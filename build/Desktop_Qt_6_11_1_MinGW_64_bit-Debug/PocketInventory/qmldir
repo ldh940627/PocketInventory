@@ -1,0 +1,6 @@
+module PocketInventory
+typeinfo appPocketInventory.qmltypes
+prefer :/qt/qml/PocketInventory/
+Main 254.0 Main.qml
+depends QtQuick
+

@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  ".qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp"
+  ".qt/rcc/qrc_qmake_PocketInventory.cpp"
+  ".rcc/qmlcache/appPocketInventory_Main_qml.cpp"
+  ".rcc/qmlcache/appPocketInventory_Main_qml.cpp.aotstats"
+  ".rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp"
+  "CMakeFiles/appPocketInventory_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/appPocketInventory_autogen.dir/ParseCache.txt"
+  "appPocketInventory_autogen"
+  "CMakeFiles/appPocketInventory.dir/appPocketInventory_autogen/mocs_compilation.cpp.obj"
+  "CMakeFiles/appPocketInventory.dir/appPocketInventory_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/appPocketInventory.dir/apppocketinventory_qmltyperegistrations.cpp.obj"
+  "CMakeFiles/appPocketInventory.dir/apppocketinventory_qmltyperegistrations.cpp.obj.d"
+  "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj"
+  "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj.d"
+  "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp.obj"
+  "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp.obj.d"
+  "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.obj"
+  "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.obj.d"
+  "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj"
+  "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj.d"
+  "CMakeFiles/appPocketInventory.dir/main.cpp.obj"
+  "CMakeFiles/appPocketInventory.dir/main.cpp.obj.d"
+  "PocketInventory/appPocketInventory.qmltypes"
+  "appPocketInventory.exe"
+  "appPocketInventory.exe.manifest"
+  "appPocketInventory.pdb"
+  "appPocketInventory_autogen/mocs_compilation.cpp"
+  "appPocketInventory_autogen/timestamp"
+  "apppocketinventory_qmltyperegistrations.cpp"
+  "libappPocketInventory.dll.a"
+  "meta_types/appPocketInventory_json_file_list.txt"
+  "meta_types/appPocketInventory_json_file_list.txt.timestamp"
+  "meta_types/qt6apppocketinventory_metatypes.json"
+  "meta_types/qt6apppocketinventory_metatypes.json.gen"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/appPocketInventory.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,14 @@
+-rootPath
+C:/Users/Coding/Desktop/Qt6/PocketInventory
+-cmake-output
+-output-file
+C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/qml_imports/appPocketInventory_conf.cmake
+-importPath
+C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug
+-importPath
+C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory
+-importPath
+C:/Qt/6.11.1/mingw_64/qml
+-qrcFiles
+C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc
+C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc

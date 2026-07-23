@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/PocketInventory/">
+    <file alias="Main.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/Main.qml</file>
+  </qresource>
+</RCC>
+
