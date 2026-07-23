@@ -86,6 +86,16 @@ ApplicationWindow {
                    return
                }
 
+               for(let i = 0; i < productModel.count; i++){
+                   const product = productModel.get(i)
+                   if(product.productName === newProductName){
+                       messageLabel.text =
+                               newProductName + "상품은 이미 등록되어 있습니다."
+                       messageLabel.color = "red"
+                       return
+                   }
+               }
+
                productModel.append({
                     productName:nameField.text,
                     productQuantity:Number(quantityField.text)
