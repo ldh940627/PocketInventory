@@ -16,6 +16,10 @@ qt_add_qml_module(appPocketInventory
     URI PocketInventory
     QML_FILES
         Main.qml
+        QML_FILES components/SummaryCard.qml
+        QML_FILES components/ProductDelegate.qml
+        QML_FILES components/SearchBar.qml
+        QML_FILES components/FilterBar.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

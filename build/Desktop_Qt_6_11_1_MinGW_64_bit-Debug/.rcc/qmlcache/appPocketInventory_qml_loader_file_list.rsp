@@ -2,4 +2,10 @@
 C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc
 --resource
 C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc
+--resource
+C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc
 /qt/qml/PocketInventory/Main.qml
+/qt/qml/PocketInventory/components/SummaryCard.qml
+/qt/qml/PocketInventory/components/ProductDelegate.qml
+/qt/qml/PocketInventory/components/SearchBar.qml
+/qt/qml/PocketInventory/components/FilterBar.qml

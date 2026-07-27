@@ -479,6 +479,30 @@ build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qm
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.s
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.s
 
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.obj
+
+# target to build an object file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.i: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.i
+
+# target to preprocess a source file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.i
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.s: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.s
+
+# target to generate assembly for a file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.s
+
 build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp.obj
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.obj
 
@@ -526,6 +550,102 @@ build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main
 build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.s
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.s
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.obj
+
+# target to build an object file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.i: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.i
+
+# target to preprocess a source file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.i
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.s: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.s
+
+# target to generate assembly for a file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.s
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.obj
+
+# target to build an object file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.i: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.i
+
+# target to preprocess a source file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.i
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.s: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.s
+
+# target to generate assembly for a file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.s
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.obj
+
+# target to build an object file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.i: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.i
+
+# target to preprocess a source file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.i
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.s: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.s
+
+# target to generate assembly for a file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.s
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.obj
+
+# target to build an object file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.i: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.i
+
+# target to preprocess a source file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.i
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.s: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.s
+
+# target to generate assembly for a file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.s
 
 build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.obj
@@ -615,12 +735,27 @@ help:
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.s
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.obj
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.i
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.s
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.s
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.s
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.obj
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.i
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.s
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.obj
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.i
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.s
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.obj
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.i
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.s
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.obj
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.i
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.s
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.s

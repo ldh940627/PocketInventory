@@ -2,5 +2,9 @@ module PocketInventory
 typeinfo appPocketInventory.qmltypes
 prefer :/qt/qml/PocketInventory/
 Main 254.0 Main.qml
+SummaryCard 254.0 components/SummaryCard.qml
+ProductDelegate 254.0 components/ProductDelegate.qml
+SearchBar 254.0 components/SearchBar.qml
+FilterBar 254.0 components/FilterBar.qml
 depends QtQuick
 

@@ -68,6 +68,10 @@ include CMakeFiles/module_appPocketInventory_aotstats_target.dir/progress.make
 CMakeFiles/module_appPocketInventory_aotstats_target: .rcc/qmlcache/module_appPocketInventory.aotstats
 
 .rcc/qmlcache/module_appPocketInventory.aotstats: .rcc/qmlcache/appPocketInventory_Main_qml.cpp.aotstats
+.rcc/qmlcache/module_appPocketInventory.aotstats: .rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.aotstats
+.rcc/qmlcache/module_appPocketInventory.aotstats: .rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.aotstats
+.rcc/qmlcache/module_appPocketInventory.aotstats: .rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.aotstats
+.rcc/qmlcache/module_appPocketInventory.aotstats: .rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.aotstats
 .rcc/qmlcache/module_appPocketInventory.aotstats: .rcc/qmlcache/module_appPocketInventory.aotstatslist
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/module_appPocketInventory.aotstats"
 	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmlaotstats.exe aggregate C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/module_appPocketInventory.aotstatslist C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/module_appPocketInventory.aotstats
@@ -76,17 +80,82 @@ CMakeFiles/module_appPocketInventory_aotstats_target: .rcc/qmlcache/module_appPo
 .rcc/qmlcache/appPocketInventory_Main_qml.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/Main.qml
 .rcc/qmlcache/appPocketInventory_Main_qml.cpp: .qt/rcc/qmake_PocketInventory.qrc
 .rcc/qmlcache/appPocketInventory_Main_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0.qrc
+.rcc/qmlcache/appPocketInventory_Main_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc
 .rcc/qmlcache/appPocketInventory_Main_qml.cpp: PocketInventory/appPocketInventory.qmltypes
 .rcc/qmlcache/appPocketInventory_Main_qml.cpp: PocketInventory/qmldir
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating .rcc/qmlcache/appPocketInventory_Main_qml.cpp, .rcc/qmlcache/appPocketInventory_Main_qml.cpp.aotstats"
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache
-	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/PocketInventory/Main.qml -I C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug -I C:/Qt/6.11.1/mingw_64/qml -i C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/qmldir --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc --dump-aot-stats --module-id=PocketInventory(appPocketInventory) -o C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp C:/Users/Coding/Desktop/Qt6/PocketInventory/Main.qml
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/PocketInventory/Main.qml -I C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug -I C:/Qt/6.11.1/mingw_64/qml -i C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/qmldir --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc --dump-aot-stats --module-id=PocketInventory(appPocketInventory) -o C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp C:/Users/Coding/Desktop/Qt6/PocketInventory/Main.qml
 
 .rcc/qmlcache/appPocketInventory_Main_qml.cpp.aotstats: .rcc/qmlcache/appPocketInventory_Main_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\appPocketInventory_Main_qml.cpp.aotstats
 
+.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp: C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/FilterBar.qml
+.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp: .qt/rcc/qmake_PocketInventory.qrc
+.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0.qrc
+.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp: PocketInventory/appPocketInventory.qmltypes
+.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp: PocketInventory/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating .rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp, .rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/PocketInventory/components/FilterBar.qml -I C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug -I C:/Qt/6.11.1/mingw_64/qml -i C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/qmldir --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc --dump-aot-stats --module-id=PocketInventory(appPocketInventory) -o C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp C:/Users/Coding/Desktop/Qt6/PocketInventory/components/FilterBar.qml
+
+.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.aotstats: .rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\appPocketInventory_components\FilterBar_qml.cpp.aotstats
+
+.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp: C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductDelegate.qml
+.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp: .qt/rcc/qmake_PocketInventory.qrc
+.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0.qrc
+.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp: PocketInventory/appPocketInventory.qmltypes
+.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp: PocketInventory/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating .rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp, .rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/PocketInventory/components/ProductDelegate.qml -I C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug -I C:/Qt/6.11.1/mingw_64/qml -i C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/qmldir --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc --dump-aot-stats --module-id=PocketInventory(appPocketInventory) -o C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductDelegate.qml
+
+.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.aotstats: .rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\appPocketInventory_components\ProductDelegate_qml.cpp.aotstats
+
+.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp: C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SearchBar.qml
+.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp: .qt/rcc/qmake_PocketInventory.qrc
+.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0.qrc
+.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp: PocketInventory/appPocketInventory.qmltypes
+.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp: PocketInventory/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating .rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp, .rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/PocketInventory/components/SearchBar.qml -I C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug -I C:/Qt/6.11.1/mingw_64/qml -i C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/qmldir --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc --dump-aot-stats --module-id=PocketInventory(appPocketInventory) -o C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SearchBar.qml
+
+.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.aotstats: .rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\appPocketInventory_components\SearchBar_qml.cpp.aotstats
+
+.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp: C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SummaryCard.qml
+.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp: .qt/rcc/qmake_PocketInventory.qrc
+.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0.qrc
+.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp: PocketInventory/appPocketInventory.qmltypes
+.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp: PocketInventory/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating .rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp, .rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/PocketInventory/components/SummaryCard.qml -I C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug -I C:/Qt/6.11.1/mingw_64/qml -i C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/qmldir --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc --dump-aot-stats --module-id=PocketInventory(appPocketInventory) -o C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SummaryCard.qml
+
+.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.aotstats: .rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\appPocketInventory_components\SummaryCard_qml.cpp.aotstats
+
 module_appPocketInventory_aotstats_target: .rcc/qmlcache/appPocketInventory_Main_qml.cpp
 module_appPocketInventory_aotstats_target: .rcc/qmlcache/appPocketInventory_Main_qml.cpp.aotstats
+module_appPocketInventory_aotstats_target: .rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp
+module_appPocketInventory_aotstats_target: .rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.aotstats
+module_appPocketInventory_aotstats_target: .rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp
+module_appPocketInventory_aotstats_target: .rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.aotstats
+module_appPocketInventory_aotstats_target: .rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp
+module_appPocketInventory_aotstats_target: .rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.aotstats
+module_appPocketInventory_aotstats_target: .rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp
+module_appPocketInventory_aotstats_target: .rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.aotstats
 module_appPocketInventory_aotstats_target: .rcc/qmlcache/module_appPocketInventory.aotstats
 module_appPocketInventory_aotstats_target: CMakeFiles/module_appPocketInventory_aotstats_target
 module_appPocketInventory_aotstats_target: CMakeFiles/module_appPocketInventory_aotstats_target.dir/build.make

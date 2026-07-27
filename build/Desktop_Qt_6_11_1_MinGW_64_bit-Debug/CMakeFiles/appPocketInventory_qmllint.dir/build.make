@@ -67,6 +67,10 @@ include CMakeFiles/appPocketInventory_qmllint.dir/progress.make
 
 CMakeFiles/appPocketInventory_qmllint: C:/Qt/6.11.1/mingw_64/bin/qmllint.exe
 CMakeFiles/appPocketInventory_qmllint: C:/Users/Coding/Desktop/Qt6/PocketInventory/Main.qml
+CMakeFiles/appPocketInventory_qmllint: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SummaryCard.qml
+CMakeFiles/appPocketInventory_qmllint: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductDelegate.qml
+CMakeFiles/appPocketInventory_qmllint: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SearchBar.qml
+CMakeFiles/appPocketInventory_qmllint: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/FilterBar.qml
 CMakeFiles/appPocketInventory_qmllint: .rcc/qmllint/appPocketInventory.rsp
 	cd /d C:\Users\Coding\Desktop\Qt6\PocketInventory && call C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmllint.exe @C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmllint/appPocketInventory.rsp
 

@@ -1,6 +1,10 @@
 <RCC>
   <qresource prefix="/qt/qml/PocketInventory/">
     <file alias="Main.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/Main.qml</file>
+    <file alias="components/SummaryCard.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SummaryCard.qml</file>
+    <file alias="components/ProductDelegate.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductDelegate.qml</file>
+    <file alias="components/SearchBar.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SearchBar.qml</file>
+    <file alias="components/FilterBar.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/FilterBar.qml</file>
   </qresource>
 </RCC>
 
