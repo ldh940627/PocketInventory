@@ -599,6 +599,30 @@ build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_comp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.s
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.s
 
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.obj
+
+# target to build an object file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.i: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.i
+
+# target to preprocess a source file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.i
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.s: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.s
+
+# target to generate assembly for a file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.s
+
 build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.obj
 
@@ -695,6 +719,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+productfilterproxymodel.obj: productfilterproxymodel.cpp.obj
+.PHONY : productfilterproxymodel.obj
+
+# target to build an object file
+productfilterproxymodel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.obj
+.PHONY : productfilterproxymodel.cpp.obj
+
+productfilterproxymodel.i: productfilterproxymodel.cpp.i
+.PHONY : productfilterproxymodel.i
+
+# target to preprocess a source file
+productfilterproxymodel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.i
+.PHONY : productfilterproxymodel.cpp.i
+
+productfilterproxymodel.s: productfilterproxymodel.cpp.s
+.PHONY : productfilterproxymodel.s
+
+# target to generate assembly for a file
+productfilterproxymodel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.s
+.PHONY : productfilterproxymodel.cpp.s
+
+productmodel.obj: productmodel.cpp.obj
+.PHONY : productmodel.obj
+
+# target to build an object file
+productmodel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productmodel.cpp.obj
+.PHONY : productmodel.cpp.obj
+
+productmodel.i: productmodel.cpp.i
+.PHONY : productmodel.i
+
+# target to preprocess a source file
+productmodel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productmodel.cpp.i
+.PHONY : productmodel.cpp.i
+
+productmodel.s: productmodel.cpp.s
+.PHONY : productmodel.s
+
+# target to generate assembly for a file
+productmodel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productmodel.cpp.s
+.PHONY : productmodel.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -750,6 +822,9 @@ help:
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.s
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.obj
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.i
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.s
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.s
@@ -762,6 +837,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... productfilterproxymodel.obj
+	@echo ... productfilterproxymodel.i
+	@echo ... productfilterproxymodel.s
+	@echo ... productmodel.obj
+	@echo ... productmodel.i
+	@echo ... productmodel.s
 .PHONY : help
 
 

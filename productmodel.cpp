@@ -1,0 +1,204 @@
+#include "productmodel.h"
+
+ProductModel::ProductModel(QObject *parent) : QAbstractListModel(parent)
+{
+
+}
+
+int ProductModel::rowCount(const QModelIndex &parent) const
+{
+    if(parent.isValid())
+        return 0;
+
+    return m_products.count();
+}
+
+QVariant ProductModel::data(const QModelIndex &index, int role) const
+{
+    if(!index.isValid())
+        return {};
+
+    if(index.row() < 0 || index.row() >= m_products.count())
+    {
+        return {};
+    }
+
+    const Product &product = m_products.at(index.row());
+
+    switch(role){
+    case ProductNameRole:
+        return product.name;
+    case ProductQuantityRole:
+        return product.quantity;
+    case MinimumQuantityRole:
+        return product.minimumQuantity;
+
+    default:
+        return {};
+    }
+}
+
+int ProductModel::count() const
+{
+    return m_products.count();
+}
+
+QVariantMap ProductModel::get(int index) const
+{
+    if(!isValidIndex(index))
+        return {};
+
+    const Product &product = m_products.at(index);
+
+    return {
+        {
+            QStringLiteral("productName"),
+            product.name
+        },
+        {
+            QStringLiteral("productQuantity"),
+            product.quantity
+        },
+        {
+            QStringLiteral("minimumQuantity"),
+            product.minimumQuantity
+        }
+    };
+}
+
+bool ProductModel::addProduct(const QString &name, int quantity, int minimumQuantity)
+{
+    const QString normalizedName = name.trimmed();
+    if(normalizedName.isEmpty())
+        return false;
+
+    if(quantity < 0 || minimumQuantity < 0)
+        return false;
+
+    if(containsProduct(normalizedName))
+        return false;
+
+    const int newIndex = m_products.count();
+
+    beginInsertRows(QModelIndex(), newIndex, newIndex);
+    m_products.append({normalizedName, quantity, minimumQuantity});
+
+    endInsertRows();
+    emit countChanged();
+    emit stockSummaryChanged();
+    return true;
+}
+
+bool ProductModel::increaseQuantity(int index)
+{
+    if (!isValidIndex(index))
+        return false;
+
+    Product &product = m_products[index];
+    product.quantity++;
+
+    const QModelIndex changedIndex = createIndex(index, 0);
+
+    emit dataChanged(changedIndex, changedIndex,{ProductQuantityRole});
+    emit stockSummaryChanged();
+
+    return true;
+}
+
+bool ProductModel::decreaseQuantity(int index)
+{
+    if (!isValidIndex(index))
+        return false;
+
+    Product &product = m_products[index];
+
+    if(product.quantity <= 0)
+        return false;
+
+    product.quantity--;
+
+    const QModelIndex changedIndex = createIndex(index, 0);
+
+    emit dataChanged(changedIndex, changedIndex, {ProductQuantityRole});
+    emit stockSummaryChanged();
+
+    return true;
+
+}
+
+bool ProductModel::removeProduct(int index)
+{
+    if (!isValidIndex(index))
+        return false;
+
+    beginRemoveRows(QModelIndex(),index,index);
+    m_products.removeAt(index);
+    endRemoveRows();
+    emit countChanged();
+    emit stockSummaryChanged();
+    return true;
+
+}
+
+bool ProductModel::containsProduct(const QString &name) const
+{
+    const QString normalizedName = name.trimmed();
+
+    for(const Product &product : m_products){
+        if(product.name.compare(normalizedName, Qt::CaseInsensitive) == 0)
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+int ProductModel::normalStockCount() const
+{
+    int normalCount = 0;
+
+    for(const Product &product : m_products){
+        if(product.quantity > product.minimumQuantity){
+            ++normalCount;
+        }
+    }
+
+    return normalCount;
+}
+
+int ProductModel::lowStockCount() const
+{
+    int lowCount = 0;
+
+    for(const Product &product : m_products){
+        if(product.quantity <= product.minimumQuantity){
+            ++lowCount;
+        }
+    }
+
+    return lowCount;
+}
+
+QHash<int, QByteArray> ProductModel::roleNames() const
+{
+    return{
+      {
+        ProductNameRole,
+        "productName"
+      },
+      {
+        ProductQuantityRole,
+        "productQuantity"
+      },
+      {
+        MinimumQuantityRole,
+        "minimumQuantity"
+      }
+    };
+}
+
+bool ProductModel::isValidIndex(int index) const
+{
+    return index >= 0 && index < m_products.count();
+}

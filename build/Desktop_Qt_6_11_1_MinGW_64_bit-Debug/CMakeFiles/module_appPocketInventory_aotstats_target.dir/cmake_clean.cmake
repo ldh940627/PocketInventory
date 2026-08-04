@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   ".rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.aotstats"
   ".rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp"
   ".rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.aotstats"
+  ".rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp"
+  ".rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.aotstats"
   ".rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp"
   ".rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.aotstats"
   ".rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp"

@@ -16,8 +16,8 @@ Rectangle{
     signal increaseRequested(int productIndex)
     signal deleteRequested(int productIndex)
 
-    height: filterMatched ? 90 : 0
-    visible: filterMatched
+    height: 90
+    visible: true
 
     color: productQuantity <= minimumQuantity ? "#ffe5e5" : "#f2f2f2"
 

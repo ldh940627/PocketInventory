@@ -399,4 +399,16 @@ CMakeFiles/appPocketInventory.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtQml/qqmlregistration.h \
  C:/Qt/6.11.1/mingw_64/include/QtQmlIntegration/qqmlintegration.h \
  C:/Qt/6.11.1/mingw_64/include/QtQml/qqmlerror.h \
- C:/Qt/6.11.1/mingw_64/include/QtQml/qqmlabstracturlinterceptor.h
+ C:/Qt/6.11.1/mingw_64/include/QtQml/qqmlabstracturlinterceptor.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVariant \
+ C:\Users\Coding\Desktop\Qt6\PocketInventory\productfilterproxymodel.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QSortFilterProxyModel \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qsortfilterproxymodel.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qabstractproxymodel.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qregularexpression.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
+ C:\Users\Coding\Desktop\Qt6\PocketInventory\productmodel.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QAbstractListModel \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h

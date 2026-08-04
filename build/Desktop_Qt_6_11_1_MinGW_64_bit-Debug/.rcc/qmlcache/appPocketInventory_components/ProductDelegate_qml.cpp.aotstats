@@ -7,22 +7,6 @@
                     "entries": [
                         {
                             "codegenResult": 0,
-                            "column": 13,
-                            "durationMicroseconds": 0,
-                            "functionName": "height",
-                            "line": 19,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 14,
-                            "durationMicroseconds": 0,
-                            "functionName": "visible",
-                            "line": 20,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
                             "column": 12,
                             "durationMicroseconds": 0,
                             "functionName": "color",

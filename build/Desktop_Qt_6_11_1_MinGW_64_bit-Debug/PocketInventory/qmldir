@@ -6,5 +6,6 @@ SummaryCard 254.0 components/SummaryCard.qml
 ProductDelegate 254.0 components/ProductDelegate.qml
 SearchBar 254.0 components/SearchBar.qml
 FilterBar 254.0 components/FilterBar.qml
+ProductForm 254.0 components/ProductForm.qml
 depends QtQuick
 

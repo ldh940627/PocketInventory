@@ -10,6 +10,8 @@ qt_standard_project_setup(REQUIRES 6.10)
 
 qt_add_executable(appPocketInventory
     main.cpp
+    productmodel.cpp
+    productmodel.h
 )
 
 qt_add_qml_module(appPocketInventory
@@ -20,6 +22,9 @@ qt_add_qml_module(appPocketInventory
         QML_FILES components/ProductDelegate.qml
         QML_FILES components/SearchBar.qml
         QML_FILES components/FilterBar.qml
+        QML_FILES components/ProductForm.qml
+        SOURCES productmodel.h productmodel.cpp
+        SOURCES productfilterproxymodel.h productfilterproxymodel.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

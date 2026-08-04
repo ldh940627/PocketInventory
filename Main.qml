@@ -4,122 +4,162 @@ import QtQuick.Layouts
 import "components"
 
 ApplicationWindow {
+
+    required property var productModel
+    required property var productFilterModel
+
     width: 500
     height: 850
     visible: true
     title: qsTr("내 손안의 재고")
 
-    property int normalStockCount : 0
-    property int lowStockCount : 0
-    property int searchResultCount: 0
 
-
-    ListModel{
-        id: productModel
+    function showMessage(message, colorName = "gray"){
+        messageLabel.text = message
+        messageLabel.color = colorName
     }
 
-    function updateStockSummary(){
-        let lowCount = 0
-
-        for(let i = 0; i < productModel.count; i++)
-        {
-            const product = productModel.get(i)
-            if(product.productQuantity <= product.minimumQuantity){
-                lowCount++
-            }
-        }
-        lowStockCount = lowCount
-        normalStockCount = productModel.count - lowCount
-    }
-
-    function matchesSearch(productName){
-        const keyword = String(searchBar.searchText ?? "")
-        .trim().toLowerCase()
-        const name = productName.toLowerCase()
-
-        if(keyword === ""){
-            return true
-        }
-
-        return name.includes(keyword)
-    }
-
-    function matchesStockFilter(productQuantity, minimumQuantity)
-    {
-        const quantity = Number(productQuantity ?? 0)
-        const minimum = Number(minimumQuantity ?? 0)
-
-        switch(filterBar.selectedFilter){
-        case "normal":
-            return quantity > minimum
-        case "low":
-            return quantity <= minimum
-        default:
-            return true
-        }
-    }
-
-    function matchesProduct(productName, productQuantity, minimumQuantity){
-        return matchesSearch(productName) && matchesStockFilter(productQuantity, minimumQuantity)
-    }
-
-    function updateSearchResultCount(){
-        let resultCount = 0
-
-        for(let i = 0; i < productModel.count; i++ ){
-            const product = productModel.get(i)
-            if(matchesProduct(product.productName, product.productQuantity, product.minimumQuantity)){
-                resultCount++
-            }
-        }
-
-        searchResultCount = resultCount
-    }
-
-    function decreaseProductQuantity(productIndex){
+    function decreaseProductQuantity(productIndex) {
         const product = productModel.get(productIndex)
 
-        if(product.productQuantity <= 0){
-            messageLabel.text = "재고는 0개보다 작을 수 없습니다."
-            messageLabel.color = "red"
+        if(!productModel.decreaseQuantity(productIndex)){
+            showMessage("재고는 0개보다 작을 수 없습니다.", "red")
             return
         }
 
-        const newQuantity = product.productQuantity - 1
+        const updateProduct = productModel.get(productIndex)
 
-        productModel.setProperty(productIndex, "productQuantity", newQuantity)
-
-        updateStockSummary()
-        updateSearchResultCount()
-
-        messageLabel.text = product.productName + " 수량을 " + newQuantity + "개로 변경했습니다."
-        messageLabel.color = "green"
+        showMessage(
+            updateProduct.productName
+            + " 수량을 "
+            + updateProduct.productQuantity
+            + "개로 변경했습니다.",
+            "green"
+        )
     }
 
-    function increaseProductQuantity(productIndex){
-        const product = productModel.get(productIndex)
-        const newQuantity = product.productQuantity + 1
+    function increaseProductQuantity(productIndex) {
+        if(!productModel.increaseQuantity(productIndex)){
+            showMessage("수량 변경에 실패했습니다.", "red")
+            return
+        }
 
-        productModel.setProperty(productIndex, "productQuantity", newQuantity)
+        const updatedProduct = productModel.get(productIndex)
 
-        updateStockSummary()
-        updateSearchResultCount()
-
-        messageLabel.text = product.productName + "수량을" + newQuantity + "개로 변경했습니다."
-        messageLabel.color = "green"
+        showMessage(
+            updatedProduct.productName
+            + " 수량을 "
+            + updatedProduct.productQuantity
+            + "개로 변경했습니다.",
+            "green"
+        )
     }
 
-    function deleteProduct(productIndex){
+    function deleteProduct(productIndex) {
         const product = productModel.get(productIndex)
+        if(!product.productName){
+            showMessage("삭제할 상품을 찾을 수 없습니다.", "red")
+            return
+        }
+
         const deletedName = product.productName
 
-        productModel.remove(productIndex)
+        if(!productModel.removeProduct(productIndex)){
+            showMessage("상품 삭제에 실패했습니다.", "red")
+            return
+        }
 
-        updateStockSummary()
-        updateSearchResultCount()
+        showMessage(
+            deletedName + " 상품을 삭제했습니다.",
+            "darkorange"
+        )
+    }
 
-        messageLabel.text = deletedName + " 상품을 삭제했습니다."
-        messageLabel.color = "darkorange"
+    function addProduct(
+        productNameText,
+        productQuantityText,
+        minimumQuantityText
+    ) {
+        const productName =
+                String(productNameText ?? "").trim()
+
+        const quantityText =
+                String(productQuantityText ?? "").trim()
+
+        const minimumText =
+                String(minimumQuantityText ?? "").trim()
+
+        if (productName === "") {
+            showMessage(
+                "상품명을 입력해주세요.",
+                "red"
+            )
+
+            productForm.focusNameField()
+            return
+        }
+
+        if (quantityText === "") {
+            showMessage(
+                "현재 수량을 입력해주세요.",
+                "red"
+            )
+            return
+        }
+
+        if (minimumText === "") {
+            showMessage(
+                "최소 수량을 입력해주세요.",
+                "red"
+            )
+            return
+        }
+
+        const productQuantity = Number(quantityText)
+        const minimumQuantity = Number(minimumText)
+
+        if (!Number.isInteger(productQuantity)
+                || productQuantity < 0) {
+            showMessage(
+                "현재 수량은 0 이상의 정수여야 합니다.",
+                "red"
+            )
+            return
+        }
+
+        if (!Number.isInteger(minimumQuantity)
+                || minimumQuantity < 0) {
+            showMessage(
+                "최소 수량은 0 이상의 정수여야 합니다.",
+                "red"
+            )
+            return
+        }
+
+        if (productModel.containsProduct(productName)) {
+            showMessage(
+                productName
+                + " 상품은 이미 등록되어 있습니다.",
+                "red"
+            )
+
+            productForm.focusNameField()
+            return
+        }
+
+        const added = productModel.addProduct(productName, productQuantity, minimumQuantity)
+
+        if(!added){
+            showMessage("상품 등록에 실패했습니다.", "red")
+            return
+        }
+
+        showMessage(
+            productName + " 상품이 등록되었습니다.",
+            "green"
+        )
+
+        productForm.resetForm()
     }
 
     ScrollView{
@@ -147,30 +187,24 @@ ApplicationWindow {
 
                    SummaryCard{
                        title: "정상 재고"
-                       value: normalStockCount + "개"
+                       value: productModel.normalStockCount + "개"
                        cardColor: "#e5f6ea"
                        valueColor: "green"
                    }
 
                    SummaryCard{
                        title: "부족 재고"
-                       value: lowStockCount + "개"
+                       value: productModel.lowStockCount + "개"
                        cardColor: "#ffe5e5"
                        valueColor: "red"
 
                    }
                 }
 
-                Label{
-                    text: "상품 등록"
-                    font.pixelSize: 26
-                    font.bold: true
-                }
-
-                Label{
+                Label {
                     id: messageLabel
 
-                    text:""
+                    text: ""
                     visible: text !== ""
 
                     Layout.fillWidth: true
@@ -182,107 +216,20 @@ ApplicationWindow {
                     font.pixelSize: 15
                 }
 
-                Label{
-                    text: "상품명"
-                }
-
-                TextField{
-                    id: nameField
+                ProductForm{
+                    id: productForm
 
                     Layout.fillWidth: true
-                    placeholderText: "상품명을 입력하세요"
-                }
 
-                Label{
-                    text: "현재 수량"
-                }
-
-                TextField{
-                    id: quantityField
-
-                    Layout.fillWidth: true
-                    placeholderText: "수량을 입력하세요"
-
-                    inputMethodHints: Qt.ImhDigitsOnly
-
-                    validator: IntValidator{
-                        bottom: 0
+                    onSubmitRequested: function(
+                        productName,
+                        productQuantity,
+                        minimumQuantity)
+                    {
+                        addProduct(productName,productQuantity,minimumQuantity)
                     }
                 }
 
-                Label{
-                    text: "최소 재고"
-                }
-
-                TextField{
-                    id: minimumQuantityField
-
-                    Layout.fillWidth: true
-                    placeholderText: "최소 재고 수량을 입력하세요"
-
-                    inputMethodHints: Qt.ImhDigitsOnly
-
-                    validator: IntValidator{
-                        bottom: 0
-                    }
-                }
-
-
-                Button{
-                    text: "상품등록"
-
-                    Layout.fillWidth: true
-
-                    onClicked:{
-                       const newProductName = nameField.text.trim()
-
-                       if(newProductName === ""){
-                           messageLabel.text = "상품명을 입력하세요."
-                           messageLabel.color = "red"
-                           return
-                       }
-
-                       if(quantityField.text === "")
-                       {
-                           messageLabel.text = "수량을 입력하세요."
-                           messageLabel.color = "red"
-                           return
-                       }
-
-                       if(minimumQuantityField.text === ""){
-                           messageLabel.text = "최소 재고를 입력하세요."
-                           messageLabel.color = "red"
-                           return
-                       }
-
-                       for(let i = 0; i < productModel.count; i++){
-                           const product = productModel.get(i)
-                           if(product.productName.toLowerCase() === newProductName.toLowerCase()){
-                               messageLabel.text =
-                                       newProductName + "상품은 이미 등록되어 있습니다."
-                               messageLabel.color = "red"
-                               return
-                           }
-                       }
-
-                       productModel.append({
-                            productName:newProductName,
-                            productQuantity:Number(quantityField.text),
-                            minimumQuantity:Number(minimumQuantityField.text)
-                        })
-
-                       updateStockSummary()
-                       updateSearchResultCount()
-
-                       messageLabel.text = newProductName + "상품이 등록되었습니다."
-                       messageLabel.color = "green"
-
-                       nameField.text = ""
-                       quantityField.text = ""
-                       minimumQuantityField.text = ""
-                       nameField.forceActiveFocus()
-                    }
-                }
 
                 Rectangle{
                     Layout.fillWidth: true
@@ -295,19 +242,24 @@ ApplicationWindow {
 
                     Layout.fillWidth: true
                     onSearchRequested: function(searchText){
-                        updateSearchResultCount()
+                        productFilterModel.searchText = searchText
                     }
 
                     onClearRequested: {
                         filterBar.resetFilter()
-                        updateSearchResultCount()
-                        messageLabel.text = "검색 조건을 초기화했습니다."
-                        messageLabel.color = "gray"
+
+                        productFilterModel.searchText = ""
+                        productFilterModel.stockFilter = "all"
+
+                        showMessage(
+                               "검색 조건을 초기화했습니다.",
+                               "gray"
+                           )
                     }
                 }
 
                 Label {
-                    text: "검색 결과: " + searchResultCount + "개"
+                    text: "검색 결과: " + productFilterModel.count + "개"
                     color: "gray"
                 }
 
@@ -316,22 +268,31 @@ ApplicationWindow {
 
                     Layout.fillWidth: true
 
-                    onFilterChanged: function(filter){
-                        updateSearchResultCount()
+                    onFilterChanged: function(filter) {
+                        productFilterModel.stockFilter = filter
 
-                        switch(filter){
+                        switch (filter) {
                         case "normal":
-                            messageLabel.text = "정상 재고 상품만 표시합니다."
+                            showMessage(
+                                "정상 재고 상품만 표시합니다.",
+                                "gray"
+                            )
                             break
+
                         case "low":
-                            messageLabel.text = "재고 부족 상품만 표시합니다."
+                            showMessage(
+                                "재고 부족 상품만 표시합니다.",
+                                "gray"
+                            )
                             break
+
                         default:
-                            messageLabel.text = "전체 상품을 표시합니다."
+                            showMessage(
+                                "전체 상품을 표시합니다.",
+                                "gray"
+                            )
                             break
                         }
-
-                        messageLabel.color = "gray"
                     }
                 }
 
@@ -349,7 +310,7 @@ ApplicationWindow {
                     horizontalAlignment: Text.AlignHCenter
                     color : "gray"
 
-                    visible: productModel.count > 0 && searchResultCount === 0
+                    visible: productModel.count > 0 && productFilterModel.count === 0
                 }
 
                 Label{
@@ -366,27 +327,29 @@ ApplicationWindow {
                     Layout.fillWidth: true
                     Layout.preferredHeight: Math.max(contentHeight, 200)
 
-                    model: productModel
+                    model: productFilterModel
                     spacing: 0
                     interactive: false
 
                     delegate: ProductDelegate{
 
-                        width: productListView.width
+                       width: productListView.width
 
-                        filterMatched: matchesProduct(productName, productQuantity, minimumQuantity)
 
-                        onDecreaseRequested: function(productIndex){
-                            decreaseProductQuantity(productIndex)
-                        }
+                       onDecreaseRequested: function(proxyIndex){
+                           const originalIndex = productFilterModel.sourceIndex(proxyIndex)
+                           decreaseProductQuantity(originalIndex)
+                       }
 
-                        onIncreaseRequested: function(productIndex){
-                            increaseProductQuantity(productIndex)
-                        }
+                       onIncreaseRequested: function(proxyIndex){
+                           const originalIndex = productFilterModel.sourceIndex(proxyIndex)
+                           increaseProductQuantity(originalIndex)
+                       }
 
-                        onDeleteRequested: function(productIndex){
-                            deleteProduct(productIndex)
-                        }
+                       onDeleteRequested: function(proxyIndex){
+                           const originalIndex = productFilterModel.sourceIndex(proxyIndex)
+                           deleteProduct(originalIndex)
+                       }
                     }
                 }
 

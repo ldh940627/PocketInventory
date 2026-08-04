@@ -8,49 +8,17 @@
                         {
                             "codegenResult": 2,
                             "column": 5,
-                            "durationMicroseconds": 1000,
-                            "functionName": "updateStockSummary",
-                            "line": 21,
-                            "message": "Cannot generate efficient code for lookup in QJSValue"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 5,
                             "durationMicroseconds": 0,
-                            "functionName": "matchesSearch",
-                            "line": 35,
+                            "functionName": "showMessage",
+                            "line": 17,
                             "message": "Functions without type annotations won't be compiled"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 5,
-                            "durationMicroseconds": 0,
-                            "functionName": "matchesStockFilter",
-                            "line": 47,
-                            "message": "Functions without type annotations won't be compiled"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 5,
-                            "durationMicroseconds": 0,
-                            "functionName": "matchesProduct",
-                            "line": 62,
-                            "message": "Functions without type annotations won't be compiled"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 5,
-                            "durationMicroseconds": 1000,
-                            "functionName": "updateSearchResultCount",
-                            "line": 66,
-                            "message": "Cannot generate efficient code for lookup in QJSValue"
                         },
                         {
                             "codegenResult": 2,
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "decreaseProductQuantity",
-                            "line": 79,
+                            "line": 22,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -58,7 +26,7 @@
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "increaseProductQuantity",
-                            "line": 99,
+                            "line": 41,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -66,7 +34,15 @@
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "deleteProduct",
-                            "line": 112,
+                            "line": 58,
+                            "message": "Functions without type annotations won't be compiled"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 5,
+                            "durationMicroseconds": 0,
+                            "functionName": "addProduct",
+                            "line": 78,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -74,7 +50,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "contentWidth",
-                            "line": 128,
+                            "line": 168,
                             "message": "Could not find property \"contentWidth\"."
                         },
                         {
@@ -82,7 +58,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 126,
+                            "line": 166,
                             "message": "Could not find property \"fill\"."
                         },
                         {
@@ -90,7 +66,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 131,
+                            "line": 171,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -98,15 +74,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 135,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "value",
-                            "line": 143,
+                            "line": 175,
                             "message": ""
                         },
                         {
@@ -114,23 +82,31 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 150,
-                            "message": "Cannot access value for name normalStockCount"
+                            "line": 183,
+                            "message": "Cannot access value for name productModel"
                         },
                         {
                             "codegenResult": 2,
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 157,
-                            "message": "Cannot access value for name lowStockCount"
+                            "line": 190,
+                            "message": "Cannot access value for name productModel"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "value",
+                            "line": 197,
+                            "message": "Cannot access value for name productModel"
                         },
                         {
                             "codegenResult": 2,
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 174,
+                            "line": 208,
                             "message": "Could not find property \"visible\"."
                         },
                         {
@@ -138,7 +114,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 178,
+                            "line": 212,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -146,47 +122,39 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 179,
+                            "line": 213,
                             "message": "Could not find property \"wrapMode\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 39,
+                            "column": 40,
                             "durationMicroseconds": 0,
-                            "functionName": "inputMethodHints",
-                            "line": 206,
-                            "message": "Could not find property \"inputMethodHints\"."
+                            "functionName": "onSubmitRequested",
+                            "line": 224,
+                            "message": "method addProduct cannot be resolved."
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 39,
+                            "codegenResult": 0,
+                            "column": 40,
                             "durationMicroseconds": 0,
-                            "functionName": "inputMethodHints",
-                            "line": 223,
-                            "message": "Could not find property \"inputMethodHints\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 236,
-                            "message": "Could not find signal \"clicked\"."
+                            "functionName": "onSubmitRequested",
+                            "line": 224,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "onSearchRequested",
-                            "line": 297,
-                            "message": "method updateSearchResultCount cannot be resolved."
+                            "line": 244,
+                            "message": "Cannot access value for name productFilterModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "onSearchRequested",
-                            "line": 297,
+                            "line": 244,
                             "message": ""
                         },
                         {
@@ -194,15 +162,15 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "onClearRequested",
-                            "line": 301,
-                            "message": "Type  does not have a property resetFilter for calling"
+                            "line": 248,
+                            "message": "Cannot access value for name productFilterModel"
                         },
                         {
                             "codegenResult": 2,
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 310,
+                            "line": 262,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -210,15 +178,15 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "onFilterChanged",
-                            "line": 319,
-                            "message": "method updateSearchResultCount cannot be resolved."
+                            "line": 271,
+                            "message": "Cannot access value for name productFilterModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "onFilterChanged",
-                            "line": 319,
+                            "line": 271,
                             "message": ""
                         },
                         {
@@ -226,7 +194,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 349,
+                            "line": 310,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -234,7 +202,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 352,
+                            "line": 313,
                             "message": "Could not find property \"visible\"."
                         },
                         {
@@ -242,7 +210,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 358,
+                            "line": 319,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -250,87 +218,79 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 360,
+                            "line": 321,
                             "message": "Could not find property \"visible\"."
                         },
                         {
-                            "codegenResult": 0,
+                            "codegenResult": 2,
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 369,
-                            "message": ""
+                            "line": 330,
+                            "message": "Cannot access value for name productFilterModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "preferredHeight",
-                            "line": 367,
+                            "line": 328,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 32,
+                            "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 375,
+                            "line": 336,
                             "message": "Cannot access value for name productListView"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 40,
-                            "durationMicroseconds": 0,
-                            "functionName": "filterMatched",
-                            "line": 377,
-                            "message": "method matchesProduct cannot be resolved."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 46,
+                            "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "onDecreaseRequested",
-                            "line": 379,
-                            "message": "method decreaseProductQuantity cannot be resolved."
+                            "line": 339,
+                            "message": "Cannot access value for name productFilterModel"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 46,
+                            "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "onDecreaseRequested",
-                            "line": 379,
+                            "line": 339,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 46,
+                            "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "onIncreaseRequested",
-                            "line": 383,
-                            "message": "method increaseProductQuantity cannot be resolved."
+                            "line": 344,
+                            "message": "Cannot access value for name productFilterModel"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 46,
+                            "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "onIncreaseRequested",
-                            "line": 383,
+                            "line": 344,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 44,
+                            "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "onDeleteRequested",
-                            "line": 387,
-                            "message": "method deleteProduct cannot be resolved."
+                            "line": 349,
+                            "message": "Cannot access value for name productFilterModel"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 44,
+                            "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "onDeleteRequested",
-                            "line": 387,
+                            "line": 349,
                             "message": ""
                         }
                     ],
