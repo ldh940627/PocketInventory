@@ -26,10 +26,15 @@ QVariant ProductModel::data(const QModelIndex &index, int role) const
     const Product &product = m_products.at(index.row());
 
     switch(role){
+    case ProductIdRole:
+        return product.id;
+
     case ProductNameRole:
         return product.name;
+
     case ProductQuantityRole:
         return product.quantity;
+
     case MinimumQuantityRole:
         return product.minimumQuantity;
 
@@ -52,6 +57,10 @@ QVariantMap ProductModel::get(int index) const
 
     return {
         {
+            QStringLiteral("productId"),
+            product.id
+        },
+        {
             QStringLiteral("productName"),
             product.name
         },
@@ -66,12 +75,26 @@ QVariantMap ProductModel::get(int index) const
     };
 }
 
-bool ProductModel::addProduct(const QString &name, int quantity, int minimumQuantity)
+void ProductModel::setProducts(const QList<Product> &products)
+{
+    beginResetModel();
+
+    m_products = QVector<Product>(products.begin(), products.end());
+    endResetModel();
+
+    emit countChanged();
+    emit stockSummaryChanged();
+
+}
+
+bool ProductModel::addProduct(int id, const QString &name, int quantity, int minimumQuantity)
 {
     const QString normalizedName = name.trimmed();
+
+    if(id<0)
+        return false;
     if(normalizedName.isEmpty())
         return false;
-
     if(quantity < 0 || minimumQuantity < 0)
         return false;
 
@@ -81,13 +104,17 @@ bool ProductModel::addProduct(const QString &name, int quantity, int minimumQuan
     const int newIndex = m_products.count();
 
     beginInsertRows(QModelIndex(), newIndex, newIndex);
-    m_products.append({normalizedName, quantity, minimumQuantity});
+
+    m_products.append({id, normalizedName, quantity, minimumQuantity});
 
     endInsertRows();
+
     emit countChanged();
     emit stockSummaryChanged();
+
     return true;
 }
+
 
 bool ProductModel::increaseQuantity(int index)
 {
@@ -180,9 +207,21 @@ int ProductModel::lowStockCount() const
     return lowCount;
 }
 
+Product ProductModel::productAt(int index) const
+{
+    if(!isValidIndex(index))
+        return {};
+
+    return m_products.at(index);
+}
+
 QHash<int, QByteArray> ProductModel::roleNames() const
 {
     return{
+      {
+        ProductIdRole,
+        "productId"
+      },
       {
         ProductNameRole,
         "productName"

@@ -4,7 +4,7 @@ project(PocketInventory VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Quick Sql)
 
 qt_standard_project_setup(REQUIRES 6.10)
 
@@ -25,6 +25,11 @@ qt_add_qml_module(appPocketInventory
         QML_FILES components/ProductForm.qml
         SOURCES productmodel.h productmodel.cpp
         SOURCES productfilterproxymodel.h productfilterproxymodel.cpp
+        SOURCES inventoryviewmodel.h inventoryviewmodel.cpp
+        SOURCES DatabaseManager.h DatabaseManager.cpp
+        SOURCES productrepository.h productrepository.cpp
+        SOURCES HistoryRecord.h
+        SOURCES historyrepository.h historyrepository.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -39,7 +44,7 @@ set_target_properties(appPocketInventory PROPERTIES
 )
 
 target_link_libraries(appPocketInventory
-    PRIVATE Qt6::Quick
+    PRIVATE Qt6::Quick Qt6::Sql
 )
 
 install(TARGETS appPocketInventory

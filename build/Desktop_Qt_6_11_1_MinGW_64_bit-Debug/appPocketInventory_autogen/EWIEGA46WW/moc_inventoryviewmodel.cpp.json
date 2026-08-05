@@ -1,0 +1,256 @@
+{
+    "classes": [
+        {
+            "className": "InventoryViewModel",
+            "lineNumber": 13,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "productNameText",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "productQuantityText",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "minimumQuantityText",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "lineNumber": 51,
+                    "name": "addProduct",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "proxyIndex",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 6,
+                    "lineNumber": 52,
+                    "name": "increaseQuantity",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "proxyIndex",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 7,
+                    "lineNumber": 53,
+                    "name": "decreaseQuantity",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "proxyIndex",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 8,
+                    "lineNumber": 54,
+                    "name": "removeProduct",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "lineNumber": 55,
+                    "name": "resetFilters",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 18,
+                    "name": "products",
+                    "override": false,
+                    "read": "products",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QAbstractItemModel*",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "lineNumber": 21,
+                    "name": "totalCount",
+                    "notify": "stockSummaryChanged",
+                    "override": false,
+                    "read": "totalCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "lineNumber": 22,
+                    "name": "normalStockCount",
+                    "notify": "stockSummaryChanged",
+                    "override": false,
+                    "read": "normalStockCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "lineNumber": 23,
+                    "name": "lowStockCount",
+                    "notify": "stockSummaryChanged",
+                    "override": false,
+                    "read": "lowStockCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "lineNumber": 26,
+                    "name": "filteredCount",
+                    "notify": "filteredCountChanged",
+                    "override": false,
+                    "read": "filteredCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "lineNumber": 29,
+                    "name": "searchText",
+                    "notify": "searchTextChanged",
+                    "override": false,
+                    "read": "searchText",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setSearchText"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "lineNumber": 32,
+                    "name": "stockFilter",
+                    "notify": "stockFilterChanged",
+                    "override": false,
+                    "read": "stockFilter",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setStockFilter"
+                }
+            ],
+            "qualifiedClassName": "InventoryViewModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "lineNumber": 60,
+                    "name": "stockSummaryChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "lineNumber": 61,
+                    "name": "filteredCountChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "lineNumber": 63,
+                    "name": "searchTextChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "lineNumber": 64,
+                    "name": "stockFilterChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "colorName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "lineNumber": 66,
+                    "name": "messageRequested",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "inventoryviewmodel.h",
+    "outputRevision": 69
+}

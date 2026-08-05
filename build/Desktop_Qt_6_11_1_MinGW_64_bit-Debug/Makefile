@@ -407,6 +407,30 @@ appPocketInventory_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory_autogen.dir\build.make CMakeFiles/appPocketInventory_autogen.dir/build
 .PHONY : appPocketInventory_autogen/fast
 
+DatabaseManager.obj: DatabaseManager.cpp.obj
+.PHONY : DatabaseManager.obj
+
+# target to build an object file
+DatabaseManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj
+.PHONY : DatabaseManager.cpp.obj
+
+DatabaseManager.i: DatabaseManager.cpp.i
+.PHONY : DatabaseManager.i
+
+# target to preprocess a source file
+DatabaseManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.i
+.PHONY : DatabaseManager.cpp.i
+
+DatabaseManager.s: DatabaseManager.cpp.s
+.PHONY : DatabaseManager.s
+
+# target to generate assembly for a file
+DatabaseManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.s
+.PHONY : DatabaseManager.cpp.s
+
 appPocketInventory_autogen/mocs_compilation.obj: appPocketInventory_autogen/mocs_compilation.cpp.obj
 .PHONY : appPocketInventory_autogen/mocs_compilation.obj
 
@@ -695,6 +719,54 @@ build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlc
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.s
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.s
 
+historyrepository.obj: historyrepository.cpp.obj
+.PHONY : historyrepository.obj
+
+# target to build an object file
+historyrepository.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historyrepository.cpp.obj
+.PHONY : historyrepository.cpp.obj
+
+historyrepository.i: historyrepository.cpp.i
+.PHONY : historyrepository.i
+
+# target to preprocess a source file
+historyrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historyrepository.cpp.i
+.PHONY : historyrepository.cpp.i
+
+historyrepository.s: historyrepository.cpp.s
+.PHONY : historyrepository.s
+
+# target to generate assembly for a file
+historyrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historyrepository.cpp.s
+.PHONY : historyrepository.cpp.s
+
+inventoryviewmodel.obj: inventoryviewmodel.cpp.obj
+.PHONY : inventoryviewmodel.obj
+
+# target to build an object file
+inventoryviewmodel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj
+.PHONY : inventoryviewmodel.cpp.obj
+
+inventoryviewmodel.i: inventoryviewmodel.cpp.i
+.PHONY : inventoryviewmodel.i
+
+# target to preprocess a source file
+inventoryviewmodel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.i
+.PHONY : inventoryviewmodel.cpp.i
+
+inventoryviewmodel.s: inventoryviewmodel.cpp.s
+.PHONY : inventoryviewmodel.s
+
+# target to generate assembly for a file
+inventoryviewmodel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.s
+.PHONY : inventoryviewmodel.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -767,6 +839,30 @@ productmodel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productmodel.cpp.s
 .PHONY : productmodel.cpp.s
 
+productrepository.obj: productrepository.cpp.obj
+.PHONY : productrepository.obj
+
+# target to build an object file
+productrepository.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productrepository.cpp.obj
+.PHONY : productrepository.cpp.obj
+
+productrepository.i: productrepository.cpp.i
+.PHONY : productrepository.i
+
+# target to preprocess a source file
+productrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productrepository.cpp.i
+.PHONY : productrepository.cpp.i
+
+productrepository.s: productrepository.cpp.s
+.PHONY : productrepository.s
+
+# target to generate assembly for a file
+productrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productrepository.cpp.s
+.PHONY : productrepository.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -798,6 +894,9 @@ help:
 	@echo ... generate_qmlls_build_ini_file
 	@echo ... module_appPocketInventory_aotstats_target
 	@echo ... appPocketInventory
+	@echo ... DatabaseManager.obj
+	@echo ... DatabaseManager.i
+	@echo ... DatabaseManager.s
 	@echo ... appPocketInventory_autogen/mocs_compilation.obj
 	@echo ... appPocketInventory_autogen/mocs_compilation.i
 	@echo ... appPocketInventory_autogen/mocs_compilation.s
@@ -834,6 +933,12 @@ help:
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.s
+	@echo ... historyrepository.obj
+	@echo ... historyrepository.i
+	@echo ... historyrepository.s
+	@echo ... inventoryviewmodel.obj
+	@echo ... inventoryviewmodel.i
+	@echo ... inventoryviewmodel.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -843,6 +948,9 @@ help:
 	@echo ... productmodel.obj
 	@echo ... productmodel.i
 	@echo ... productmodel.s
+	@echo ... productrepository.obj
+	@echo ... productrepository.i
+	@echo ... productrepository.s
 .PHONY : help
 
 

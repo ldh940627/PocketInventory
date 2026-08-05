@@ -5,8 +5,7 @@ import "components"
 
 ApplicationWindow {
 
-    required property var productModel
-    required property var productFilterModel
+    required property var inventoryViewModel
 
     width: 500
     height: 850
@@ -19,147 +18,12 @@ ApplicationWindow {
         messageLabel.color = colorName
     }
 
-    function decreaseProductQuantity(productIndex) {
-        const product = productModel.get(productIndex)
+    Connections{
+        target: inventoryViewModel
 
-        if(!productModel.decreaseQuantity(productIndex)){
-            showMessage("재고는 0개보다 작을 수 없습니다.", "red")
-            return
+        function onMessageRequested(message, colorName){
+            showMessage(message, colorName)
         }
-
-        const updateProduct = productModel.get(productIndex)
-
-        showMessage(
-            updateProduct.productName
-            + " 수량을 "
-            + updateProduct.productQuantity
-            + "개로 변경했습니다.",
-            "green"
-        )
-    }
-
-    function increaseProductQuantity(productIndex) {
-        if(!productModel.increaseQuantity(productIndex)){
-            showMessage("수량 변경에 실패했습니다.", "red")
-            return
-        }
-
-        const updatedProduct = productModel.get(productIndex)
-
-        showMessage(
-            updatedProduct.productName
-            + " 수량을 "
-            + updatedProduct.productQuantity
-            + "개로 변경했습니다.",
-            "green"
-        )
-    }
-
-    function deleteProduct(productIndex) {
-        const product = productModel.get(productIndex)
-        if(!product.productName){
-            showMessage("삭제할 상품을 찾을 수 없습니다.", "red")
-            return
-        }
-
-        const deletedName = product.productName
-
-        if(!productModel.removeProduct(productIndex)){
-            showmessage("상품 삭제에 실패했습니다.", "red")
-            return
-        }
-
-        showMessage(
-            deletedName + " 상품을 삭제했습니다.",
-            "darkorange"
-        )
-    }
-
-    function addProduct(
-        productNameText,
-        productQuantityText,
-        minimumQuantityText
-    ) {
-        const productName =
-                String(productNameText ?? "").trim()
-
-        const quantityText =
-                String(productQuantityText ?? "").trim()
-
-        const minimumText =
-                String(minimumQuantityText ?? "").trim()
-
-        if (productName === "") {
-            showMessage(
-                "상품명을 입력해주세요.",
-                "red"
-            )
-
-            productForm.focusNameField()
-            return
-        }
-
-        if (quantityText === "") {
-            showMessage(
-                "현재 수량을 입력해주세요.",
-                "red"
-            )
-            return
-        }
-
-        if (minimumText === "") {
-            showMessage(
-                "최소 수량을 입력해주세요.",
-                "red"
-            )
-            return
-        }
-
-        const productQuantity = Number(quantityText)
-        const minimumQuantity = Number(minimumText)
-
-        if (!Number.isInteger(productQuantity)
-                || productQuantity < 0) {
-            showMessage(
-                "현재 수량은 0 이상의 정수여야 합니다.",
-                "red"
-            )
-            return
-        }
-
-        if (!Number.isInteger(minimumQuantity)
-                || minimumQuantity < 0) {
-            showMessage(
-                "최소 수량은 0 이상의 정수여야 합니다.",
-                "red"
-            )
-            return
-        }
-
-        if (productModel.containsProduct(productName)) {
-            showMessage(
-                productName
-                + " 상품은 이미 등록되어 있습니다.",
-                "red"
-            )
-
-            productForm.focusNameField()
-            return
-        }
-
-        const added = productModel.addProduct(productName, productQuantity, minimumQuantity)
-
-        if(!added){
-            showMessage("상품 등록에 실패했습니다.", "red")
-            return
-        }
-
-        showMessage(
-            productName + " 상품이 등록되었습니다.",
-            "green"
-        )
-
-        productForm.resetForm()
     }
 
     ScrollView{
@@ -180,21 +44,21 @@ ApplicationWindow {
 
                    SummaryCard{
                        title: "전체 상품"
-                       value: productModel.count + "개"
+                       value: inventoryViewModel.totalCount + "개"
                        cardColor: "#e8f0fe"
                        valueColor: "black"
                    }
 
                    SummaryCard{
                        title: "정상 재고"
-                       value: productModel.normalStockCount + "개"
+                       value: inventoryViewModel.normalStockCount + "개"
                        cardColor: "#e5f6ea"
                        valueColor: "green"
                    }
 
                    SummaryCard{
                        title: "부족 재고"
-                       value: productModel.lowStockCount + "개"
+                       value: inventoryViewModel.lowStockCount + "개"
                        cardColor: "#ffe5e5"
                        valueColor: "red"
 
@@ -226,7 +90,10 @@ ApplicationWindow {
                         productQuantity,
                         minimumQuantity)
                     {
-                        addProduct(productName,productQuantity,minimumQuantity)
+                        const succeeded = inventoryViewModel.addProduct(productName, productQuantity, minimumQuantity)
+
+                        if(succeeded)
+                            productForm.resetForm()
                     }
                 }
 
@@ -242,24 +109,17 @@ ApplicationWindow {
 
                     Layout.fillWidth: true
                     onSearchRequested: function(searchText){
-                        productFilterModel.searchText = searchText
+                        inventoryViewModel.searchText = searchText
                     }
 
                     onClearRequested: {
                         filterBar.resetFilter()
-
-                        productFilterModel.searchText = ""
-                        productFilterModel.stockFilter = "all"
-
-                        showMessage(
-                               "검색 조건을 초기화했습니다.",
-                               "gray"
-                           )
+                        inventoryViewModel.resetFilters()
                     }
                 }
 
                 Label {
-                    text: "검색 결과: " + productFilterModel.count + "개"
+                    text: "검색 결과: " + inventoryViewModel.filteredCount + "개"
                     color: "gray"
                 }
 
@@ -269,7 +129,7 @@ ApplicationWindow {
                     Layout.fillWidth: true
 
                     onFilterChanged: function(filter) {
-                        productFilterModel.stockFilter = filter
+                        inventoryViewModel.stockFilter = filter
 
                         switch (filter) {
                         case "normal":
@@ -310,7 +170,7 @@ ApplicationWindow {
                     horizontalAlignment: Text.AlignHCenter
                     color : "gray"
 
-                    visible: productModel.count > 0 && productFilterModel.count === 0
+                    visible: inventoryViewModel.totalCount > 0 && inventoryViewModel.filteredCount === 0
                 }
 
                 Label{
@@ -318,7 +178,7 @@ ApplicationWindow {
                     text: "등록된 상품이 없습니다."
                     horizontalAlignment: Text.AlignHCenter
                     color: "gray"
-                    visible: productModel.count === 0
+                    visible: inventoryViewModel.totalCount === 0
                 }
 
                 ListView {
@@ -327,7 +187,7 @@ ApplicationWindow {
                     Layout.fillWidth: true
                     Layout.preferredHeight: Math.max(contentHeight, 200)
 
-                    model: productFilterModel
+                    model: inventoryViewModel.products
                     spacing: 0
                     interactive: false
 
@@ -337,18 +197,15 @@ ApplicationWindow {
 
 
                        onDecreaseRequested: function(proxyIndex){
-                           const originalIndex = productFilterModel.sourceIndex(proxyIndex)
-                           decreaseProductQuantity(originalIndex)
+                           inventoryViewModel.decreaseQuantity(proxyIndex)
                        }
 
                        onIncreaseRequested: function(proxyIndex){
-                           const originalIndex = productFilterModel.sourceIndex(proxyIndex)
-                           increaseProductQuantity(originalIndex)
+                           inventoryViewModel.increaseQuantity(proxyIndex)
                        }
 
                        onDeleteRequested: function(proxyIndex){
-                           const orginalIndex = productFilterModel.sourceIndex(proxyIndex)
-                           deleteProduct(originalIndex)
+                           inventoryViewModel.removeProduct(proxyIndex)
                        }
                     }
                 }

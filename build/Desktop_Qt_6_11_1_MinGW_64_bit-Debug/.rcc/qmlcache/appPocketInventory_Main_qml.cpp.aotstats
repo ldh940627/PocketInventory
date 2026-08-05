@@ -10,39 +10,23 @@
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "showMessage",
-                            "line": 17,
+                            "line": 16,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 5,
+                            "column": 17,
                             "durationMicroseconds": 0,
-                            "functionName": "decreaseProductQuantity",
+                            "functionName": "target",
                             "line": 22,
-                            "message": "Functions without type annotations won't be compiled"
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 5,
+                            "column": 9,
                             "durationMicroseconds": 0,
-                            "functionName": "increaseProductQuantity",
-                            "line": 41,
-                            "message": "Functions without type annotations won't be compiled"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 5,
-                            "durationMicroseconds": 0,
-                            "functionName": "deleteProduct",
-                            "line": 58,
-                            "message": "Functions without type annotations won't be compiled"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 5,
-                            "durationMicroseconds": 0,
-                            "functionName": "addProduct",
-                            "line": 78,
+                            "functionName": "onMessageRequested",
+                            "line": 24,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -50,7 +34,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "contentWidth",
-                            "line": 168,
+                            "line": 32,
                             "message": "Could not find property \"contentWidth\"."
                         },
                         {
@@ -58,7 +42,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 166,
+                            "line": 30,
                             "message": "Could not find property \"fill\"."
                         },
                         {
@@ -66,7 +50,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 171,
+                            "line": 35,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -74,7 +58,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 175,
+                            "line": 39,
                             "message": ""
                         },
                         {
@@ -82,31 +66,31 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 183,
-                            "message": "Cannot access value for name productModel"
+                            "line": 47,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 2,
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 190,
-                            "message": "Cannot access value for name productModel"
+                            "line": 54,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 2,
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 197,
-                            "message": "Cannot access value for name productModel"
+                            "line": 61,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 2,
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 208,
+                            "line": 72,
                             "message": "Could not find property \"visible\"."
                         },
                         {
@@ -114,7 +98,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 212,
+                            "line": 76,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -122,7 +106,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 213,
+                            "line": 77,
                             "message": "Could not find property \"wrapMode\"."
                         },
                         {
@@ -130,15 +114,15 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "onSubmitRequested",
-                            "line": 224,
-                            "message": "method addProduct cannot be resolved."
+                            "line": 88,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "onSubmitRequested",
-                            "line": 224,
+                            "line": 88,
                             "message": ""
                         },
                         {
@@ -146,15 +130,15 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "onSearchRequested",
-                            "line": 244,
-                            "message": "Cannot access value for name productFilterModel"
+                            "line": 111,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "onSearchRequested",
-                            "line": 244,
+                            "line": 111,
                             "message": ""
                         },
                         {
@@ -162,15 +146,15 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "onClearRequested",
-                            "line": 248,
-                            "message": "Cannot access value for name productFilterModel"
+                            "line": 115,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 2,
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 262,
+                            "line": 122,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -178,15 +162,15 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "onFilterChanged",
-                            "line": 271,
-                            "message": "Cannot access value for name productFilterModel"
+                            "line": 131,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "onFilterChanged",
-                            "line": 271,
+                            "line": 131,
                             "message": ""
                         },
                         {
@@ -194,7 +178,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 310,
+                            "line": 170,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -202,7 +186,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 313,
+                            "line": 173,
                             "message": "Could not find property \"visible\"."
                         },
                         {
@@ -210,7 +194,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 319,
+                            "line": 179,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -218,7 +202,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 321,
+                            "line": 181,
                             "message": "Could not find property \"visible\"."
                         },
                         {
@@ -226,15 +210,15 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 330,
-                            "message": "Cannot access value for name productFilterModel"
+                            "line": 190,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "preferredHeight",
-                            "line": 328,
+                            "line": 188,
                             "message": ""
                         },
                         {
@@ -242,7 +226,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 336,
+                            "line": 196,
                             "message": "Cannot access value for name productListView"
                         },
                         {
@@ -250,15 +234,15 @@
                             "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "onDecreaseRequested",
-                            "line": 339,
-                            "message": "Cannot access value for name productFilterModel"
+                            "line": 199,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "onDecreaseRequested",
-                            "line": 339,
+                            "line": 199,
                             "message": ""
                         },
                         {
@@ -266,15 +250,15 @@
                             "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "onIncreaseRequested",
-                            "line": 344,
-                            "message": "Cannot access value for name productFilterModel"
+                            "line": 203,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "onIncreaseRequested",
-                            "line": 344,
+                            "line": 203,
                             "message": ""
                         },
                         {
@@ -282,15 +266,15 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "onDeleteRequested",
-                            "line": 349,
-                            "message": "Cannot access value for name productFilterModel"
+                            "line": 207,
+                            "message": "Cannot access value for name inventoryViewModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "onDeleteRequested",
-                            "line": 349,
+                            "line": 207,
                             "message": ""
                         }
                     ],

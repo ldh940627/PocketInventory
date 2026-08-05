@@ -45,14 +45,11 @@ template <> constexpr inline auto ProductModel::qt_create_metaobjectdata<qt_meta
         "get",
         "QVariantMap",
         "index",
-        "addProduct",
-        "name",
-        "quantity",
-        "minimumQuantity",
         "increaseQuantity",
         "decreaseQuantity",
         "removeProduct",
         "containsProduct",
+        "name",
         "count",
         "normalStockCount",
         "lowStockCount"
@@ -67,34 +64,30 @@ template <> constexpr inline auto ProductModel::qt_create_metaobjectdata<qt_meta
         QtMocHelpers::MethodData<QVariantMap(int) const>(4, 2, QMC::AccessPublic, 0x80000000 | 5, {{
             { QMetaType::Int, 6 },
         }}),
-        // Method 'addProduct'
-        QtMocHelpers::MethodData<bool(const QString &, int, int)>(7, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::QString, 8 }, { QMetaType::Int, 9 }, { QMetaType::Int, 10 },
-        }}),
         // Method 'increaseQuantity'
-        QtMocHelpers::MethodData<bool(int)>(11, 2, QMC::AccessPublic, QMetaType::Bool, {{
+        QtMocHelpers::MethodData<bool(int)>(7, 2, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::Int, 6 },
         }}),
         // Method 'decreaseQuantity'
-        QtMocHelpers::MethodData<bool(int)>(12, 2, QMC::AccessPublic, QMetaType::Bool, {{
+        QtMocHelpers::MethodData<bool(int)>(8, 2, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::Int, 6 },
         }}),
         // Method 'removeProduct'
-        QtMocHelpers::MethodData<bool(int)>(13, 2, QMC::AccessPublic, QMetaType::Bool, {{
+        QtMocHelpers::MethodData<bool(int)>(9, 2, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::Int, 6 },
         }}),
         // Method 'containsProduct'
-        QtMocHelpers::MethodData<bool(const QString &) const>(14, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::QString, 8 },
+        QtMocHelpers::MethodData<bool(const QString &) const>(10, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 11 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'count'
-        QtMocHelpers::PropertyData<int>(15, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
+        QtMocHelpers::PropertyData<int>(12, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
         // property 'normalStockCount'
-        QtMocHelpers::PropertyData<int>(16, QMetaType::Int, QMC::DefaultPropertyFlags, 1),
+        QtMocHelpers::PropertyData<int>(13, QMetaType::Int, QMC::DefaultPropertyFlags, 1),
         // property 'lowStockCount'
-        QtMocHelpers::PropertyData<int>(17, QMetaType::Int, QMC::DefaultPropertyFlags, 1),
+        QtMocHelpers::PropertyData<int>(14, QMetaType::Int, QMC::DefaultPropertyFlags, 1),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -120,15 +113,13 @@ void ProductModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 1: _t->stockSummaryChanged(); break;
         case 2: { QVariantMap _r = _t->get((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<QVariantMap*>(_a[0]) = std::move(_r); }  break;
-        case 3: { bool _r = _t->addProduct((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3])));
+        case 3: { bool _r = _t->increaseQuantity((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 4: { bool _r = _t->increaseQuantity((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 4: { bool _r = _t->decreaseQuantity((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 5: { bool _r = _t->decreaseQuantity((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 5: { bool _r = _t->removeProduct((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 6: { bool _r = _t->removeProduct((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
-            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 7: { bool _r = _t->containsProduct((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])));
+        case 6: { bool _r = _t->containsProduct((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -169,14 +160,14 @@ int ProductModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 7;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 7)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 7;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

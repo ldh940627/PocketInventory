@@ -84,9 +84,15 @@ bool ProductFilterProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex 
     const int minimumQuantity = sourceModel()->data(sourceIndex, ProductModel::MinimumQuantityRole).toInt();
     const bool matchesSearch = m_searchText.isEmpty() || productName.contains(m_searchText, Qt::CaseInsensitive);
 
+    qDebug()
+        << m_stockFilter
+        << productName
+        << productQuantity
+        << minimumQuantity;
+
     bool matchesStock = true;
 
-    if(m_stockFilter == QStringLiteral("normall")){
+    if(m_stockFilter == QStringLiteral("normal")){
         matchesStock = productQuantity > minimumQuantity;
     }
     else if (m_stockFilter == QStringLiteral("low")){

@@ -1,30 +1,40 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QVariant>
+#include <QDebug>
 
-#include "productfilterproxymodel.h"
-#include "productmodel.h"
+#include "DatabaseManager.h"
+#include "inventoryviewmodel.h"
+#include "productrepository.h"
+
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
+    DatabaseManager databaseManager;
+
+    if(!databaseManager.open()){
+        qCritical() << "데이터베이스 연결 실패 :" << databaseManager.lastError();
+        return -1;
+    }
+
+    ProductRepository productRepository(databaseManager.database());
+
+    HistoryRepository historyRepository(databaseManager.database());
+
+    InventoryViewModel inventoryViewModel(&productRepository, &historyRepository);
+
+    qDebug() << "데이터베이스 연결 성공: " << databaseManager.databasePath();
+
     QQmlApplicationEngine engine;
-
-    ProductModel productModel;
-
-    ProductFilterProxyModel productFilterModel;
-    productFilterModel.setSourceModel(&productModel);
 
     engine.setInitialProperties({
         {
-            QStringLiteral("productModel"),
-            QVariant::fromValue(&productModel)
+            QStringLiteral("inventoryViewModel"),
+            QVariant::fromValue(&inventoryViewModel)
         },
-        {
-            QStringLiteral("productFilterModel"),
-            QVariant::fromValue(&productFilterModel)
-        }
+
     });
 
     QObject::connect(
@@ -33,7 +43,13 @@ int main(int argc, char *argv[])
         &app,
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
+
     engine.loadFromModule("PocketInventory", "Main");
 
-    return QGuiApplication::exec();
+    const int exitCode = app.exec();
+
+    databaseManager.close();
+
+    return exitCode;
+
 }

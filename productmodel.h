@@ -7,6 +7,7 @@
 
 struct Product
 {
+    int id = -1;
     QString name;
     int quantity = 0;
     int minimumQuantity = 0;
@@ -16,20 +17,17 @@ class ProductModel : public QAbstractListModel
 {
     Q_OBJECT
 
-    Q_PROPERTY(
-        int count
-        READ count
-        NOTIFY countChanged)
+    Q_PROPERTY(int count READ count NOTIFY countChanged)
 
     Q_PROPERTY(int normalStockCount READ normalStockCount NOTIFY stockSummaryChanged)
     Q_PROPERTY(int lowStockCount READ lowStockCount NOTIFY stockSummaryChanged)
 
 public:
 
-
     enum ProductRole
     {
-        ProductNameRole = Qt::UserRole + 1,
+        ProductIdRole = Qt::UserRole + 1,
+        ProductNameRole,
         ProductQuantityRole,
         MinimumQuantityRole
     };
@@ -43,10 +41,8 @@ public:
 
     Q_INVOKABLE QVariantMap get(int index) const;
 
-    Q_INVOKABLE bool addProduct(
-        const QString &name,
-        int quantity,
-        int minimumQuantity);
+    void setProducts(const QList<Product> &products);
+    bool addProduct(int id, const QString &name, int quantity, int minimumQuantity);
 
     Q_INVOKABLE bool increaseQuantity(int index);
     Q_INVOKABLE bool decreaseQuantity(int index);
@@ -56,6 +52,8 @@ public:
 
     int normalStockCount() const;
     int lowStockCount() const;
+
+    Product productAt(int index) const;
 
 
 signals:

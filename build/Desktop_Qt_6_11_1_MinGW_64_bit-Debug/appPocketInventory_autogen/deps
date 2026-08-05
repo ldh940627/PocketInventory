@@ -1,5 +1,8 @@
 appPocketInventory_autogen/timestamp: \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/QAbstractItemModel \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QAbstractListModel \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/QList \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QSortFilterProxyModel \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
@@ -63,6 +66,7 @@ appPocketInventory_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qmap.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qmath.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qmetacontainer.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qmetaobject.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qmetatype.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qminmax.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qnamespace.h \
@@ -127,6 +131,11 @@ appPocketInventory_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qxptype_traits.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qyieldcpu.h \
+	C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlDatabase \
+	C:/Qt/6.11.1/mingw_64/include/QtSql/qsqldatabase.h \
+	C:/Qt/6.11.1/mingw_64/include/QtSql/qtsql-config.h \
+	C:/Qt/6.11.1/mingw_64/include/QtSql/qtsqlexports.h \
+	C:/Qt/6.11.1/mingw_64/include/QtSql/qtsqlglobal.h \
 	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/FindWrapAtomic.cmake \
 	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake \
 	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake \
@@ -794,6 +803,46 @@ appPocketInventory_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargetsPrecheck.cmake \
 	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsVersionlessTargets.cmake \
 	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6SvgToQmlMacros.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginConfig.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargetsPrecheck.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginConfig.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargetsPrecheck.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginConfig.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginTargets.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginTargetsPrecheck.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargetsPrecheck.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargetsPrecheck.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargetsPrecheck.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargetsPrecheck.cmake \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlVersionlessAliasTargets.cmake \
 	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6TaskTree/Qt6TaskTreeAdditionalTargetInfo.cmake \
 	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6TaskTree/Qt6TaskTreeConfig.cmake \
 	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6TaskTree/Qt6TaskTreeConfigVersion.cmake \
@@ -1048,6 +1097,8 @@ appPocketInventory_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/CMakeLists.txt \
+	C:/Users/Coding/Desktop/Qt6/PocketInventory/DatabaseManager.cpp \
+	C:/Users/Coding/Desktop/Qt6/PocketInventory/HistoryRecord.h \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/qml_imports/appPocketInventory_conf.cmake \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qtcreator/cmake-helper/package-manager.cmake \
@@ -1056,9 +1107,16 @@ appPocketInventory_autogen/timestamp: \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/moc_predefs.h \
+	C:/Users/Coding/Desktop/Qt6/PocketInventory/databasemanager.h \
+	C:/Users/Coding/Desktop/Qt6/PocketInventory/historyrepository.cpp \
+	C:/Users/Coding/Desktop/Qt6/PocketInventory/historyrepository.h \
+	C:/Users/Coding/Desktop/Qt6/PocketInventory/inventoryviewmodel.cpp \
+	C:/Users/Coding/Desktop/Qt6/PocketInventory/inventoryviewmodel.h \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/main.cpp \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/productfilterproxymodel.cpp \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/productfilterproxymodel.h \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/productmodel.cpp \
 	C:/Users/Coding/Desktop/Qt6/PocketInventory/productmodel.h \
+	C:/Users/Coding/Desktop/Qt6/PocketInventory/productrepository.cpp \
+	C:/Users/Coding/Desktop/Qt6/PocketInventory/productrepository.h \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

@@ -401,14 +401,28 @@ CMakeFiles/appPocketInventory.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtQml/qqmlerror.h \
  C:/Qt/6.11.1/mingw_64/include/QtQml/qqmlabstracturlinterceptor.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QVariant \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QDebug \
+ C:\Users\Coding\Desktop\Qt6\PocketInventory\DatabaseManager.h \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlDatabase \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qsqldatabase.h \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qtsqlglobal.h \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qtsql-config.h \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qtsqlexports.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
+ C:\Users\Coding\Desktop\Qt6\PocketInventory\inventoryviewmodel.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QAbstractItemModel \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\productfilterproxymodel.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QSortFilterProxyModel \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qsortfilterproxymodel.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qabstractproxymodel.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qregularexpression.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\productmodel.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QAbstractListModel \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
- C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
+ C:\Users\Coding\Desktop\Qt6\PocketInventory\productrepository.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QList \
+ C:\Users\Coding\Desktop\Qt6\PocketInventory\historyrepository.h \
+ C:\Users\Coding\Desktop\Qt6\PocketInventory\HistoryRecord.h
