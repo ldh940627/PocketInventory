@@ -365,4 +365,5 @@ CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qmetaobject.h \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\historyrepository.h \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\HistoryRecord.h \
+ C:\Users\Coding\Desktop\Qt6\PocketInventory\inventoryservice.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QDebug

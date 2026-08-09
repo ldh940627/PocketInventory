@@ -10,3 +10,5 @@ C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit
 /qt/qml/PocketInventory/components/SearchBar.qml
 /qt/qml/PocketInventory/components/FilterBar.qml
 /qt/qml/PocketInventory/components/ProductForm.qml
+/qt/qml/PocketInventory/components/HistoryDelegate.qml
+/qt/qml/PocketInventory/components/HistoryFilterBar.qml

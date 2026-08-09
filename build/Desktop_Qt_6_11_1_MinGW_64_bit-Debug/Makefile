@@ -599,6 +599,54 @@ build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_comp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.s
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.s
 
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.obj
+
+# target to build an object file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.i: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.i
+
+# target to preprocess a source file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.i
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.s: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.s
+
+# target to generate assembly for a file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.s
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.obj
+
+# target to build an object file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.i: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.i
+
+# target to preprocess a source file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.i
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.s: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.s
+
+# target to generate assembly for a file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.s
+
 build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.obj
 
@@ -719,6 +767,54 @@ build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlc
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.s
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.s
 
+historyfilterproxymodel.obj: historyfilterproxymodel.cpp.obj
+.PHONY : historyfilterproxymodel.obj
+
+# target to build an object file
+historyfilterproxymodel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.obj
+.PHONY : historyfilterproxymodel.cpp.obj
+
+historyfilterproxymodel.i: historyfilterproxymodel.cpp.i
+.PHONY : historyfilterproxymodel.i
+
+# target to preprocess a source file
+historyfilterproxymodel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.i
+.PHONY : historyfilterproxymodel.cpp.i
+
+historyfilterproxymodel.s: historyfilterproxymodel.cpp.s
+.PHONY : historyfilterproxymodel.s
+
+# target to generate assembly for a file
+historyfilterproxymodel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.s
+.PHONY : historyfilterproxymodel.cpp.s
+
+historymodel.obj: historymodel.cpp.obj
+.PHONY : historymodel.obj
+
+# target to build an object file
+historymodel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historymodel.cpp.obj
+.PHONY : historymodel.cpp.obj
+
+historymodel.i: historymodel.cpp.i
+.PHONY : historymodel.i
+
+# target to preprocess a source file
+historymodel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historymodel.cpp.i
+.PHONY : historymodel.cpp.i
+
+historymodel.s: historymodel.cpp.s
+.PHONY : historymodel.s
+
+# target to generate assembly for a file
+historymodel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historymodel.cpp.s
+.PHONY : historymodel.cpp.s
+
 historyrepository.obj: historyrepository.cpp.obj
 .PHONY : historyrepository.obj
 
@@ -742,6 +838,54 @@ historyrepository.s: historyrepository.cpp.s
 historyrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historyrepository.cpp.s
 .PHONY : historyrepository.cpp.s
+
+historyviewmodel.obj: historyviewmodel.cpp.obj
+.PHONY : historyviewmodel.obj
+
+# target to build an object file
+historyviewmodel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.obj
+.PHONY : historyviewmodel.cpp.obj
+
+historyviewmodel.i: historyviewmodel.cpp.i
+.PHONY : historyviewmodel.i
+
+# target to preprocess a source file
+historyviewmodel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.i
+.PHONY : historyviewmodel.cpp.i
+
+historyviewmodel.s: historyviewmodel.cpp.s
+.PHONY : historyviewmodel.s
+
+# target to generate assembly for a file
+historyviewmodel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.s
+.PHONY : historyviewmodel.cpp.s
+
+inventoryservice.obj: inventoryservice.cpp.obj
+.PHONY : inventoryservice.obj
+
+# target to build an object file
+inventoryservice.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj
+.PHONY : inventoryservice.cpp.obj
+
+inventoryservice.i: inventoryservice.cpp.i
+.PHONY : inventoryservice.i
+
+# target to preprocess a source file
+inventoryservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.i
+.PHONY : inventoryservice.cpp.i
+
+inventoryservice.s: inventoryservice.cpp.s
+.PHONY : inventoryservice.s
+
+# target to generate assembly for a file
+inventoryservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.s
+.PHONY : inventoryservice.cpp.s
 
 inventoryviewmodel.obj: inventoryviewmodel.cpp.obj
 .PHONY : inventoryviewmodel.obj
@@ -918,6 +1062,12 @@ help:
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.s
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.obj
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.i
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.s
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.obj
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.i
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.s
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.s
@@ -933,9 +1083,21 @@ help:
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.s
+	@echo ... historyfilterproxymodel.obj
+	@echo ... historyfilterproxymodel.i
+	@echo ... historyfilterproxymodel.s
+	@echo ... historymodel.obj
+	@echo ... historymodel.i
+	@echo ... historymodel.s
 	@echo ... historyrepository.obj
 	@echo ... historyrepository.i
 	@echo ... historyrepository.s
+	@echo ... historyviewmodel.obj
+	@echo ... historyviewmodel.i
+	@echo ... historyviewmodel.s
+	@echo ... inventoryservice.obj
+	@echo ... inventoryservice.i
+	@echo ... inventoryservice.s
 	@echo ... inventoryviewmodel.obj
 	@echo ... inventoryviewmodel.i
 	@echo ... inventoryviewmodel.s

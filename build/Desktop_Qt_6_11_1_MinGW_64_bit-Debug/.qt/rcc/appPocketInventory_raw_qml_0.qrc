@@ -6,6 +6,8 @@
     <file alias="components/SearchBar.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SearchBar.qml</file>
     <file alias="components/FilterBar.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/FilterBar.qml</file>
     <file alias="components/ProductForm.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductForm.qml</file>
+    <file alias="components/HistoryDelegate.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryDelegate.qml</file>
+    <file alias="components/HistoryFilterBar.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryFilterBar.qml</file>
   </qresource>
 </RCC>
 

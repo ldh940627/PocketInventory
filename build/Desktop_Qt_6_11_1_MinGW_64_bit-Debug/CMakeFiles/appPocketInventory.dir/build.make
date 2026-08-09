@@ -190,43 +190,73 @@ PocketInventory/appPocketInventory.qmltypes: apppocketinventory_qmltyperegistrat
 .rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.aotstats: .rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\appPocketInventory_components\ProductForm_qml.cpp.aotstats
 
+.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp: C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryDelegate.qml
+.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp: .qt/rcc/qmake_PocketInventory.qrc
+.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0.qrc
+.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp: PocketInventory/appPocketInventory.qmltypes
+.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp: PocketInventory/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating .rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp, .rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/PocketInventory/components/HistoryDelegate.qml -I C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug -I C:/Qt/6.11.1/mingw_64/qml -i C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/qmldir --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc --dump-aot-stats --module-id=PocketInventory(appPocketInventory) -o C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryDelegate.qml
+
+.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.aotstats: .rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\appPocketInventory_components\HistoryDelegate_qml.cpp.aotstats
+
+.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp: C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryFilterBar.qml
+.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp: .qt/rcc/qmake_PocketInventory.qrc
+.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0.qrc
+.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp: .qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp: PocketInventory/appPocketInventory.qmltypes
+.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp: PocketInventory/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating .rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp, .rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/PocketInventory/components/HistoryFilterBar.qml -I C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug -I C:/Qt/6.11.1/mingw_64/qml -i C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/qmldir --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc --resource C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc --dump-aot-stats --module-id=PocketInventory(appPocketInventory) -o C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryFilterBar.qml
+
+.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.aotstats: .rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\appPocketInventory_components\HistoryFilterBar_qml.cpp.aotstats
+
 .qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/Main.qml
 .qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SummaryCard.qml
 .qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductDelegate.qml
 .qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SearchBar.qml
 .qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/FilterBar.qml
 .qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductForm.qml
+.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryDelegate.qml
+.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryFilterBar.qml
 .qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp: .qt/rcc/appPocketInventory_raw_qml_0.qrc
 .qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp: C:/Qt/6.11.1/mingw_64/bin/rcc.exe
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Running rcc for resource appPocketInventory_raw_qml_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Running rcc for resource appPocketInventory_raw_qml_0"
 	C:\Qt\6.11.1\mingw_64\bin\rcc.exe --output C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp --name appPocketInventory_raw_qml_0 C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc --no-zstd
 
 .qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp: PocketInventory/components/qmldir
 .qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp: .qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc
 .qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp: C:/Qt/6.11.1/mingw_64/bin/rcc.exe
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Running rcc for resource appPocketInventory_raw_qml_0_extra_qmldirs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Running rcc for resource appPocketInventory_raw_qml_0_extra_qmldirs"
 	C:\Qt\6.11.1\mingw_64\bin\rcc.exe --output C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp --name appPocketInventory_raw_qml_0_extra_qmldirs C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc --no-zstd
 
 appPocketInventory_autogen/timestamp: C:/Qt/6.11.1/mingw_64/bin/moc.exe
 appPocketInventory_autogen/timestamp: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Automatic MOC and UIC for target appPocketInventory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Automatic MOC and UIC for target appPocketInventory"
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/appPocketInventory_autogen.dir/AutogenInfo.json Debug
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/timestamp
 
 meta_types/appPocketInventory_json_file_list.txt: C:/Qt/6.11.1/mingw_64/bin/cmake_automoc_parser.exe
 meta_types/appPocketInventory_json_file_list.txt: appPocketInventory_autogen/timestamp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Running AUTOMOC file extraction for target appPocketInventory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Running AUTOMOC file extraction for target appPocketInventory"
 	C:\Qt\6.11.1\mingw_64\bin\cmake_automoc_parser.exe --cmake-autogen-cache-file C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/appPocketInventory_autogen.dir/ParseCache.txt --cmake-autogen-info-file C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/appPocketInventory_autogen.dir/AutogenInfo.json --output-file-path C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/meta_types/appPocketInventory_json_file_list.txt --timestamp-file-path C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/meta_types/appPocketInventory_json_file_list.txt.timestamp --cmake-autogen-include-dir-path C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/include
 
 meta_types/qt6apppocketinventory_metatypes.json: meta_types/qt6apppocketinventory_metatypes.json.gen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating meta_types/qt6apppocketinventory_metatypes.json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating meta_types/qt6apppocketinventory_metatypes.json"
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E true
 
 CMakeFiles/appPocketInventory.dir/appPocketInventory_autogen/mocs_compilation.cpp.obj: CMakeFiles/appPocketInventory.dir/flags.make
 CMakeFiles/appPocketInventory.dir/appPocketInventory_autogen/mocs_compilation.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/appPocketInventory_autogen/mocs_compilation.cpp.obj: appPocketInventory_autogen/mocs_compilation.cpp
 CMakeFiles/appPocketInventory.dir/appPocketInventory_autogen/mocs_compilation.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/appPocketInventory.dir/appPocketInventory_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/appPocketInventory.dir/appPocketInventory_autogen/mocs_compilation.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/appPocketInventory_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\appPocketInventory.dir\appPocketInventory_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\appPocketInventory_autogen\mocs_compilation.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\appPocketInventory_autogen\mocs_compilation.cpp
 
 CMakeFiles/appPocketInventory.dir/appPocketInventory_autogen/mocs_compilation.cpp.i: cmake_force
@@ -241,7 +271,7 @@ CMakeFiles/appPocketInventory.dir/main.cpp.obj: CMakeFiles/appPocketInventory.di
 CMakeFiles/appPocketInventory.dir/main.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/main.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/main.cpp
 CMakeFiles/appPocketInventory.dir/main.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/appPocketInventory.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/appPocketInventory.dir/main.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/main.cpp.obj -MF CMakeFiles\appPocketInventory.dir\main.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\main.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\main.cpp
 
 CMakeFiles/appPocketInventory.dir/main.cpp.i: cmake_force
@@ -256,7 +286,7 @@ CMakeFiles/appPocketInventory.dir/productmodel.cpp.obj: CMakeFiles/appPocketInve
 CMakeFiles/appPocketInventory.dir/productmodel.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/productmodel.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/productmodel.cpp
 CMakeFiles/appPocketInventory.dir/productmodel.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/appPocketInventory.dir/productmodel.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/appPocketInventory.dir/productmodel.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/productmodel.cpp.obj -MF CMakeFiles\appPocketInventory.dir\productmodel.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\productmodel.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\productmodel.cpp
 
 CMakeFiles/appPocketInventory.dir/productmodel.cpp.i: cmake_force
@@ -271,7 +301,7 @@ CMakeFiles/appPocketInventory.dir/apppocketinventory_qmltyperegistrations.cpp.ob
 CMakeFiles/appPocketInventory.dir/apppocketinventory_qmltyperegistrations.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/apppocketinventory_qmltyperegistrations.cpp.obj: apppocketinventory_qmltyperegistrations.cpp
 CMakeFiles/appPocketInventory.dir/apppocketinventory_qmltyperegistrations.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/appPocketInventory.dir/apppocketinventory_qmltyperegistrations.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/appPocketInventory.dir/apppocketinventory_qmltyperegistrations.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wa,-mbig-obj -MD -MT CMakeFiles/appPocketInventory.dir/apppocketinventory_qmltyperegistrations.cpp.obj -MF CMakeFiles\appPocketInventory.dir\apppocketinventory_qmltyperegistrations.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\apppocketinventory_qmltyperegistrations.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\apppocketinventory_qmltyperegistrations.cpp
 
 CMakeFiles/appPocketInventory.dir/apppocketinventory_qmltyperegistrations.cpp.i: cmake_force
@@ -286,7 +316,7 @@ CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp.obj: .qt/rcc/qrc_qmake_PocketInventory.cpp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_PocketInventory.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_PocketInventory.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_PocketInventory.cpp
 
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp.i: cmake_force
@@ -301,7 +331,7 @@ CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.obj: CMakeFiles/ap
 CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/productfilterproxymodel.cpp
 CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.obj -MF CMakeFiles\appPocketInventory.dir\productfilterproxymodel.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\productfilterproxymodel.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\productfilterproxymodel.cpp
 
 CMakeFiles/appPocketInventory.dir/productfilterproxymodel.cpp.i: cmake_force
@@ -316,7 +346,7 @@ CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj: CMakeFiles/appPock
 CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/inventoryviewmodel.cpp
 CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj -MF CMakeFiles\appPocketInventory.dir\inventoryviewmodel.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\inventoryviewmodel.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\inventoryviewmodel.cpp
 
 CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.i: cmake_force
@@ -331,7 +361,7 @@ CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj: CMakeFiles/appPocketI
 CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/DatabaseManager.cpp
 CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj -MF CMakeFiles\appPocketInventory.dir\DatabaseManager.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\DatabaseManager.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\DatabaseManager.cpp
 
 CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.i: cmake_force
@@ -346,7 +376,7 @@ CMakeFiles/appPocketInventory.dir/productrepository.cpp.obj: CMakeFiles/appPocke
 CMakeFiles/appPocketInventory.dir/productrepository.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/productrepository.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/productrepository.cpp
 CMakeFiles/appPocketInventory.dir/productrepository.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/appPocketInventory.dir/productrepository.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/appPocketInventory.dir/productrepository.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/productrepository.cpp.obj -MF CMakeFiles\appPocketInventory.dir\productrepository.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\productrepository.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\productrepository.cpp
 
 CMakeFiles/appPocketInventory.dir/productrepository.cpp.i: cmake_force
@@ -361,7 +391,7 @@ CMakeFiles/appPocketInventory.dir/historyrepository.cpp.obj: CMakeFiles/appPocke
 CMakeFiles/appPocketInventory.dir/historyrepository.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/historyrepository.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/historyrepository.cpp
 CMakeFiles/appPocketInventory.dir/historyrepository.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/appPocketInventory.dir/historyrepository.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/appPocketInventory.dir/historyrepository.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/historyrepository.cpp.obj -MF CMakeFiles\appPocketInventory.dir\historyrepository.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\historyrepository.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\historyrepository.cpp
 
 CMakeFiles/appPocketInventory.dir/historyrepository.cpp.i: cmake_force
@@ -372,11 +402,71 @@ CMakeFiles/appPocketInventory.dir/historyrepository.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appPocketInventory.dir/historyrepository.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Coding\Desktop\Qt6\PocketInventory\historyrepository.cpp -o CMakeFiles\appPocketInventory.dir\historyrepository.cpp.s
 
+CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj: CMakeFiles/appPocketInventory.dir/flags.make
+CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
+CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/inventoryservice.cpp
+CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj -MF CMakeFiles\appPocketInventory.dir\inventoryservice.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\inventoryservice.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\inventoryservice.cpp
+
+CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Coding\Desktop\Qt6\PocketInventory\inventoryservice.cpp > CMakeFiles\appPocketInventory.dir\inventoryservice.cpp.i
+
+CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Coding\Desktop\Qt6\PocketInventory\inventoryservice.cpp -o CMakeFiles\appPocketInventory.dir\inventoryservice.cpp.s
+
+CMakeFiles/appPocketInventory.dir/historymodel.cpp.obj: CMakeFiles/appPocketInventory.dir/flags.make
+CMakeFiles/appPocketInventory.dir/historymodel.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
+CMakeFiles/appPocketInventory.dir/historymodel.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/historymodel.cpp
+CMakeFiles/appPocketInventory.dir/historymodel.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/appPocketInventory.dir/historymodel.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/historymodel.cpp.obj -MF CMakeFiles\appPocketInventory.dir\historymodel.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\historymodel.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\historymodel.cpp
+
+CMakeFiles/appPocketInventory.dir/historymodel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appPocketInventory.dir/historymodel.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Coding\Desktop\Qt6\PocketInventory\historymodel.cpp > CMakeFiles\appPocketInventory.dir\historymodel.cpp.i
+
+CMakeFiles/appPocketInventory.dir/historymodel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appPocketInventory.dir/historymodel.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Coding\Desktop\Qt6\PocketInventory\historymodel.cpp -o CMakeFiles\appPocketInventory.dir\historymodel.cpp.s
+
+CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.obj: CMakeFiles/appPocketInventory.dir/flags.make
+CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
+CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/historyviewmodel.cpp
+CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.obj -MF CMakeFiles\appPocketInventory.dir\historyviewmodel.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\historyviewmodel.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\historyviewmodel.cpp
+
+CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Coding\Desktop\Qt6\PocketInventory\historyviewmodel.cpp > CMakeFiles\appPocketInventory.dir\historyviewmodel.cpp.i
+
+CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Coding\Desktop\Qt6\PocketInventory\historyviewmodel.cpp -o CMakeFiles\appPocketInventory.dir\historyviewmodel.cpp.s
+
+CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.obj: CMakeFiles/appPocketInventory.dir/flags.make
+CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
+CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.obj: C:/Users/Coding/Desktop/Qt6/PocketInventory/historyfilterproxymodel.cpp
+CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.obj -MF CMakeFiles\appPocketInventory.dir\historyfilterproxymodel.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\historyfilterproxymodel.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\historyfilterproxymodel.cpp
+
+CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Coding\Desktop\Qt6\PocketInventory\historyfilterproxymodel.cpp > CMakeFiles\appPocketInventory.dir\historyfilterproxymodel.cpp.i
+
+CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Coding\Desktop\Qt6\PocketInventory\historyfilterproxymodel.cpp -o CMakeFiles\appPocketInventory.dir\historyfilterproxymodel.cpp.s
+
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj: CMakeFiles/appPocketInventory.dir/flags.make
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj: .rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_qmlcache_loader.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_qmlcache_loader.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_qmlcache_loader.cpp
 
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.i: cmake_force
@@ -391,7 +481,7 @@ CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rc
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.obj: .rcc/qmlcache/appPocketInventory_Main_qml.cpp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_Main_qml.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_Main_qml.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_Main_qml.cpp
 
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.i: cmake_force
@@ -406,7 +496,7 @@ CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rc
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj: .rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\SummaryCard_qml.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\SummaryCard_qml.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\SummaryCard_qml.cpp
 
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.i: cmake_force
@@ -421,7 +511,7 @@ CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rc
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj: .rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\ProductDelegate_qml.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\ProductDelegate_qml.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\ProductDelegate_qml.cpp
 
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.i: cmake_force
@@ -436,7 +526,7 @@ CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rc
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj: .rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\SearchBar_qml.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\SearchBar_qml.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\SearchBar_qml.cpp
 
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.i: cmake_force
@@ -451,7 +541,7 @@ CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rc
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj: .rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\FilterBar_qml.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\FilterBar_qml.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\FilterBar_qml.cpp
 
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.i: cmake_force
@@ -466,7 +556,7 @@ CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rc
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj: .rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\ProductForm_qml.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\ProductForm_qml.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\ProductForm_qml.cpp
 
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.i: cmake_force
@@ -477,11 +567,41 @@ CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\ProductForm_qml.cpp -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\ProductForm_qml.cpp.s
 
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/flags.make
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj: .rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryDelegate_qml.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryDelegate_qml.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryDelegate_qml.cpp
+
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryDelegate_qml.cpp > CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryDelegate_qml.cpp.i
+
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryDelegate_qml.cpp -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryDelegate_qml.cpp.s
+
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/flags.make
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj: .rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryFilterBar_qml.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryFilterBar_qml.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryFilterBar_qml.cpp
+
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryFilterBar_qml.cpp > CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryFilterBar_qml.cpp.i
+
+CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryFilterBar_qml.cpp -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.rcc\qmlcache\appPocketInventory_components\HistoryFilterBar_qml.cpp.s
+
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj: CMakeFiles/appPocketInventory.dir/flags.make
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj: .qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\rcc\qrc_appPocketInventory_raw_qml_0.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\rcc\qrc_appPocketInventory_raw_qml_0.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\rcc\qrc_appPocketInventory_raw_qml_0.cpp
 
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.i: cmake_force
@@ -496,7 +616,7 @@ CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj: CMakeFiles/appPocketInventory.dir/includes_CXX.rsp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj: .qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj: CMakeFiles/appPocketInventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj -MF CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\rcc\qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj.d -o CMakeFiles\appPocketInventory.dir\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\rcc\qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj -c C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\rcc\qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp
 
 CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.i: cmake_force
@@ -519,6 +639,10 @@ appPocketInventory_OBJECTS = \
 "CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj" \
 "CMakeFiles/appPocketInventory.dir/productrepository.cpp.obj" \
 "CMakeFiles/appPocketInventory.dir/historyrepository.cpp.obj" \
+"CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj" \
+"CMakeFiles/appPocketInventory.dir/historymodel.cpp.obj" \
+"CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.obj" \
+"CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.obj" \
 "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj" \
 "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.obj" \
 "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj" \
@@ -526,6 +650,8 @@ appPocketInventory_OBJECTS = \
 "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj" \
 "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj" \
 "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj" \
+"CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj" \
+"CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj" \
 "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj" \
 "CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj"
 
@@ -542,6 +668,10 @@ appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/productrepository.cpp.obj
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/historyrepository.cpp.obj
+appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj
+appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/historymodel.cpp.obj
+appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/historyviewmodel.cpp.obj
+appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/historyfilterproxymodel.cpp.obj
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_qmlcache_loader.cpp.obj
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp.obj
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SummaryCard_qml.cpp.obj
@@ -549,6 +679,8 @@ appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp.obj
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.obj
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp.obj
+appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.obj
+appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.obj
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp.obj
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp.obj
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/build.make
@@ -564,7 +696,7 @@ appPocketInventory.exe: appPocketInventory.exe.manifest
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/linkLibs.rsp
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/objects1.rsp
 appPocketInventory.exe: CMakeFiles/appPocketInventory.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable appPocketInventory.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking CXX executable appPocketInventory.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\appPocketInventory.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -582,6 +714,10 @@ CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_Main_
 CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_Main_qml.cpp.aotstats
 CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp
 CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.aotstats
+CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp
+CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp.aotstats
+CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp
+CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp.aotstats
 CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp
 CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp.aotstats
 CMakeFiles/appPocketInventory.dir/depend: .rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp

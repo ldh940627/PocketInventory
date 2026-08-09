@@ -5,7 +5,10 @@ import "components"
 
 ApplicationWindow {
 
+    id: rootWindow
+
     required property var inventoryViewModel
+    required property var historyViewModel
 
     width: 500
     height: 850
@@ -207,6 +210,65 @@ ApplicationWindow {
                        onDeleteRequested: function(proxyIndex){
                            inventoryViewModel.removeProduct(proxyIndex)
                        }
+
+                       onReceiveRequested: function(proxyIndex, quantityText){
+                           const succeeded = inventoryViewModel.receiveStock(proxyIndex, quantityText)
+                       }
+
+                       onReleaseRequested: function(proxyIndex, quantityText){
+                           inventoryViewModel.releaseStock(proxyIndex, quantityText)
+                       }
+                    }
+                }
+
+                Rectangle{
+                    Layout.fillWidth: true
+                    height: 1
+                    color: "lightgray"
+                }
+
+                Label{
+                    text: "재고 변경 이력"
+                    font.pixelSize: 22
+                    font.bold: true
+                }
+
+                HistoryFilterBar{
+                    Layout.fillWidth: true
+
+                    historyViewModel: rootWindow.historyViewModel
+                }
+
+                Label {
+                    Layout.fillWidth: true
+
+                    text: "재고 변경 이력이 없습니다."
+
+                    horizontalAlignment:
+                        Text.AlignHCenter
+
+                    color: "gray"
+
+                    visible:
+                        historyViewModel.count === 0
+                }
+
+                ListView {
+                    id: historyListView
+
+                    Layout.fillWidth: true
+
+                    Layout.preferredHeight:
+                        Math.max(contentHeight, 200)
+
+                    model:
+                        historyViewModel.history
+
+                    spacing: 8
+                    interactive: false
+
+                    delegate: HistoryDelegate {
+                        width: historyListView.width
                     }
                 }
 

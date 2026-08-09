@@ -40,7 +40,7 @@ bool HistoryRepository::insertHistory(int productId, const QString &productName,
     query.bindValue(QStringLiteral(":product_id"), productId);
     query.bindValue(QStringLiteral(":product_name"), productName.trimmed());
     query.bindValue(QStringLiteral(":old_quantity"), oldQuantity);
-    query.bindValue(QStringLiteral(":new_quantity"),newQuantity);
+    query.bindValue(QStringLiteral(":new_quantity"), newQuantity);
     query.bindValue(QStringLiteral(":action"), action.trimmed().toUpper());
 
     if(!query.exec()){

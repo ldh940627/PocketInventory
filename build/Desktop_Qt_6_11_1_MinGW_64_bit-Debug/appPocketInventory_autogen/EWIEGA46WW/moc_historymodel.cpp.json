@@ -1,0 +1,46 @@
+{
+    "classes": [
+        {
+            "className": "HistoryModel",
+            "lineNumber": 9,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 13,
+                    "name": "count",
+                    "notify": "countChanged",
+                    "override": false,
+                    "read": "count",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false
+                }
+            ],
+            "qualifiedClassName": "HistoryModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "lineNumber": 33,
+                    "name": "countChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "historymodel.h",
+    "outputRevision": 69
+}

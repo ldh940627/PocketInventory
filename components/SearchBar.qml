@@ -7,6 +7,7 @@ Rectangle{
     id: root
 
     property alias searchText: searchField.text
+    property string placeholderText : "상품명을 검색하세요"
 
     signal searchRequested(string searchText)
     signal clearRequested()
@@ -23,7 +24,7 @@ Rectangle{
         TextField{
             id: searchField
             Layout.fillWidth: true
-            placeholderText: "상품명을 검색하세요"
+            placeholderText: root.placeholderText
 
             onTextChanged: {
                 root.searchRequested(text)

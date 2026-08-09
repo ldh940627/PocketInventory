@@ -16,6 +16,9 @@ Rectangle{
     signal increaseRequested(int productIndex)
     signal deleteRequested(int productIndex)
 
+    signal receiveRequested(int productIndex, string quantityText)
+    signal releaseRequested(int productIndex, string quantityText)
+
     height: 90
     visible: true
 
@@ -32,6 +35,43 @@ Rectangle{
             text: productName
             font.pixelSize: 18
             Layout.fillWidth: true
+        }
+
+        TextField {
+            id: amountField
+
+            Layout.preferredWidth: 80
+
+            placeholderText: "수량"
+
+            inputMethodHints:
+                Qt.ImhDigitsOnly
+
+            validator: IntValidator {
+                bottom: 1
+            }
+        }
+
+        Button {
+            text: "입고"
+
+            onClicked: {
+                root.receiveRequested(
+                    root.index,
+                    amountField.text
+                )
+            }
+        }
+
+        Button {
+            text: "출고"
+
+            onClicked: {
+                root.releaseRequested(
+                    root.index,
+                    amountField.text
+                )
+            }
         }
 
         Label{

@@ -351,6 +351,7 @@ C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/Coding/Desktop/Qt6/PocketInventory/HistoryRecord.h \
   C:/Users/Coding/Desktop/Qt6/PocketInventory/historyrepository.h \
+  C:/Users/Coding/Desktop/Qt6/PocketInventory/inventoryservice.h \
   C:/Users/Coding/Desktop/Qt6/PocketInventory/productfilterproxymodel.h \
   C:/Users/Coding/Desktop/Qt6/PocketInventory/productmodel.h \
   C:/Users/Coding/Desktop/Qt6/PocketInventory/productrepository.h

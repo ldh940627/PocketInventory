@@ -9,6 +9,7 @@
 #include "productmodel.h"
 #include "productrepository.h"
 #include "historyrepository.h"
+#include "inventoryservice.h"
 
 class InventoryViewModel : public QObject
 {
@@ -33,7 +34,7 @@ class InventoryViewModel : public QObject
 
 
 public:
-    explicit InventoryViewModel(ProductRepository *productRepository, HistoryRepository *historyRepository, QObject *parent = nullptr);
+    explicit InventoryViewModel(ProductRepository *productRepository, InventoryService *inventoryService, QObject *parent = nullptr);
 
     QAbstractItemModel *products();
 
@@ -49,10 +50,13 @@ public:
     void setStockFilter(const QString &stockFilter);
 
     Q_INVOKABLE bool addProduct(const QString &productNameText, const QString &productQuantityText, const QString &minimumQuantityText);
+    Q_INVOKABLE bool receiveStock(int proxyIndex, const QString &quantityText);
+    Q_INVOKABLE bool releaseStock(int proxyIndex, const QString &quantityText);
     Q_INVOKABLE void increaseQuantity(int proxyIndex);
     Q_INVOKABLE void decreaseQuantity(int proxyIndex);
     Q_INVOKABLE void removeProduct(int proxyIndex);
     Q_INVOKABLE void resetFilters();
+
 
 
 
@@ -65,11 +69,13 @@ signals:
 
     void messageRequested(const QString &message, const QString &colorName);
 
+    void historyChanged();
+
 private:
     int toSourceIndex(int proxyIndex) const;
 
     ProductRepository *m_productRepository = nullptr;
-    HistoryRepository *m_historyRepository = nullptr;
+    InventoryService *m_inventoryService = nullptr;
 
     ProductModel m_productModel;
     ProductFilterProxyModel m_filterModel;

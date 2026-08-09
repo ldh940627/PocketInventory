@@ -2,8 +2,8 @@
 #include <QDebug>
 
 
-InventoryViewModel::InventoryViewModel(ProductRepository *productrepository, HistoryRepository *historyrepository, QObject *parent)
-    : QObject(parent), m_productRepository(productrepository), m_historyRepository(historyrepository)
+InventoryViewModel::InventoryViewModel(ProductRepository *productrepository, InventoryService *inventoryService, QObject *parent)
+    : QObject(parent), m_productRepository(productrepository), m_inventoryService(inventoryService)
 {
     m_filterModel.setSourceModel(&m_productModel);
 
@@ -126,12 +126,12 @@ bool InventoryViewModel::addProduct(const QString &productNameText, const QStrin
         return false;
     }
 
-    QString databaseError;
+    QString errorMessage;
 
-    const int productId = m_productRepository->insertProduct(productName, quantity, minimumQuantity, &databaseError);
+    const int productId = m_inventoryService->addProduct(productName, quantity, minimumQuantity, &errorMessage);
 
     if(productId < 0){
-        emit messageRequested(QStringLiteral("상품을 저장하지 못했습니다: ") + databaseError, QStringLiteral("red"));
+        emit messageRequested(QStringLiteral("상품을 저장하지 못했습니다: ") + errorMessage, QStringLiteral("red"));
         return false;
     }
 
@@ -140,17 +140,99 @@ bool InventoryViewModel::addProduct(const QString &productNameText, const QStrin
         return false;
     }
 
+    emit historyChanged();
+
     emit messageRequested(productName + QStringLiteral(" 상품이 등록되었습니다."), QStringLiteral("green"));
 
-    if(m_historyRepository){
-        QString historyError;
+    return true;
+}
 
-        if(!m_historyRepository->insertHistory(productId, productName, 0, quantity, QStringLiteral("CREATE"), &historyError)){
-            qWarning() << "상품 등록 이력 저장 실패:" << historyError;
-        }
+bool InventoryViewModel::receiveStock(int proxyIndex, const QString &quantityText)
+{
+    const int sourceIndex = toSourceIndex(proxyIndex);
+
+    if(sourceIndex < 0){
+        emit messageRequested(QStringLiteral("상품 위치를 찾을 수 없습니다."), QStringLiteral("red"));
+        return false;
     }
 
+    bool quantityOk = false;
+
+    const int amount = quantityText.trimmed().toInt(&quantityOk);
+
+    if(!quantityOk || amount <= 0){
+        emit messageRequested(QStringLiteral("입고 수량은 1 이상의 정수여야 합니다."), QStringLiteral("red"));
+
+        return false;
+    }
+
+    const Product product = m_productModel.productAt(sourceIndex);
+
+    QString errorMessage;
+
+    if(!m_inventoryService->adjustQuantity(product, amount, QString("PURCHASE"), &errorMessage)){
+        emit messageRequested(QStringLiteral("입고 처리에 실패했습니다:") + errorMessage, QStringLiteral("red"));
+        return false;
+    }
+
+    const int newQuantity = product.quantity + amount;
+
+    m_productModel.setQuantity(sourceIndex, newQuantity);
+
+    emit historyChanged();
+
+    emit messageRequested(product.name + QStringLiteral("") + QString::number(amount) + QStringLiteral("개 입고 처리했습니다."),
+                          QStringLiteral("green"));
+
     return true;
+
+}
+
+bool InventoryViewModel::releaseStock(int proxyIndex, const QString &quantityText)
+{
+    const int sourceIndex = toSourceIndex(proxyIndex);
+
+    if(sourceIndex < 0){
+        emit messageRequested(QStringLiteral("상품 위치를 찾을 수 없습니다."), QStringLiteral("red"));
+        return false;
+    }
+
+    bool quantityOk = false;
+
+    const int amount = quantityText.trimmed().toInt(&quantityOk);
+
+    if(!quantityOk || amount <= 0){
+        emit messageRequested(QStringLiteral("출고 수량은 1이상의 정수여야 합니다."),
+                             QStringLiteral("red"));
+
+        return false;
+    }
+
+    const Product product = m_productModel.productAt(sourceIndex);
+
+    if(product.quantity < amount){
+        emit messageRequested(QStringLiteral("출고 수량이 현재 재고보다 많습니다."), QStringLiteral("red"));
+        return false;
+    }
+
+    QString errorMessage;
+
+    if(!m_inventoryService->adjustQuantity(product, -amount, QStringLiteral("SALE"), &errorMessage)){
+        emit messageRequested(QStringLiteral("출고 처리에 실패했습니다: ") + errorMessage,
+                              QStringLiteral("red"));
+        return false;
+    }
+
+    const int newQuantity = product.quantity - amount;
+
+    m_productModel.setQuantity(sourceIndex, newQuantity);
+
+    emit historyChanged();
+
+    emit messageRequested(product.name + QStringLiteral(" ") + QString::number(amount)
+                              +QStringLiteral("개 출고 처리했습니다."), QStringLiteral("darkorange"));
+    return true;
+
 }
 
 void InventoryViewModel::increaseQuantity(int proxyIndex)
@@ -163,34 +245,22 @@ void InventoryViewModel::increaseQuantity(int proxyIndex)
     }
 
     const Product product = m_productModel.productAt(sourceIndex);
-    const int oldQuantity = product.quantity;
-    const int newQuantity = oldQuantity +1;
 
     QString errorMessage;
 
-    if(!m_productRepository->updateQuantity(product.id, newQuantity, &errorMessage))
-    {
-        emit messageRequested(
-            QStringLiteral("수량을 저장하지 못했습니다: ") + errorMessage, QStringLiteral("red"));
+    if(!m_inventoryService->increaseQuantity(product, &errorMessage)){
+         emit messageRequested(QStringLiteral("수량 변경에 실패했습니다."), QStringLiteral("red"));
         return;
     }
 
-    if(m_historyRepository && !m_historyRepository->insertHistory(product.id, product.name,
-        oldQuantity, newQuantity, QStringLiteral("INCREASE"),&errorMessage))
-    {
-        emit messageRequested(QStringLiteral("재고 이력 저장에 실패했습니다.") + errorMessage, QStringLiteral("red"));
-        return;
-    }
+    m_productModel.increaseQuantity(sourceIndex);
 
-    if(!m_productModel.increaseQuantity(sourceIndex)){
-        emit messageRequested(QStringLiteral("수량 변경에 실패했습니다."), QStringLiteral("red"));
-        return;
-    }
+    emit historyChanged();
 
     emit messageRequested(
         product.name
             + QStringLiteral(" 수량을 ")
-            + QString::number(newQuantity)
+            + QString::number(product.quantity + 1)
             + QStringLiteral( "개로 변경했습니다." ), QStringLiteral("green"));
 }
 
@@ -205,43 +275,29 @@ void InventoryViewModel::decreaseQuantity(int proxyIndex)
 
     const Product product = m_productModel.productAt(sourceIndex);
 
+    QString errorMessage;
+
     if (product.quantity <= 0) {
         emit messageRequested(QStringLiteral("재고는 0개보다 작을 수 없습니다."), QStringLiteral("red"));
 
         return;
     }
 
-
-    const int oldQuantity = product.quantity;
-    const int newQuantity = oldQuantity -1;
-
-    QString error;
-
-    if(!m_productRepository->updateQuantity(product.id, newQuantity, &error))
-    {
-        emit messageRequested("DB 저장 실패 : " + error, "red");
-
+    if(!m_inventoryService->decreaseQuantity(product, &errorMessage)){
+        emit messageRequested(errorMessage, QStringLiteral("red"));
         return;
     }
 
-    if(m_historyRepository && !m_historyRepository->insertHistory(product.id, product.name, oldQuantity,
-        newQuantity, QStringLiteral("DECREASE"), &error)){
-        emit messageRequested(QStringLiteral("재고 이력 저장에 실패했습니다: ") + error, QStringLiteral("red"));
-        return;
-    }
+    m_productModel.decreaseQuantity(sourceIndex);
 
-    if(!m_productModel.decreaseQuantity(sourceIndex)){
-        emit messageRequested(QStringLiteral("화면 수량 갱신에 실패했습니다."), QStringLiteral("red"));
-        return;
-    }
+    emit historyChanged();
+
 
     emit messageRequested(
         product.name
             + QStringLiteral(" 수량을 ")
-            + QString::number(newQuantity)
-            + QStringLiteral(
-                "개로 변경했습니다."
-                ),
+            + QString::number(product.quantity - 1)
+            + QStringLiteral("개로 변경했습니다."),
         QStringLiteral("green")
         );
 
@@ -258,25 +314,16 @@ void InventoryViewModel::removeProduct(int proxyIndex)
 
     const Product product = m_productModel.productAt(sourceIndex);
 
-    QString error;
+    QString errorMessage;
 
-    if(!m_productRepository->deleteProduct(product.id, &error))
-    {
-        emit messageRequested("DB 삭제 실패", "red");
+    if(!m_inventoryService->deleteProduct(product, &errorMessage)){
+        emit messageRequested(QStringLiteral("상품 삭제에 실패했습니다:") + errorMessage, QStringLiteral("red"));
         return;
     }
 
-    if(m_historyRepository && !m_historyRepository->insertHistory(product.id, product.name, product.quantity, 0,
-                                                                   QStringLiteral("DELETE"), &error)){
-        emit messageRequested(QStringLiteral("삭제 이력 저장에 실패했습니다:") + error, QStringLiteral("red"));
-        return;
-    }
+    m_productModel.removeProduct(sourceIndex);
 
-
-    if(!m_productModel.removeProduct(sourceIndex)){
-        emit messageRequested(QStringLiteral("상품 삭제에 실패했습니다"), QStringLiteral("red"));
-        return;
-    }
+    emit historyChanged();
 
     emit messageRequested(product.name + QStringLiteral("상품을 삭제했습니다."), QStringLiteral("darkorange"));
 }

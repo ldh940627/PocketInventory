@@ -84,6 +84,8 @@ QString DatabaseManager::databasePath() const
 bool DatabaseManager::createTables()
 {
     QSqlQuery query(m_database);
+
+    // Product 테이블
     const QString createProductsTable = QStringLiteral( "CREATE TABLE IF NOT EXISTS products ("
                                                        "id INTEGER PRIMARY KEY AUTOINCREMENT, "
                                                        "name TEXT NOT NULL COLLATE NOCASE UNIQUE, "
@@ -95,6 +97,28 @@ bool DatabaseManager::createTables()
 
     if(!query.exec(createProductsTable)){
         m_lastError = query.lastError().text();
+
+        return false;
+    }
+
+    // History 테이블
+    const QString createHistoryTable =
+        QStringLiteral(
+            "CREATE TABLE IF NOT EXISTS history ("
+            "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+            "product_id INTEGER NOT NULL, "
+            "product_name TEXT NOT NULL, "
+            "old_quantity INTEGER NOT NULL, "
+            "new_quantity INTEGER NOT NULL, "
+            "action TEXT NOT NULL, "
+            "created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP"
+            ")"
+            );
+
+    if (!query.exec(createHistoryTable)) {
+        m_lastError =
+            QStringLiteral("history 테이블 생성 실패: ")
+            + query.lastError().text();
 
         return false;
     }

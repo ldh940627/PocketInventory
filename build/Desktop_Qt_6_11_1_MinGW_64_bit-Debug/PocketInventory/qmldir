@@ -7,5 +7,7 @@ ProductDelegate 254.0 components/ProductDelegate.qml
 SearchBar 254.0 components/SearchBar.qml
 FilterBar 254.0 components/FilterBar.qml
 ProductForm 254.0 components/ProductForm.qml
+HistoryDelegate 254.0 components/HistoryDelegate.qml
+HistoryFilterBar 254.0 components/HistoryFilterBar.qml
 depends QtQuick
 

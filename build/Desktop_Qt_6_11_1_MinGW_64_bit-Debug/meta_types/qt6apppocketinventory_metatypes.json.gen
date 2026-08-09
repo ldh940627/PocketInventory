@@ -2,8 +2,501 @@
     {
         "classes": [
             {
+                "className": "HistoryFilterProxyModel",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "lineNumber": 35,
+                        "name": "sortNewestFirst",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "lineNumber": 36,
+                        "name": "sortOldestFirst",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 12,
+                        "name": "actionFilter",
+                        "notify": "actionFilterChanged",
+                        "override": false,
+                        "read": "actionFilter",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setActionFilter"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 13,
+                        "name": "count",
+                        "notify": "countChanged",
+                        "override": false,
+                        "read": "count",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "lineNumber": 14,
+                        "name": "searchText",
+                        "notify": "searchTextChanged",
+                        "override": false,
+                        "read": "searchText",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setSearchText"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "lineNumber": 15,
+                        "name": "fromDate",
+                        "notify": "fromDateChanged",
+                        "override": false,
+                        "read": "fromDate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QDate",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setFromDate"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "lineNumber": 16,
+                        "name": "toDate",
+                        "notify": "toDateChanged",
+                        "override": false,
+                        "read": "toDate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QDate",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setToDate"
+                    }
+                ],
+                "qualifiedClassName": "HistoryFilterProxyModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 41,
+                        "name": "countChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 44,
+                        "name": "actionFilterChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "lineNumber": 45,
+                        "name": "searchTextChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 48,
+                        "name": "fromDateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "lineNumber": 49,
+                        "name": "toDateChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QSortFilterProxyModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "historyfilterproxymodel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "HistoryModel",
+                "lineNumber": 9,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 13,
+                        "name": "count",
+                        "notify": "countChanged",
+                        "override": false,
+                        "read": "count",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "virtual": false
+                    }
+                ],
+                "qualifiedClassName": "HistoryModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 33,
+                        "name": "countChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "historymodel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "HistoryViewModel",
+                "lineNumber": 11,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "lineNumber": 52,
+                        "name": "reload",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "lineNumber": 53,
+                        "name": "resetFilters",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "fromDateText",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "toDateText",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "lineNumber": 55,
+                        "name": "setDateRange",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 10,
+                        "lineNumber": 57,
+                        "name": "sortNewestFirst",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 11,
+                        "lineNumber": 58,
+                        "name": "sortOldestFirst",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 12,
+                        "lineNumber": 60,
+                        "name": "showAllDates",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 13,
+                        "lineNumber": 61,
+                        "name": "showToday",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 14,
+                        "lineNumber": 62,
+                        "name": "showLast7Days",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 15,
+                        "lineNumber": 63,
+                        "name": "showLast30Days",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 15,
+                        "name": "history",
+                        "override": false,
+                        "read": "history",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QAbstractItemModel*",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 17,
+                        "name": "count",
+                        "notify": "countChanged",
+                        "override": false,
+                        "read": "count",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "lineNumber": 19,
+                        "name": "actionFilter",
+                        "notify": "actionFilterChanged",
+                        "override": false,
+                        "read": "actionFilter",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setActionFilter"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "lineNumber": 21,
+                        "name": "searchText",
+                        "notify": "searchTextChanged",
+                        "override": false,
+                        "read": "searchText",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setSearchText"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "lineNumber": 23,
+                        "name": "fromDate",
+                        "notify": "fromDateChanged",
+                        "override": false,
+                        "read": "fromDate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QDate",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setFromDate"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "lineNumber": 25,
+                        "name": "toDate",
+                        "notify": "toDateChanged",
+                        "override": false,
+                        "read": "toDate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QDate",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setToDate"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "lineNumber": 27,
+                        "name": "datePreset",
+                        "notify": "datePresetChanged",
+                        "override": false,
+                        "read": "datePreset",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "lineNumber": 29,
+                        "name": "sortOrder",
+                        "notify": "sortOrderChanged",
+                        "override": false,
+                        "read": "sortOrder",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false
+                    }
+                ],
+                "qualifiedClassName": "HistoryViewModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 67,
+                        "name": "countChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 68,
+                        "name": "actionFilterChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "lineNumber": 69,
+                        "name": "searchTextChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 71,
+                        "name": "fromDateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "lineNumber": 72,
+                        "name": "toDateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "lineNumber": 74,
+                        "name": "datePresetChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "lineNumber": 75,
+                        "name": "sortOrderChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "historyviewmodel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
                 "className": "InventoryViewModel",
-                "lineNumber": 13,
+                "lineNumber": 14,
                 "methods": [
                     {
                         "access": "public",
@@ -21,9 +514,43 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 5,
-                        "lineNumber": 51,
+                        "index": 6,
+                        "lineNumber": 52,
                         "name": "addProduct",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "proxyIndex",
+                                "type": "int"
+                            },
+                            {
+                                "name": "quantityText",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "lineNumber": 53,
+                        "name": "receiveStock",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "proxyIndex",
+                                "type": "int"
+                            },
+                            {
+                                "name": "quantityText",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "lineNumber": 54,
+                        "name": "releaseStock",
                         "returnType": "bool"
                     },
                     {
@@ -34,8 +561,8 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 6,
-                        "lineNumber": 52,
+                        "index": 9,
+                        "lineNumber": 55,
                         "name": "increaseQuantity",
                         "returnType": "void"
                     },
@@ -47,8 +574,8 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 7,
-                        "lineNumber": 53,
+                        "index": 10,
+                        "lineNumber": 56,
                         "name": "decreaseQuantity",
                         "returnType": "void"
                     },
@@ -60,15 +587,15 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 8,
-                        "lineNumber": 54,
+                        "index": 11,
+                        "lineNumber": 57,
                         "name": "removeProduct",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 9,
-                        "lineNumber": 55,
+                        "index": 12,
+                        "lineNumber": 58,
                         "name": "resetFilters",
                         "returnType": "void"
                     }
@@ -80,7 +607,7 @@
                         "designable": true,
                         "final": false,
                         "index": 0,
-                        "lineNumber": 18,
+                        "lineNumber": 19,
                         "name": "products",
                         "override": false,
                         "read": "products",
@@ -96,7 +623,7 @@
                         "designable": true,
                         "final": false,
                         "index": 1,
-                        "lineNumber": 21,
+                        "lineNumber": 22,
                         "name": "totalCount",
                         "notify": "stockSummaryChanged",
                         "override": false,
@@ -113,7 +640,7 @@
                         "designable": true,
                         "final": false,
                         "index": 2,
-                        "lineNumber": 22,
+                        "lineNumber": 23,
                         "name": "normalStockCount",
                         "notify": "stockSummaryChanged",
                         "override": false,
@@ -130,7 +657,7 @@
                         "designable": true,
                         "final": false,
                         "index": 3,
-                        "lineNumber": 23,
+                        "lineNumber": 24,
                         "name": "lowStockCount",
                         "notify": "stockSummaryChanged",
                         "override": false,
@@ -147,7 +674,7 @@
                         "designable": true,
                         "final": false,
                         "index": 4,
-                        "lineNumber": 26,
+                        "lineNumber": 27,
                         "name": "filteredCount",
                         "notify": "filteredCountChanged",
                         "override": false,
@@ -164,7 +691,7 @@
                         "designable": true,
                         "final": false,
                         "index": 5,
-                        "lineNumber": 29,
+                        "lineNumber": 30,
                         "name": "searchText",
                         "notify": "searchTextChanged",
                         "override": false,
@@ -182,7 +709,7 @@
                         "designable": true,
                         "final": false,
                         "index": 6,
-                        "lineNumber": 32,
+                        "lineNumber": 33,
                         "name": "stockFilter",
                         "notify": "stockFilterChanged",
                         "override": false,
@@ -201,28 +728,28 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 60,
+                        "lineNumber": 64,
                         "name": "stockSummaryChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 1,
-                        "lineNumber": 61,
+                        "lineNumber": 65,
                         "name": "filteredCountChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 2,
-                        "lineNumber": 63,
+                        "lineNumber": 67,
                         "name": "searchTextChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 3,
-                        "lineNumber": 64,
+                        "lineNumber": 68,
                         "name": "stockFilterChanged",
                         "returnType": "void"
                     },
@@ -239,8 +766,15 @@
                             }
                         ],
                         "index": 4,
-                        "lineNumber": 66,
+                        "lineNumber": 70,
                         "name": "messageRequested",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "lineNumber": 72,
+                        "name": "historyChanged",
                         "returnType": "void"
                     }
                 ],
@@ -396,7 +930,7 @@
                             }
                         ],
                         "index": 3,
-                        "lineNumber": 47,
+                        "lineNumber": 49,
                         "name": "increaseQuantity",
                         "returnType": "bool"
                     },
@@ -409,7 +943,7 @@
                             }
                         ],
                         "index": 4,
-                        "lineNumber": 48,
+                        "lineNumber": 50,
                         "name": "decreaseQuantity",
                         "returnType": "bool"
                     },
@@ -422,7 +956,7 @@
                             }
                         ],
                         "index": 5,
-                        "lineNumber": 49,
+                        "lineNumber": 51,
                         "name": "removeProduct",
                         "returnType": "bool"
                     },
@@ -436,7 +970,7 @@
                         ],
                         "index": 6,
                         "isConst": true,
-                        "lineNumber": 51,
+                        "lineNumber": 53,
                         "name": "containsProduct",
                         "returnType": "bool"
                     }
@@ -500,14 +1034,14 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 60,
+                        "lineNumber": 62,
                         "name": "countChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 1,
-                        "lineNumber": 61,
+                        "lineNumber": 63,
                         "name": "stockSummaryChanged",
                         "returnType": "void"
                     }

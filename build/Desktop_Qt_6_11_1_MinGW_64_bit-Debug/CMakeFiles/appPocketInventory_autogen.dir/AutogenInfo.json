@@ -1194,9 +1194,33 @@
 			null
 		],
 		[
+			"C:/Users/Coding/Desktop/Qt6/PocketInventory/historyfilterproxymodel.h",
+			"MU",
+			"EWIEGA46WW/moc_historyfilterproxymodel.cpp",
+			null
+		],
+		[
+			"C:/Users/Coding/Desktop/Qt6/PocketInventory/historymodel.h",
+			"MU",
+			"EWIEGA46WW/moc_historymodel.cpp",
+			null
+		],
+		[
 			"C:/Users/Coding/Desktop/Qt6/PocketInventory/historyrepository.h",
 			"MU",
 			"EWIEGA46WW/moc_historyrepository.cpp",
+			null
+		],
+		[
+			"C:/Users/Coding/Desktop/Qt6/PocketInventory/historyviewmodel.h",
+			"MU",
+			"EWIEGA46WW/moc_historyviewmodel.cpp",
+			null
+		],
+		[
+			"C:/Users/Coding/Desktop/Qt6/PocketInventory/inventoryservice.h",
+			"MU",
+			"EWIEGA46WW/moc_inventoryservice.cpp",
 			null
 		],
 		[
@@ -1302,6 +1326,8 @@
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp",
+		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp",
+		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp",
@@ -1325,7 +1351,27 @@
 			null
 		],
 		[
+			"C:/Users/Coding/Desktop/Qt6/PocketInventory/historyfilterproxymodel.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Coding/Desktop/Qt6/PocketInventory/historymodel.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Coding/Desktop/Qt6/PocketInventory/historyrepository.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Coding/Desktop/Qt6/PocketInventory/historyviewmodel.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Coding/Desktop/Qt6/PocketInventory/inventoryservice.cpp",
 			"MU",
 			null
 		],
@@ -1360,6 +1406,8 @@
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PocketInventory.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Main_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp",
+		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp",
+		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryFilterBar_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductDelegate_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/ProductForm_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/SearchBar_qml.cpp",

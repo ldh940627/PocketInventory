@@ -115,6 +115,31 @@ bool ProductModel::addProduct(int id, const QString &name, int quantity, int min
     return true;
 }
 
+bool ProductModel::setQuantity(int index, int quantity)
+{
+    if(!isValidIndex(index))
+        return false;
+
+    if(quantity < 0)
+        return false;
+
+    Product &product = m_products[index];
+
+    if(product.quantity == quantity)
+        return true;
+
+    product.quantity = quantity;
+
+    const QModelIndex changedIndex = createIndex(index, 0);
+
+    emit dataChanged(changedIndex, changedIndex, {ProductQuantityRole});
+
+    emit stockSummaryChanged();
+
+    return true;
+
+}
+
 
 bool ProductModel::increaseQuantity(int index)
 {

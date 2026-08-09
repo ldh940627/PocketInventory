@@ -72,6 +72,8 @@ CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketIn
 CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/SearchBar.qml
 CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/FilterBar.qml
 CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductForm.qml
+CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryDelegate.qml
+CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryFilterBar.qml
 CMakeFiles/appPocketInventory_qmllint_json: .rcc/qmllint/appPocketInventory_json.rsp
 	cd /d C:\Users\Coding\Desktop\Qt6\PocketInventory && call C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmllint.exe @C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmllint/appPocketInventory_json.rsp
 

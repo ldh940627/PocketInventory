@@ -4,6 +4,7 @@
 #include <QDebug>
 
 #include "DatabaseManager.h"
+#include "historyviewmodel.h"
 #include "inventoryviewmodel.h"
 #include "productrepository.h"
 
@@ -23,7 +24,11 @@ int main(int argc, char *argv[])
 
     HistoryRepository historyRepository(databaseManager.database());
 
-    InventoryViewModel inventoryViewModel(&productRepository, &historyRepository);
+    InventoryService inventoryService(databaseManager.database(), &productRepository, &historyRepository);
+
+    InventoryViewModel inventoryViewModel(&productRepository, &inventoryService);
+
+    HistoryViewModel historyViewModel(&historyRepository);
 
     qDebug() << "데이터베이스 연결 성공: " << databaseManager.databasePath();
 
@@ -34,7 +39,10 @@ int main(int argc, char *argv[])
             QStringLiteral("inventoryViewModel"),
             QVariant::fromValue(&inventoryViewModel)
         },
-
+        {
+            QStringLiteral("historyViewModel"),
+            QVariant::fromValue(&historyViewModel)
+        }
     });
 
     QObject::connect(
@@ -43,6 +51,12 @@ int main(int argc, char *argv[])
         &app,
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
+
+    QObject::connect(
+        &inventoryViewModel,
+        &InventoryViewModel::historyChanged,
+        &historyViewModel,
+        &HistoryViewModel::reload);
 
     engine.loadFromModule("PocketInventory", "Main");
 

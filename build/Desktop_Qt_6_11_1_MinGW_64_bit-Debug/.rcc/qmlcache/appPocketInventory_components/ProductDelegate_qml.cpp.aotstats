@@ -10,7 +10,7 @@
                             "column": 12,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 22,
+                            "line": 25,
                             "message": ""
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 27,
+                            "line": 30,
                             "message": ""
                         },
                         {
@@ -26,52 +26,28 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 32,
+                            "line": 35,
                             "message": "Could not find property \"text\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 19,
+                            "column": 17,
                             "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 38,
-                            "message": "Could not find property \"text\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 22,
-                            "durationMicroseconds": 0,
-                            "functionName": "visible",
-                            "line": 44,
-                            "message": "Could not find property \"visible\"."
+                            "functionName": "inputMethodHints",
+                            "line": 48,
+                            "message": "Could not find property \"inputMethodHints\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 53,
+                            "line": 58,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 18,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 59,
-                            "message": "Could not find property \"text\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 34,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalAlignment",
-                            "line": 64,
-                            "message": "Could not find property \"horizontalAlignment\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 23,
+                            "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
                             "line": 69,
@@ -79,10 +55,58 @@
                         },
                         {
                             "codegenResult": 2,
+                            "column": 19,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 78,
+                            "message": "Could not find property \"text\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 84,
+                            "message": "Could not find property \"visible\"."
+                        },
+                        {
+                            "codegenResult": 2,
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 77,
+                            "line": 93,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 99,
+                            "message": "Could not find property \"text\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 104,
+                            "message": "Could not find property \"horizontalAlignment\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 109,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 117,
                             "message": "Could not find signal \"clicked\"."
                         }
                     ],

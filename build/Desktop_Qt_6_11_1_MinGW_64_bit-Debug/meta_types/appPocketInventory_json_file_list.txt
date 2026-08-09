@@ -1,3 +1,6 @@
+C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/include/../EWIEGA46WW/moc_historyfilterproxymodel.cpp.json
+C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/include/../EWIEGA46WW/moc_historymodel.cpp.json
+C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/include/../EWIEGA46WW/moc_historyviewmodel.cpp.json
 C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/include/../EWIEGA46WW/moc_inventoryviewmodel.cpp.json
 C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/include/../EWIEGA46WW/moc_productfilterproxymodel.cpp.json
 C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/include/../EWIEGA46WW/moc_productmodel.cpp.json

@@ -30,6 +30,12 @@ qt_add_qml_module(appPocketInventory
         SOURCES productrepository.h productrepository.cpp
         SOURCES HistoryRecord.h
         SOURCES historyrepository.h historyrepository.cpp
+        SOURCES inventoryservice.h inventoryservice.cpp
+        SOURCES historymodel.h historymodel.cpp
+        SOURCES historyviewmodel.h historyviewmodel.cpp
+        QML_FILES components/HistoryDelegate.qml
+        SOURCES historyfilterproxymodel.h historyfilterproxymodel.cpp
+        QML_FILES components/HistoryFilterBar.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

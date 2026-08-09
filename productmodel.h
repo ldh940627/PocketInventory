@@ -44,6 +44,8 @@ public:
     void setProducts(const QList<Product> &products);
     bool addProduct(int id, const QString &name, int quantity, int minimumQuantity);
 
+    bool setQuantity(int index, int quantity);
+
     Q_INVOKABLE bool increaseQuantity(int index);
     Q_INVOKABLE bool decreaseQuantity(int index);
     Q_INVOKABLE bool removeProduct(int index);
