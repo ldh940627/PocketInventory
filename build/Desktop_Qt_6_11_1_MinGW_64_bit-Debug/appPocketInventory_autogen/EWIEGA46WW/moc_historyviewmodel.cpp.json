@@ -6,15 +6,15 @@
             "methods": [
                 {
                     "access": "public",
-                    "index": 7,
-                    "lineNumber": 52,
+                    "index": 8,
+                    "lineNumber": 58,
                     "name": "reload",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 8,
-                    "lineNumber": 53,
+                    "index": 9,
+                    "lineNumber": 59,
                     "name": "resetFilters",
                     "returnType": "void"
                 },
@@ -30,50 +30,50 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 9,
-                    "lineNumber": 55,
+                    "index": 10,
+                    "lineNumber": 61,
                     "name": "setDateRange",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 10,
-                    "lineNumber": 57,
+                    "index": 11,
+                    "lineNumber": 63,
                     "name": "sortNewestFirst",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 11,
-                    "lineNumber": 58,
+                    "index": 12,
+                    "lineNumber": 64,
                     "name": "sortOldestFirst",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 12,
-                    "lineNumber": 60,
+                    "index": 13,
+                    "lineNumber": 66,
                     "name": "showAllDates",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 13,
-                    "lineNumber": 61,
+                    "index": 14,
+                    "lineNumber": 67,
                     "name": "showToday",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 14,
-                    "lineNumber": 62,
+                    "index": 15,
+                    "lineNumber": 68,
                     "name": "showLast7Days",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 15,
-                    "lineNumber": 63,
+                    "index": 16,
+                    "lineNumber": 69,
                     "name": "showLast30Days",
                     "returnType": "void"
                 }
@@ -97,11 +97,27 @@
                     "virtual": false
                 },
                 {
-                    "constant": false,
+                    "constant": true,
                     "designable": true,
                     "final": false,
                     "index": 1,
                     "lineNumber": 17,
+                    "name": "recentHistory",
+                    "override": false,
+                    "read": "recentHistory",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QAbstractItemModel*",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "lineNumber": 19,
                     "name": "count",
                     "notify": "countChanged",
                     "override": false,
@@ -117,8 +133,25 @@
                     "constant": false,
                     "designable": true,
                     "final": false,
-                    "index": 2,
-                    "lineNumber": 19,
+                    "index": 3,
+                    "lineNumber": 21,
+                    "name": "totalCount",
+                    "notify": "totalCountChanged",
+                    "override": false,
+                    "read": "totalCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "lineNumber": 23,
                     "name": "actionFilter",
                     "notify": "actionFilterChanged",
                     "override": false,
@@ -135,8 +168,8 @@
                     "constant": false,
                     "designable": true,
                     "final": false,
-                    "index": 3,
-                    "lineNumber": 21,
+                    "index": 5,
+                    "lineNumber": 25,
                     "name": "searchText",
                     "notify": "searchTextChanged",
                     "override": false,
@@ -153,8 +186,8 @@
                     "constant": false,
                     "designable": true,
                     "final": false,
-                    "index": 4,
-                    "lineNumber": 23,
+                    "index": 6,
+                    "lineNumber": 27,
                     "name": "fromDate",
                     "notify": "fromDateChanged",
                     "override": false,
@@ -171,8 +204,8 @@
                     "constant": false,
                     "designable": true,
                     "final": false,
-                    "index": 5,
-                    "lineNumber": 25,
+                    "index": 7,
+                    "lineNumber": 29,
                     "name": "toDate",
                     "notify": "toDateChanged",
                     "override": false,
@@ -189,8 +222,8 @@
                     "constant": false,
                     "designable": true,
                     "final": false,
-                    "index": 6,
-                    "lineNumber": 27,
+                    "index": 8,
+                    "lineNumber": 31,
                     "name": "datePreset",
                     "notify": "datePresetChanged",
                     "override": false,
@@ -206,8 +239,8 @@
                     "constant": false,
                     "designable": true,
                     "final": false,
-                    "index": 7,
-                    "lineNumber": 29,
+                    "index": 9,
+                    "lineNumber": 33,
                     "name": "sortOrder",
                     "notify": "sortOrderChanged",
                     "override": false,
@@ -225,49 +258,56 @@
                 {
                     "access": "public",
                     "index": 0,
-                    "lineNumber": 67,
+                    "lineNumber": 73,
                     "name": "countChanged",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
                     "index": 1,
-                    "lineNumber": 68,
-                    "name": "actionFilterChanged",
+                    "lineNumber": 74,
+                    "name": "totalCountChanged",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
                     "index": 2,
-                    "lineNumber": 69,
-                    "name": "searchTextChanged",
+                    "lineNumber": 75,
+                    "name": "actionFilterChanged",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
                     "index": 3,
-                    "lineNumber": 71,
-                    "name": "fromDateChanged",
+                    "lineNumber": 76,
+                    "name": "searchTextChanged",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
                     "index": 4,
-                    "lineNumber": 72,
-                    "name": "toDateChanged",
+                    "lineNumber": 78,
+                    "name": "fromDateChanged",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
                     "index": 5,
-                    "lineNumber": 74,
-                    "name": "datePresetChanged",
+                    "lineNumber": 79,
+                    "name": "toDateChanged",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
                     "index": 6,
-                    "lineNumber": 75,
+                    "lineNumber": 81,
+                    "name": "datePresetChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "lineNumber": 82,
                     "name": "sortOrderChanged",
                     "returnType": "void"
                 }

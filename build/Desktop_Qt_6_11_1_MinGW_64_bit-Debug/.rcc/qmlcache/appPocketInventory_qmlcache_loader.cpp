@@ -61,6 +61,111 @@ namespace _qt_qml_PocketInventory_components_HistoryFilterBar_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_PocketInventory_components_AppTheme_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_NavButton_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_AppSidebar_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_AppHeader_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_AppToast_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_DashboardStatCard_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_DashboardPanel_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_LowStockDashboardDelegate_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_RecentHistoryDelegate_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_Pages_DashboardPage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_InventoryRowDelegate_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_ProductDialog_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_Pages_InventoryPage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_Pages_HistoryPage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_PocketInventory_components_HistoryRowDelegate_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -83,6 +188,21 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/ProductForm.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_ProductForm_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/HistoryDelegate.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_HistoryDelegate_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/HistoryFilterBar.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_HistoryFilterBar_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/AppTheme.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_AppTheme_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/NavButton.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_NavButton_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/AppSidebar.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_AppSidebar_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/AppHeader.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_AppHeader_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/AppToast.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_AppToast_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/DashboardStatCard.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_DashboardStatCard_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/DashboardPanel.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_DashboardPanel_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/LowStockDashboardDelegate.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_LowStockDashboardDelegate_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/RecentHistoryDelegate.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_RecentHistoryDelegate_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/Pages/DashboardPage.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_Pages_DashboardPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/InventoryRowDelegate.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_InventoryRowDelegate_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/ProductDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_ProductDialog_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/Pages/InventoryPage.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_Pages_InventoryPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/Pages/HistoryPage.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_Pages_HistoryPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/HistoryRowDelegate.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_HistoryRowDelegate_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

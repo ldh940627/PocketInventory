@@ -9,5 +9,20 @@ FilterBar 254.0 components/FilterBar.qml
 ProductForm 254.0 components/ProductForm.qml
 HistoryDelegate 254.0 components/HistoryDelegate.qml
 HistoryFilterBar 254.0 components/HistoryFilterBar.qml
+AppTheme 254.0 components/AppTheme.qml
+NavButton 254.0 components/NavButton.qml
+AppSidebar 254.0 components/AppSidebar.qml
+AppHeader 254.0 components/AppHeader.qml
+AppToast 254.0 components/AppToast.qml
+DashboardStatCard 254.0 components/DashboardStatCard.qml
+DashboardPanel 254.0 components/DashboardPanel.qml
+LowStockDashboardDelegate 254.0 components/LowStockDashboardDelegate.qml
+RecentHistoryDelegate 254.0 components/RecentHistoryDelegate.qml
+DashboardPage 254.0 Pages/DashboardPage.qml
+InventoryRowDelegate 254.0 components/InventoryRowDelegate.qml
+ProductDialog 254.0 components/ProductDialog.qml
+InventoryPage 254.0 Pages/InventoryPage.qml
+HistoryPage 254.0 Pages/HistoryPage.qml
+HistoryRowDelegate 254.0 components/HistoryRowDelegate.qml
 depends QtQuick
 

@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QVariant>
+#include <QQuickStyle>
 #include <QDebug>
 
 #include "DatabaseManager.h"
@@ -12,6 +13,8 @@
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
+
+    QQuickStyle::setStyle(QStringLiteral("Basic"));
 
     DatabaseManager databaseManager;
 

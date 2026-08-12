@@ -74,6 +74,21 @@ CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/Pocket
 CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductForm.qml
 CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryDelegate.qml
 CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryFilterBar.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppTheme.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/NavButton.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppSidebar.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppHeader.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppToast.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DashboardStatCard.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DashboardPanel.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/LowStockDashboardDelegate.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/RecentHistoryDelegate.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/DashboardPage.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryRowDelegate.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductDialog.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/InventoryPage.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/HistoryPage.qml
+CMakeFiles/appPocketInventory_qmllint_module: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryRowDelegate.qml
 CMakeFiles/appPocketInventory_qmllint_module: .rcc/qmllint/appPocketInventory_module.rsp
 	cd /d C:\Users\Coding\Desktop\Qt6\PocketInventory && call C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmllint.exe @C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmllint/appPocketInventory_module.rsp
 

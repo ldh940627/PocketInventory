@@ -79,6 +79,21 @@ CMakeFiles/appPocketInventory_qmlimportscan: .qt/qml_imports/appPocketInventory_
 .qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductForm.qml
 .qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryDelegate.qml
 .qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryFilterBar.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppTheme.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/NavButton.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppSidebar.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppHeader.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppToast.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DashboardStatCard.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DashboardPanel.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/LowStockDashboardDelegate.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/RecentHistoryDelegate.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/DashboardPage.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryRowDelegate.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductDialog.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/InventoryPage.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/HistoryPage.qml
+.qt/qml_imports/appPocketInventory_build.cmake: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryRowDelegate.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running qmlimportscanner for appPocketInventory"
 	cd /d C:\Users\Coding\Desktop\Qt6\PocketInventory && call C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmlimportscanner.exe @C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/qml_imports/appPocketInventory_build.rsp
 

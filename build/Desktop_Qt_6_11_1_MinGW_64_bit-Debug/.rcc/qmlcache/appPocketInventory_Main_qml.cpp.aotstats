@@ -7,355 +7,139 @@
                     "entries": [
                         {
                             "codegenResult": 2,
-                            "column": 5,
+                            "column": 12,
                             "durationMicroseconds": 0,
-                            "functionName": "showMessage",
-                            "line": 19,
-                            "message": "Functions without type annotations won't be compiled"
+                            "functionName": "color",
+                            "line": 24,
+                            "message": "Could not find property \"color\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 17,
-                            "durationMicroseconds": 1000,
+                            "durationMicroseconds": 0,
                             "functionName": "target",
-                            "line": 25,
-                            "message": "Cannot access value for name inventoryViewModel"
+                            "line": 33,
+                            "message": "Cannot retrieve a non-object type by ID: rootWindow"
                         },
                         {
                             "codegenResult": 2,
                             "column": 9,
                             "durationMicroseconds": 0,
                             "functionName": "onMessageRequested",
-                            "line": 27,
+                            "line": 35,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 23,
-                            "durationMicroseconds": 0,
-                            "functionName": "contentWidth",
-                            "line": 35,
-                            "message": "Could not find property \"contentWidth\"."
-                        },
-                        {
-                            "codegenResult": 2,
+                            "codegenResult": 0,
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 33,
-                            "message": "Could not find property \"fill\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 38,
-                            "message": "Could not find property \"width\"."
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 24,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 42,
+                            "line": 44,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 31,
+                            "column": 17,
                             "durationMicroseconds": 0,
-                            "functionName": "value",
-                            "line": 50,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "value",
-                            "line": 57,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "value",
-                            "line": 64,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 30,
-                            "durationMicroseconds": 0,
-                            "functionName": "visible",
-                            "line": 75,
-                            "message": "Could not find property \"visible\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 42,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalAlignment",
-                            "line": 79,
-                            "message": "Could not find property \"horizontalAlignment\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "wrapMode",
-                            "line": 80,
-                            "message": "Could not find property \"wrapMode\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 40,
-                            "durationMicroseconds": 1000,
-                            "functionName": "onSubmitRequested",
-                            "line": 91,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 40,
-                            "durationMicroseconds": 0,
-                            "functionName": "onSubmitRequested",
-                            "line": 91,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 40,
-                            "durationMicroseconds": 0,
-                            "functionName": "onSearchRequested",
-                            "line": 114,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 40,
-                            "durationMicroseconds": 0,
-                            "functionName": "onSearchRequested",
-                            "line": 114,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 39,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClearRequested",
-                            "line": 118,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 27,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 125,
-                            "message": "Could not find property \"text\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 38,
-                            "durationMicroseconds": 0,
-                            "functionName": "onFilterChanged",
-                            "line": 134,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 38,
-                            "durationMicroseconds": 0,
-                            "functionName": "onFilterChanged",
-                            "line": 134,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 42,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalAlignment",
-                            "line": 173,
-                            "message": "Could not find property \"horizontalAlignment\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 30,
-                            "durationMicroseconds": 0,
-                            "functionName": "visible",
-                            "line": 176,
-                            "message": "Could not find property \"visible\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 42,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalAlignment",
-                            "line": 182,
-                            "message": "Could not find property \"horizontalAlignment\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 30,
-                            "durationMicroseconds": 0,
-                            "functionName": "visible",
-                            "line": 184,
-                            "message": "Could not find property \"visible\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "model",
-                            "line": 193,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 45,
-                            "durationMicroseconds": 1000,
-                            "functionName": "preferredHeight",
-                            "line": 191,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 199,
-                            "message": "Cannot access value for name productListView"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 45,
-                            "durationMicroseconds": 0,
-                            "functionName": "onDecreaseRequested",
-                            "line": 202,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 45,
-                            "durationMicroseconds": 0,
-                            "functionName": "onDecreaseRequested",
-                            "line": 202,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 45,
-                            "durationMicroseconds": 0,
-                            "functionName": "onIncreaseRequested",
-                            "line": 206,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 45,
-                            "durationMicroseconds": 0,
-                            "functionName": "onIncreaseRequested",
-                            "line": 206,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 43,
-                            "durationMicroseconds": 0,
-                            "functionName": "onDeleteRequested",
-                            "line": 210,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 0,
-                            "functionName": "onDeleteRequested",
-                            "line": 210,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 44,
-                            "durationMicroseconds": 0,
-                            "functionName": "onReceiveRequested",
-                            "line": 214,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 44,
-                            "durationMicroseconds": 0,
-                            "functionName": "onReceiveRequested",
-                            "line": 214,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 44,
-                            "durationMicroseconds": 0,
-                            "functionName": "onReleaseRequested",
-                            "line": 218,
-                            "message": "Cannot access value for name inventoryViewModel"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 44,
-                            "durationMicroseconds": 0,
-                            "functionName": "onReleaseRequested",
-                            "line": 218,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 39,
-                            "durationMicroseconds": 0,
-                            "functionName": "historyViewModel",
-                            "line": 239,
+                            "functionName": "currentPage",
+                            "line": 55,
                             "message": "Cannot retrieve a non-object type by ID: rootWindow"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 25,
+                            "column": 30,
                             "durationMicroseconds": 0,
-                            "functionName": "horizontalAlignment",
-                            "line": 248,
-                            "message": "Could not find property \"horizontalAlignment\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 25,
-                            "durationMicroseconds": 0,
-                            "functionName": "visible",
-                            "line": 253,
-                            "message": "Could not find property \"visible\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 25,
-                            "durationMicroseconds": 0,
-                            "functionName": "model",
-                            "line": 265,
-                            "message": "Cannot access value for name historyViewModel"
+                            "functionName": "onPageRequested",
+                            "line": 57,
+                            "message": "Cannot retrieve a non-object type by ID: rootWindow"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 25,
+                            "column": 30,
                             "durationMicroseconds": 0,
-                            "functionName": "preferredHeight",
-                            "line": 262,
+                            "functionName": "onPageRequested",
+                            "line": 57,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 17,
+                            "durationMicroseconds": 0,
+                            "functionName": "preferredWidth",
+                            "line": 50,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 66,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 69,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 32,
+                            "column": 25,
                             "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 271,
-                            "message": "Cannot access value for name historyListView"
+                            "functionName": "currentIndex",
+                            "line": 83,
+                            "message": "Cannot retrieve a non-object type by ID: rootWindow"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "inventoryViewModel",
+                            "line": 87,
+                            "message": "Cannot retrieve a non-object type by ID: rootWindow"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "historyViewModel",
+                            "line": 90,
+                            "message": "Cannot retrieve a non-object type by ID: rootWindow"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "inventoryViewModel",
+                            "line": 95,
+                            "message": "Cannot retrieve a non-object type by ID: rootWindow"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "historyViewModel",
+                            "line": 100,
+                            "message": "Cannot retrieve a non-object type by ID: rootWindow"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 13,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 111,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 13,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 114,
+                            "message": ""
                         }
                     ],
                     "filePath": "C:/Users/Coding/Desktop/Qt6/PocketInventory/Main.qml"

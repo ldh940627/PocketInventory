@@ -8,6 +8,21 @@
     <file alias="components/ProductForm.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductForm.qml</file>
     <file alias="components/HistoryDelegate.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryDelegate.qml</file>
     <file alias="components/HistoryFilterBar.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryFilterBar.qml</file>
+    <file alias="components/AppTheme.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppTheme.qml</file>
+    <file alias="components/NavButton.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/NavButton.qml</file>
+    <file alias="components/AppSidebar.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppSidebar.qml</file>
+    <file alias="components/AppHeader.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppHeader.qml</file>
+    <file alias="components/AppToast.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppToast.qml</file>
+    <file alias="components/DashboardStatCard.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DashboardStatCard.qml</file>
+    <file alias="components/DashboardPanel.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DashboardPanel.qml</file>
+    <file alias="components/LowStockDashboardDelegate.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/LowStockDashboardDelegate.qml</file>
+    <file alias="components/RecentHistoryDelegate.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/RecentHistoryDelegate.qml</file>
+    <file alias="Pages/DashboardPage.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/DashboardPage.qml</file>
+    <file alias="components/InventoryRowDelegate.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryRowDelegate.qml</file>
+    <file alias="components/ProductDialog.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductDialog.qml</file>
+    <file alias="Pages/InventoryPage.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/InventoryPage.qml</file>
+    <file alias="Pages/HistoryPage.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/HistoryPage.qml</file>
+    <file alias="components/HistoryRowDelegate.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryRowDelegate.qml</file>
   </qresource>
 </RCC>
 

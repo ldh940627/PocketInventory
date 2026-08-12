@@ -7,6 +7,8 @@ HistoryViewModel::HistoryViewModel(HistoryRepository *repository, QObject *paren
 {
     m_filterModel.setSourceModel(&m_historyModel);
 
+    connect(&m_historyModel, &HistoryModel::countChanged, this, &HistoryViewModel::totalCountChanged);
+
     connect(&m_filterModel, &HistoryFilterProxyModel::countChanged, this, &HistoryViewModel::countChanged);
     connect(&m_filterModel, &HistoryFilterProxyModel::actionFilterChanged, this, &HistoryViewModel::actionFilterChanged);
     connect(&m_filterModel, &HistoryFilterProxyModel::searchTextChanged, this, &HistoryViewModel::searchTextChanged);
@@ -21,7 +23,18 @@ QAbstractItemModel *HistoryViewModel::history()
     return &m_filterModel;
 }
 
+QAbstractItemModel *HistoryViewModel::recentHistory()
+{
+    return &m_historyModel;
+
+}
+
 int HistoryViewModel::count() const
+{
+    return m_filterModel.count();
+}
+
+int HistoryViewModel::totalCount() const
 {
     return m_filterModel.count();
 }

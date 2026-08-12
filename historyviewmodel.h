@@ -14,7 +14,11 @@ class HistoryViewModel : public QObject
 
     Q_PROPERTY(QAbstractItemModel* history READ history CONSTANT)
 
+    Q_PROPERTY(QAbstractItemModel* recentHistory READ recentHistory CONSTANT)
+
     Q_PROPERTY(int count READ count NOTIFY countChanged)
+
+    Q_PROPERTY(int totalCount READ totalCount NOTIFY totalCountChanged)
 
     Q_PROPERTY(QString actionFilter READ actionFilter WRITE setActionFilter NOTIFY actionFilterChanged)
 
@@ -31,8 +35,10 @@ public:
     explicit HistoryViewModel(HistoryRepository *repository, QObject *parent = nullptr);
 
     QAbstractItemModel *history();
+    QAbstractItemModel *recentHistory();
 
     int count() const;
+    int totalCount() const;
 
     QString searchText() const;
     void setSearchText(const QString &searchText);
@@ -65,6 +71,7 @@ public:
 
 signals:
     void countChanged();
+    void totalCountChanged();
     void actionFilterChanged();
     void searchTextChanged();
 

@@ -76,6 +76,21 @@ CMakeFiles/appPocketInventory_copy_qml: .qt/appPocketInventory_qml.txt
 .qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductForm.qml
 .qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryDelegate.qml
 .qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryFilterBar.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppTheme.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/NavButton.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppSidebar.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppHeader.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/AppToast.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DashboardStatCard.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DashboardPanel.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/LowStockDashboardDelegate.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/RecentHistoryDelegate.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/DashboardPage.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryRowDelegate.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/ProductDialog.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/InventoryPage.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/HistoryPage.qml
+.qt/appPocketInventory_qml.txt: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryRowDelegate.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying appPocketInventory qml sources into build dir"
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -DFILES_INFO_PATH=C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/appPocketInventory_qml.cmake -P C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
 

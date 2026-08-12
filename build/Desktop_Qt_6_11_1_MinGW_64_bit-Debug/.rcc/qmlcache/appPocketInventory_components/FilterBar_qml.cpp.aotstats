@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 2,
                             "column": 5,
-                            "durationMicroseconds": 12000,
+                            "durationMicroseconds": 0,
                             "functionName": "resetFilter",
                             "line": 72,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"

@@ -4,7 +4,7 @@ project(PocketInventory VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick Sql)
+find_package(Qt6 REQUIRED COMPONENTS Quick Sql QuickControls2)
 
 qt_standard_project_setup(REQUIRES 6.10)
 
@@ -36,6 +36,21 @@ qt_add_qml_module(appPocketInventory
         QML_FILES components/HistoryDelegate.qml
         SOURCES historyfilterproxymodel.h historyfilterproxymodel.cpp
         QML_FILES components/HistoryFilterBar.qml
+        QML_FILES components/AppTheme.qml
+        QML_FILES components/NavButton.qml
+        QML_FILES components/AppSidebar.qml
+        QML_FILES components/AppHeader.qml
+        QML_FILES components/AppToast.qml
+        QML_FILES components/DashboardStatCard.qml
+        QML_FILES components/DashboardPanel.qml
+        QML_FILES components/LowStockDashboardDelegate.qml
+        QML_FILES components/RecentHistoryDelegate.qml
+        QML_FILES Pages/DashboardPage.qml
+        QML_FILES components/InventoryRowDelegate.qml
+        QML_FILES components/ProductDialog.qml
+        QML_FILES Pages/InventoryPage.qml
+        QML_FILES Pages/HistoryPage.qml
+        QML_FILES components/HistoryRowDelegate.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -50,7 +65,7 @@ set_target_properties(appPocketInventory PROPERTIES
 )
 
 target_link_libraries(appPocketInventory
-    PRIVATE Qt6::Quick Qt6::Sql
+    PRIVATE Qt6::Quick Qt6::Sql Qt6::QuickControls2
 )
 
 install(TARGETS appPocketInventory

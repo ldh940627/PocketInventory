@@ -67,7 +67,8 @@ template <> constexpr inline auto InventoryViewModel::qt_create_metaobjectdata<q
         "lowStockCount",
         "filteredCount",
         "searchText",
-        "stockFilter"
+        "stockFilter",
+        "lowStockProducts"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -127,6 +128,8 @@ template <> constexpr inline auto InventoryViewModel::qt_create_metaobjectdata<q
         QtMocHelpers::PropertyData<QString>(28, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 2),
         // property 'stockFilter'
         QtMocHelpers::PropertyData<QString>(29, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 3),
+        // property 'lowStockProducts'
+        QtMocHelpers::PropertyData<QAbstractItemModel*>(30, 0x80000000 | 23, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -184,6 +187,7 @@ void InventoryViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
     if (_c == QMetaObject::RegisterPropertyMetaType) {
         switch (_id) {
         default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        case 7:
         case 0:
             *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QAbstractItemModel* >(); break;
         }
@@ -198,6 +202,7 @@ void InventoryViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 4: *reinterpret_cast<int*>(_v) = _t->filteredCount(); break;
         case 5: *reinterpret_cast<QString*>(_v) = _t->searchText(); break;
         case 6: *reinterpret_cast<QString*>(_v) = _t->stockFilter(); break;
+        case 7: *reinterpret_cast<QAbstractItemModel**>(_v) = _t->lowStockProducts(); break;
         default: break;
         }
     }
@@ -243,7 +248,7 @@ int InventoryViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 8;
     }
     return _id;
 }

@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 2,
                             "column": 5,
-                            "durationMicroseconds": 6000,
+                            "durationMicroseconds": 0,
                             "functionName": "requestSubmit",
                             "line": 81,
                             "message": "Cannot retrieve a non-object type by ID: nameField"
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 5,
-                            "durationMicroseconds": 1000,
+                            "durationMicroseconds": 0,
                             "functionName": "resetForm",
                             "line": 98,
                             "message": ""

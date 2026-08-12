@@ -1,279 +1,120 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+
 import "components"
+import "Pages"
 
 ApplicationWindow {
-
     id: rootWindow
 
     required property var inventoryViewModel
     required property var historyViewModel
 
-    width: 500
-    height: 850
+    width: 1280
+    height: 800
+
+    minimumWidth: 1000
+    minimumHeight: 650
+
     visible: true
-    title: qsTr("내 손안의 재고")
 
+    title: qsTr("PocketInventory")
 
-    function showMessage(message, colorName = "gray"){
-        messageLabel.text = message
-        messageLabel.color = colorName
+    color: theme.background
+
+    property int currentPage: 0
+
+    AppTheme {
+        id: theme
     }
 
-    Connections{
-        target: inventoryViewModel
+    Connections {
+        target: rootWindow.inventoryViewModel
 
-        function onMessageRequested(message, colorName){
-            showMessage(message, colorName)
+        function onMessageRequested(message, colorName) {
+            toastMessage.show(
+                message,
+                colorName
+            )
         }
     }
 
-    ScrollView{
+    RowLayout {
         anchors.fill: parent
-        clip:true
-        contentWidth: availableWidth
 
-        Pane{
-            width: parent.width
-            padding:30
+        spacing: 0
+
+        AppSidebar {
+            Layout.preferredWidth:
+                theme.sidebarWidth
+
+            Layout.fillHeight: true
+
+            currentPage:
+                rootWindow.currentPage
+
+            onPageRequested: function(pageIndex) {
+                rootWindow.currentPage = pageIndex
+            }
+        }
+
+        Rectangle {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+
+            color: theme.background
 
             ColumnLayout {
-                width: parent.width
-                spacing: 15
-                RowLayout{
+                anchors.fill: parent
+
+                spacing: 0
+
+                AppHeader {
                     Layout.fillWidth: true
-                    spacing: 10
-
-                   SummaryCard{
-                       title: "전체 상품"
-                       value: inventoryViewModel.totalCount + "개"
-                       cardColor: "#e8f0fe"
-                       valueColor: "black"
-                   }
-
-                   SummaryCard{
-                       title: "정상 재고"
-                       value: inventoryViewModel.normalStockCount + "개"
-                       cardColor: "#e5f6ea"
-                       valueColor: "green"
-                   }
-
-                   SummaryCard{
-                       title: "부족 재고"
-                       value: inventoryViewModel.lowStockCount + "개"
-                       cardColor: "#ffe5e5"
-                       valueColor: "red"
-
-                   }
+                    Layout.preferredHeight: 60
                 }
 
-                Label {
-                    id: messageLabel
-
-                    text: ""
-                    visible: text !== ""
-
+                StackLayout {
                     Layout.fillWidth: true
+                    Layout.fillHeight: true
 
-                    horizontalAlignment: Text.AlignHCenter
-                    wrapMode: Text.WordWrap
+                    currentIndex:
+                        rootWindow.currentPage
 
-                    color: "green"
-                    font.pixelSize: 15
-                }
+                    DashboardPage {
+                        inventoryViewModel:
+                            rootWindow.inventoryViewModel
 
-                ProductForm{
-                    id: productForm
-
-                    Layout.fillWidth: true
-
-                    onSubmitRequested: function(
-                        productName,
-                        productQuantity,
-                        minimumQuantity)
-                    {
-                        const succeeded = inventoryViewModel.addProduct(productName, productQuantity, minimumQuantity)
-
-                        if(succeeded)
-                            productForm.resetForm()
-                    }
-                }
-
-
-                Rectangle{
-                    Layout.fillWidth: true
-                    height: 1
-                    color: "lightgray"
-                }
-
-                SearchBar{
-                    id: searchBar
-
-                    Layout.fillWidth: true
-                    onSearchRequested: function(searchText){
-                        inventoryViewModel.searchText = searchText
+                        historyViewModel:
+                            rootWindow.historyViewModel
                     }
 
-                    onClearRequested: {
-                        filterBar.resetFilter()
-                        inventoryViewModel.resetFilters()
+                    InventoryPage {
+                        inventoryViewModel:
+                            rootWindow.inventoryViewModel
+                    }
+
+                    HistoryPage {
+                        historyViewModel:
+                            rootWindow.historyViewModel
                     }
                 }
-
-                Label {
-                    text: "검색 결과: " + inventoryViewModel.filteredCount + "개"
-                    color: "gray"
-                }
-
-                FilterBar{
-                    id: filterBar
-
-                    Layout.fillWidth: true
-
-                    onFilterChanged: function(filter) {
-                        inventoryViewModel.stockFilter = filter
-
-                        switch (filter) {
-                        case "normal":
-                            showMessage(
-                                "정상 재고 상품만 표시합니다.",
-                                "gray"
-                            )
-                            break
-
-                        case "low":
-                            showMessage(
-                                "재고 부족 상품만 표시합니다.",
-                                "gray"
-                            )
-                            break
-
-                        default:
-                            showMessage(
-                                "전체 상품을 표시합니다.",
-                                "gray"
-                            )
-                            break
-                        }
-                    }
-                }
-
-
-
-                Label {
-                    text: "상품 목록"
-                    font.pixelSize: 22
-                    font.bold: true
-                }
-
-                Label{
-                    Layout.fillWidth: true
-                    text:"조건에 맞는 상품이 없습니다."
-                    horizontalAlignment: Text.AlignHCenter
-                    color : "gray"
-
-                    visible: inventoryViewModel.totalCount > 0 && inventoryViewModel.filteredCount === 0
-                }
-
-                Label{
-                    Layout.fillWidth: true
-                    text: "등록된 상품이 없습니다."
-                    horizontalAlignment: Text.AlignHCenter
-                    color: "gray"
-                    visible: inventoryViewModel.totalCount === 0
-                }
-
-                ListView {
-                    id: productListView
-
-                    Layout.fillWidth: true
-                    Layout.preferredHeight: Math.max(contentHeight, 200)
-
-                    model: inventoryViewModel.products
-                    spacing: 0
-                    interactive: false
-
-                    delegate: ProductDelegate{
-
-                       width: productListView.width
-
-
-                       onDecreaseRequested: function(proxyIndex){
-                           inventoryViewModel.decreaseQuantity(proxyIndex)
-                       }
-
-                       onIncreaseRequested: function(proxyIndex){
-                           inventoryViewModel.increaseQuantity(proxyIndex)
-                       }
-
-                       onDeleteRequested: function(proxyIndex){
-                           inventoryViewModel.removeProduct(proxyIndex)
-                       }
-
-                       onReceiveRequested: function(proxyIndex, quantityText){
-                           const succeeded = inventoryViewModel.receiveStock(proxyIndex, quantityText)
-                       }
-
-                       onReleaseRequested: function(proxyIndex, quantityText){
-                           inventoryViewModel.releaseStock(proxyIndex, quantityText)
-                       }
-                    }
-                }
-
-                Rectangle{
-                    Layout.fillWidth: true
-                    height: 1
-                    color: "lightgray"
-                }
-
-                Label{
-                    text: "재고 변경 이력"
-                    font.pixelSize: 22
-                    font.bold: true
-                }
-
-                HistoryFilterBar{
-                    Layout.fillWidth: true
-
-                    historyViewModel: rootWindow.historyViewModel
-                }
-
-                Label {
-                    Layout.fillWidth: true
-
-                    text: "재고 변경 이력이 없습니다."
-
-                    horizontalAlignment:
-                        Text.AlignHCenter
-
-                    color: "gray"
-
-                    visible:
-                        historyViewModel.count === 0
-                }
-
-                ListView {
-                    id: historyListView
-
-                    Layout.fillWidth: true
-
-                    Layout.preferredHeight:
-                        Math.max(contentHeight, 200)
-
-                    model:
-                        historyViewModel.history
-
-                    spacing: 8
-                    interactive: false
-
-                    delegate: HistoryDelegate {
-                        width: historyListView.width
-                    }
-                }
-
             }
         }
     }
 
+    AppToast {
+        id: toastMessage
+
+        anchors.horizontalCenter:
+            parent.horizontalCenter
+
+        anchors.top:
+            parent.top
+
+        anchors.topMargin: 72
+
+        z: 1000
+    }
 }

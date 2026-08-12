@@ -7,6 +7,10 @@ InventoryViewModel::InventoryViewModel(ProductRepository *productrepository, Inv
 {
     m_filterModel.setSourceModel(&m_productModel);
 
+    m_lowStockModel.setSourceModel(&m_productModel);
+
+    m_lowStockModel.setStockFilter(QStringLiteral("low"));
+
     connect(&m_productModel, &ProductModel::countChanged, this, &InventoryViewModel::stockSummaryChanged);
     connect(&m_productModel, &ProductModel::stockSummaryChanged, this, &InventoryViewModel::stockSummaryChanged);
     connect(&m_filterModel, &ProductFilterProxyModel::countChanged, this, &InventoryViewModel::filteredCountChanged);
@@ -36,6 +40,11 @@ InventoryViewModel::InventoryViewModel(ProductRepository *productrepository, Inv
 QAbstractItemModel *InventoryViewModel::products()
 {
     return &m_filterModel;
+}
+
+QAbstractItemModel *InventoryViewModel::lowStockProducts()
+{
+    return &m_lowStockModel;
 }
 
 int InventoryViewModel::totalCount() const

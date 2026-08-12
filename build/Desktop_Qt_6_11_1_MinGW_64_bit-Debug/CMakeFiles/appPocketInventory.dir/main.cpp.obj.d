@@ -401,6 +401,10 @@ CMakeFiles/appPocketInventory.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtQml/qqmlerror.h \
  C:/Qt/6.11.1/mingw_64/include/QtQml/qqmlabstracturlinterceptor.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QVariant \
+ C:/Qt/6.11.1/mingw_64/include/QtQuickControls2/QQuickStyle \
+ C:/Qt/6.11.1/mingw_64/include/QtQuickControls2/qquickstyle.h \
+ C:/Qt/6.11.1/mingw_64/include/QtQuickControls2/qtquickcontrols2global.h \
+ C:/Qt/6.11.1/mingw_64/include/QtQuickControls2/qtquickcontrols2exports.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QDebug \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\DatabaseManager.h \
  C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlDatabase \

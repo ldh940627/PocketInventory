@@ -32,11 +32,13 @@ class InventoryViewModel : public QObject
     // 재고 상태 필터
     Q_PROPERTY(QString stockFilter READ stockFilter WRITE setStockFilter NOTIFY stockFilterChanged)
 
+    Q_PROPERTY(QAbstractItemModel* lowStockProducts READ lowStockProducts CONSTANT)
 
 public:
     explicit InventoryViewModel(ProductRepository *productRepository, InventoryService *inventoryService, QObject *parent = nullptr);
 
     QAbstractItemModel *products();
+    QAbstractItemModel *lowStockProducts();
 
     int totalCount() const;
     int normalStockCount() const;
@@ -79,6 +81,7 @@ private:
 
     ProductModel m_productModel;
     ProductFilterProxyModel m_filterModel;
+    ProductFilterProxyModel m_lowStockModel;
 
 
 };

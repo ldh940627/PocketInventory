@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="/qt/qml/PocketInventory/">
     <file alias="components/qmldir">C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/components/qmldir</file>
+    <file alias="Pages/qmldir">C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/Pages/qmldir</file>
   </qresource>
 </RCC>
 
