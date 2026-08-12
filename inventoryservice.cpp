@@ -137,56 +137,82 @@ bool InventoryService::adjustQuantity(const Product &product, int delta, const Q
     return true;
 }
 
-int InventoryService::addProduct(const QString &name, int quantity, int minimumQuantity, QString *errorMessage)
+int InventoryService::addProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, QString *errorMessage)
 {
 
     if(!m_productRepository || !m_historyRepository){
         if(errorMessage){
-            *errorMessage = QStringLiteral("Repository가 연결되지 않았습니다.");
+            *errorMessage =
+                QStringLiteral("Repository가 연결되지 않았습니다.");
         }
+
         return -1;
     }
 
     if(!beginTransaction(errorMessage)){
-        // qDebug() << "[ADD] Transaction 시작 실패:"
-        //          << (errorMessage ? *errorMessage : QString());
         return -1;
     }
 
+    qDebug() << "[ADD] Product INSERT 시작";
 
-    const int productId = m_productRepository->insertProduct(name, quantity, minimumQuantity, errorMessage);
+    const int productId =
+        m_productRepository->insertProduct(
+            name,
+            quantity,
+            minimumQuantity,
+            unitPrice,
+            errorMessage
+            );
 
     if(productId < 0){
-        // qDebug() << "[ADD] Product INSERT 실패:"
-        //          << (errorMessage ? *errorMessage : QString());
+        qDebug()
+        << "[ADD] Product INSERT 실패:"
+        << (errorMessage ? *errorMessage : QString());
+
         rollbackTransaction();
         return -1;
     }
 
-    // qDebug() << "[ADD] Product INSERT 성공:"
-    //          << productId;
+    qDebug()
+        << "[ADD] Product INSERT 성공:"
+        << productId;
 
-    if(!m_historyRepository->insertHistory(productId, name, 0, quantity, QStringLiteral("CREATE"), errorMessage)){
-        // qDebug() << "[ADD] History INSERT 실패:"
-        //          << (errorMessage ? *errorMessage : QString());
+
+    qDebug() << "[ADD] History INSERT 시작";
+
+    if(!m_historyRepository->insertHistory(
+            productId,
+            name,
+            0,
+            quantity,
+            QStringLiteral("CREATE"),
+            errorMessage
+            ))
+    {
+        qDebug()
+        << "[ADD] History INSERT 실패:"
+        << (errorMessage ? *errorMessage : QString());
+
         rollbackTransaction();
         return -1;
     }
 
-     // qDebug() << "[ADD] History INSERT 성공";
+    qDebug()
+        << "[ADD] History INSERT 성공";
+
 
     if(!commitTransaction(errorMessage)){
-        // qDebug() << "[ADD] Commit 실패:"
-        //           << (errorMessage ? *errorMessage : QString());
+        qDebug()
+        << "[ADD] Commit 실패:"
+        << (errorMessage ? *errorMessage : QString());
+
         rollbackTransaction();
         return -1;
     }
 
-    // qDebug()
-    //     << "[ADD] History INSERT 성공";
+    qDebug() << "[ADD] Commit 성공";
 
     return productId;
-
 
 }
 

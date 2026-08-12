@@ -10,7 +10,7 @@
                             "column": 13,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 24,
+                            "line": 23,
                             "message": "Cannot access value for name root"
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 22,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 31,
+                            "line": 30,
                             "message": "Cannot access value for name root"
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 33,
+                            "line": 32,
                             "message": ""
                         },
                         {
@@ -34,7 +34,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "verticalCenter",
-                            "line": 34,
+                            "line": 33,
                             "message": ""
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 53,
+                            "line": 52,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -50,23 +50,7 @@
                             "column": 17,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 56,
-                            "message": "Could not find property \"color\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 19,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 64,
-                            "message": "Could not find property \"text\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 17,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 67,
+                            "line": 55,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -74,7 +58,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "bold",
-                            "line": 72,
+                            "line": 60,
                             "message": "Could not find property \"bold\"."
                         }
                     ],

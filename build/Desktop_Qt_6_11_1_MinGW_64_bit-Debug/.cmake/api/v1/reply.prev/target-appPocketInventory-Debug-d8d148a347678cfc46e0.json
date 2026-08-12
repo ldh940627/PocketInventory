@@ -27,13 +27,13 @@
 			"qt6_add_qml_module",
 			"qt_add_qml_module",
 			"add_dependencies",
-			"_qt_internal_qml_copy_files_to_build_dir",
 			"_qt_internal_write_deferred_qmlls_build_ini_file",
 			"_qt_internal_scan_qml_imports",
 			"_qt_internal_generate_deploy_qml_imports_script",
 			"cmake_language",
 			"_qt_internal_finalize_executable",
 			"qt6_finalize_target",
+			"_qt_internal_qml_copy_files_to_build_dir",
 			"add_compile_definitions",
 			"project",
 			"target_include_directories",
@@ -109,13 +109,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 70,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 66,
+				"line" : 70,
 				"parent" : 0
 			},
 			{
@@ -413,36 +413,60 @@
 				"parent" : 59
 			},
 			{
-				"command" : 14,
-				"file" : 10,
-				"line" : 1045,
-				"parent" : 24
-			},
-			{
-				"command" : 13,
-				"file" : 10,
-				"line" : 3223,
-				"parent" : 61
-			},
-			{
 				"file" : 1,
 				"line" : -1,
 				"parent" : 0
 			},
 			{
-				"command" : 15,
+				"command" : 14,
 				"file" : 21,
 				"line" : 1,
-				"parent" : 63
+				"parent" : 61
 			},
 			{
 				"command" : 13,
 				"file" : 10,
 				"line" : 1477,
+				"parent" : 62
+			},
+			{
+				"command" : 19,
+				"file" : 22,
+				"line" : 1,
+				"parent" : 61
+			},
+			{
+				"command" : 18,
+				"file" : 0,
+				"line" : 898,
 				"parent" : 64
 			},
 			{
-				"command" : 14,
+				"command" : 17,
+				"file" : 0,
+				"line" : 818,
+				"parent" : 65
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 818,
+				"parent" : 66
+			},
+			{
+				"command" : 15,
+				"file" : 10,
+				"line" : 4921,
+				"parent" : 67
+			},
+			{
+				"command" : 13,
+				"file" : 10,
+				"line" : 4696,
+				"parent" : 68
+			},
+			{
+				"command" : 20,
 				"file" : 10,
 				"line" : 1051,
 				"parent" : 24
@@ -451,42 +475,18 @@
 				"command" : 13,
 				"file" : 10,
 				"line" : 3223,
-				"parent" : 66
-			},
-			{
-				"command" : 20,
-				"file" : 22,
-				"line" : 1,
-				"parent" : 63
-			},
-			{
-				"command" : 19,
-				"file" : 0,
-				"line" : 898,
-				"parent" : 68
-			},
-			{
-				"command" : 18,
-				"file" : 0,
-				"line" : 818,
-				"parent" : 69
-			},
-			{
-				"command" : 17,
-				"file" : 0,
-				"line" : 818,
 				"parent" : 70
 			},
 			{
-				"command" : 16,
+				"command" : 20,
 				"file" : 10,
-				"line" : 4921,
-				"parent" : 71
+				"line" : 1045,
+				"parent" : 24
 			},
 			{
 				"command" : 13,
 				"file" : 10,
-				"line" : 4696,
+				"line" : 3223,
 				"parent" : 72
 			},
 			{
@@ -860,6 +860,54 @@
 				"parent" : 89
 			},
 			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3694,
+				"parent" : 89
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3887,
+				"parent" : 89
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3694,
+				"parent" : 89
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3887,
+				"parent" : 89
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3694,
+				"parent" : 89
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3887,
+				"parent" : 89
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3694,
+				"parent" : 89
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3887,
+				"parent" : 89
+			},
+			{
 				"command" : 30,
 				"file" : 10,
 				"line" : 3979,
@@ -869,19 +917,19 @@
 				"command" : 29,
 				"file" : 0,
 				"line" : 419,
-				"parent" : 136
+				"parent" : 144
 			},
 			{
 				"command" : 28,
 				"file" : 0,
 				"line" : 2659,
-				"parent" : 137
+				"parent" : 145
 			},
 			{
 				"command" : 25,
 				"file" : 0,
 				"line" : 2199,
-				"parent" : 138
+				"parent" : 146
 			},
 			{
 				"command" : 30,
@@ -893,43 +941,43 @@
 				"command" : 29,
 				"file" : 0,
 				"line" : 419,
-				"parent" : 140
+				"parent" : 148
 			},
 			{
 				"command" : 28,
 				"file" : 0,
 				"line" : 2659,
-				"parent" : 141
+				"parent" : 149
 			},
 			{
 				"command" : 25,
 				"file" : 0,
 				"line" : 2199,
-				"parent" : 142
+				"parent" : 150
 			},
 			{
 				"command" : 33,
 				"file" : 0,
 				"line" : 892,
-				"parent" : 68
+				"parent" : 64
 			},
 			{
 				"command" : 25,
 				"file" : 0,
 				"line" : 2324,
-				"parent" : 144
+				"parent" : 152
 			},
 			{
 				"command" : 34,
 				"file" : 0,
 				"line" : 835,
-				"parent" : 69
+				"parent" : 65
 			},
 			{
 				"command" : 25,
 				"file" : 24,
 				"line" : 126,
-				"parent" : 146
+				"parent" : 154
 			}
 		]
 	},
@@ -1122,8 +1170,12 @@
 				66,
 				68,
 				70,
-				71,
-				72
+				72,
+				74,
+				76,
+				78,
+				79,
+				80
 			]
 		},
 		{
@@ -1288,23 +1340,23 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 62,
-			"id" : "appPocketInventory_copy_qml::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 65,
+			"backtrace" : 63,
 			"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 67,
+			"id" : "appPocketInventory_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 69,
+			"id" : "appPocketInventory_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 71,
 			"id" : "appPocketInventory_copy_res::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 73,
-			"id" : "appPocketInventory_qmlimportscan::@6890427a1f51a3e7e1df"
-		},
-		{
-			"id" : "appPocketInventory_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "appPocketInventory_copy_qml::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
@@ -1480,20 +1532,24 @@
 				66,
 				68,
 				70,
-				71,
 				72,
-				73,
-				75,
+				74,
 				76,
+				78,
+				79,
 				80,
-				112,
-				113,
-				114,
-				115,
-				116,
-				117,
-				118,
-				119
+				81,
+				83,
+				84,
+				88,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131
 			]
 		},
 		{
@@ -1532,7 +1588,11 @@
 				63,
 				65,
 				67,
-				69
+				69,
+				71,
+				73,
+				75,
+				77
 			]
 		},
 		{
@@ -1556,30 +1616,22 @@
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				74,
-				77,
-				78
+				82,
+				85,
+				86
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				79
+				87
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				81,
-				82,
-				83,
-				84,
-				85,
-				86,
-				87,
-				88,
 				89,
 				90,
 				91,
@@ -1602,7 +1654,19 @@
 				108,
 				109,
 				110,
-				111
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123
 			]
 		}
 	],
@@ -2028,57 +2092,105 @@
 			"sourceGroupIndex" : 0
 		},
 		{
+			"backtrace" : 136,
+			"path" : "components/HistoryRowDelegate.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 137,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryRowDelegate_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 138,
+			"path" : "components/StockAdjustDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
 			"backtrace" : 139,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/StockAdjustDialog_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 140,
+			"path" : "components/InventoryToolbar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 141,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/InventoryToolbar_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 142,
+			"path" : "components/InventoryTable.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 143,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/InventoryTable_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 147,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 143,
+			"backtrace" : 151,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appPocketInventory_raw_qml_0_extra_qmldirs.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 153,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/qmake_PocketInventory.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 153,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/qmldir",
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 153,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 153,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/rcc/appPocketInventory_raw_qml_0_extra_qmldirs.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 153,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/components/qmldir",
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 153,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/Pages/qmldir",
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 147,
+			"backtrace" : 155,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory.exe.manifest",
 			"sourceGroupIndex" : 4
 		},
@@ -2242,6 +2354,30 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_Pages/HistoryPage_qml.cpp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/HistoryRowDelegate_qml.cpp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/StockAdjustDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/InventoryToolbar_qml.cpp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/InventoryTable_qml.cpp.rule",
 			"sourceGroupIndex" : 5
 		},
 		{

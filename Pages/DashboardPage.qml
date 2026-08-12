@@ -96,12 +96,15 @@ Item {
 
                             title: "전체 상품"
 
-                            value:
-                                root.inventoryViewModel.totalCount
+                            valueText:
+                                String(
+                                    root.inventoryViewModel.totalCount
+                                )
 
                             unit: "개"
 
-                            accentColor: theme.primary
+                            accentColor:
+                                theme.primary
                         }
 
                         DashboardStatCard {
@@ -110,12 +113,15 @@ Item {
 
                             title: "정상 재고"
 
-                            value:
-                                root.inventoryViewModel.normalStockCount
+                            valueText:
+                                String(
+                                    root.inventoryViewModel.normalStockCount
+                                )
 
                             unit: "개"
 
-                            accentColor: theme.success
+                            accentColor:
+                                theme.success
                         }
 
                         DashboardStatCard {
@@ -124,26 +130,36 @@ Item {
 
                             title: "부족 재고"
 
-                            value:
-                                root.inventoryViewModel.lowStockCount
+                            valueText:
+                                String(
+                                    root.inventoryViewModel.lowStockCount
+                                )
 
                             unit: "개"
 
-                            accentColor: theme.danger
+                            accentColor:
+                                theme.danger
                         }
 
                         DashboardStatCard {
                             Layout.fillWidth: true
                             Layout.preferredWidth: 1
 
-                            title: "재고 변경"
+                            title: "총 재고 금액"
 
-                            value:
-                                root.historyViewModel.totalCount
+                            valueText:
+                                Number(
+                                    root.inventoryViewModel.totalInventoryValue
+                                ).toLocaleString(
+                                    Qt.locale("ko_KR"),
+                                    "f",
+                                    0
+                                )
 
-                            unit: "건"
+                            unit: "원"
 
-                            accentColor: theme.warning
+                            accentColor:
+                                theme.warning
                         }
                     }
 

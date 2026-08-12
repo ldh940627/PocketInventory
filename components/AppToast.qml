@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Layouts
 
 Rectangle {
     id: root
@@ -8,28 +9,49 @@ Rectangle {
 
     width:
         Math.min(
-            messageLabel.implicitWidth + 40,
-            500
+            contentRow.implicitWidth + 32,
+            380
         )
 
-    height: 44
+    height: 46
 
-    radius: 8
+    radius: 10
 
     visible: false
 
-    color: "#111827"
-    opacity: 0.95
+    color: "#1F2937"
 
-    Label {
-        id: messageLabel
+    border.width: 1
+    border.color: "#374151"
 
-        anchors.centerIn: parent
+    RowLayout {
+        id: contentRow
 
-        text: root.messageText
+        anchors.fill: parent
+        anchors.leftMargin: 14
+        anchors.rightMargin: 14
 
-        color: "white"
-        font.pixelSize: 13
+        spacing: 10
+
+        Rectangle {
+            id: indicator
+
+            width: 7
+            height: 7
+            radius: 4
+
+            color: "#9CA3AF"
+        }
+
+        Label {
+            text: root.messageText
+
+            color: "white"
+
+            font.pixelSize: 12
+
+            Layout.fillWidth: true
+        }
     }
 
     Timer {
@@ -47,19 +69,19 @@ Rectangle {
 
         switch (colorName) {
         case "red":
-            root.color = "#DC2626"
+            indicator.color = "#E5484D"
             break
 
         case "green":
-            root.color = "#16A34A"
+            indicator.color = "#16A66A"
             break
 
         case "darkorange":
-            root.color = "#D97706"
+            indicator.color = "#E79A24"
             break
 
         default:
-            root.color = "#374151"
+            indicator.color = "#4F6EF7"
             break
         }
 

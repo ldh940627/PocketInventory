@@ -20,11 +20,10 @@ Item {
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
 
-        width:
-            Math.min(
-                parent.width - 56,
-                1180
-            )
+        width: Math.min(
+            parent.width - 56,
+            1180
+        )
 
         ColumnLayout {
             anchors.fill: parent
@@ -34,9 +33,9 @@ Item {
 
             spacing: theme.sectionSpacing
 
-            // =========================
+            // ====================================================
             // Header
-            // =========================
+            // ====================================================
 
             ColumnLayout {
                 Layout.fillWidth: true
@@ -53,8 +52,7 @@ Item {
                 }
 
                 Label {
-                    text:
-                        "상품의 등록, 입고, 출고 및 재고 변경 내역을 확인합니다."
+                    text: "재고 변동 기록을 확인합니다."
 
                     font.pixelSize: 13
 
@@ -62,9 +60,9 @@ Item {
                 }
             }
 
-            // =========================
+            // ====================================================
             // Filter
-            // =========================
+            // ====================================================
 
             HistoryFilterBar {
                 Layout.fillWidth: true
@@ -73,9 +71,9 @@ Item {
                     root.historyViewModel
             }
 
-            // =========================
-            // Result count
-            // =========================
+            // ====================================================
+            // Result Count
+            // ====================================================
 
             RowLayout {
                 Layout.fillWidth: true
@@ -95,21 +93,11 @@ Item {
                 Item {
                     Layout.fillWidth: true
                 }
-
-                Label {
-                    text:
-                        "전체 "
-                        + root.historyViewModel.totalCount
-                        + "건"
-
-                    color: theme.textMuted
-                    font.pixelSize: 12
-                }
             }
 
-            // =========================
+            // ====================================================
             // History Table
-            // =========================
+            // ====================================================
 
             Rectangle {
                 Layout.fillWidth: true
@@ -129,9 +117,9 @@ Item {
 
                     spacing: 0
 
-                    // -------------------------
+                    // ============================================
                     // Table Header
-                    // -------------------------
+                    // ============================================
 
                     Rectangle {
                         Layout.fillWidth: true
@@ -145,7 +133,7 @@ Item {
                             anchors.leftMargin: 20
                             anchors.rightMargin: 20
 
-                            spacing: 12
+                            spacing: 16
 
                             Label {
                                 text: "상품"
@@ -162,34 +150,40 @@ Item {
                             Label {
                                 text: "변경"
 
-                                Layout.preferredWidth: 150
-
-                                font.pixelSize: 12
-                                font.bold: true
-
-                                color: theme.textSecondary
-                            }
-
-                            Label {
-                                text: "유형"
-
-                                Layout.preferredWidth: 100
-
-                                font.pixelSize: 12
-                                font.bold: true
-
-                                color: theme.textSecondary
-                            }
-
-                            Label {
-                                text: "일시"
-
                                 Layout.preferredWidth: 170
 
                                 font.pixelSize: 12
                                 font.bold: true
 
                                 color: theme.textSecondary
+
+                                horizontalAlignment: Text.AlignHCenter
+                            }
+
+                            Label {
+                                text: "유형"
+
+                                Layout.preferredWidth: 110
+
+                                font.pixelSize: 12
+                                font.bold: true
+
+                                color: theme.textSecondary
+
+                                horizontalAlignment: Text.AlignHCenter
+                            }
+
+                            Label {
+                                text: "일시"
+
+                                Layout.preferredWidth: 130
+
+                                font.pixelSize: 12
+                                font.bold: true
+
+                                color: theme.textSecondary
+
+                                horizontalAlignment: Text.AlignHCenter
                             }
                         }
 
@@ -204,9 +198,9 @@ Item {
                         }
                     }
 
-                    // -------------------------
-                    // List Area
-                    // -------------------------
+                    // ============================================
+                    // History List
+                    // ============================================
 
                     Item {
                         Layout.fillWidth: true
@@ -222,26 +216,56 @@ Item {
                             model:
                                 root.historyViewModel.history
 
+                            spacing: 0
+
                             delegate: HistoryRowDelegate {
                                 width:
                                     historyListView.width
                             }
                         }
 
-                        Label {
+                        // ========================================
+                        // Empty State
+                        // ========================================
+
+                        ColumnLayout {
                             anchors.centerIn: parent
 
                             visible:
                                 root.historyViewModel.count === 0
 
-                            text:
-                                root.historyViewModel.totalCount === 0
-                                ? "재고 변경 이력이 없습니다."
-                                : "조건에 맞는 이력이 없습니다."
+                            spacing: 6
 
-                            color: theme.textSecondary
+                            Label {
+                                Layout.alignment:
+                                    Qt.AlignHCenter
 
-                            font.pixelSize: 13
+                                text:
+                                    root.historyViewModel.totalCount === 0
+                                    ? "변경 이력이 없습니다."
+                                    : "조건에 맞는 이력이 없습니다."
+
+                                color:
+                                    theme.textSecondary
+
+                                font.pixelSize: 13
+                            }
+
+                            Label {
+                                Layout.alignment:
+                                    Qt.AlignHCenter
+
+                                visible:
+                                    root.historyViewModel.totalCount > 0
+
+                                text:
+                                    "검색어나 필터 조건을 변경해보세요."
+
+                                color:
+                                    theme.textMuted
+
+                                font.pixelSize: 11
+                            }
                         }
                     }
                 }

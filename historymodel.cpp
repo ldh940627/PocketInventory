@@ -65,7 +65,7 @@ void HistoryModel::setHistory(const QList<HistoryRecord> &history)
 QHash<int, QByteArray> HistoryModel::roleNames() const
 {
     return{
-        {HistoryIdRole, "hisoryId"},
+        {HistoryIdRole, "historyId"},
         {ProductIdRole, "productId"},
         {ProductNameRole, "productName"},
         {OldQuantityRole, "oldQuantity"},

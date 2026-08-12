@@ -8,7 +8,6 @@
 #include "productfilterproxymodel.h"
 #include "productmodel.h"
 #include "productrepository.h"
-#include "historyrepository.h"
 #include "inventoryservice.h"
 
 class InventoryViewModel : public QObject
@@ -18,10 +17,16 @@ class InventoryViewModel : public QObject
     // listview가 사용할 필터링된 모델
     Q_PROPERTY(QAbstractItemModel* products READ products CONSTANT)
 
+    Q_PROPERTY(QAbstractItemModel* lowStockProducts READ lowStockProducts CONSTANT)
+
     // 통계 카드
     Q_PROPERTY(int totalCount READ totalCount NOTIFY stockSummaryChanged)
+
     Q_PROPERTY(int normalStockCount READ normalStockCount NOTIFY stockSummaryChanged)
+
     Q_PROPERTY(int lowStockCount READ lowStockCount NOTIFY stockSummaryChanged)
+
+    Q_PROPERTY(qint64 totalInventoryValue READ totalInventoryValue NOTIFY stockSummaryChanged)
 
     // 검색 결과 개수
     Q_PROPERTY(int filteredCount READ filteredCount NOTIFY filteredCountChanged)
@@ -32,26 +37,35 @@ class InventoryViewModel : public QObject
     // 재고 상태 필터
     Q_PROPERTY(QString stockFilter READ stockFilter WRITE setStockFilter NOTIFY stockFilterChanged)
 
-    Q_PROPERTY(QAbstractItemModel* lowStockProducts READ lowStockProducts CONSTANT)
+
 
 public:
+
     explicit InventoryViewModel(ProductRepository *productRepository, InventoryService *inventoryService, QObject *parent = nullptr);
 
     QAbstractItemModel *products();
+
     QAbstractItemModel *lowStockProducts();
 
     int totalCount() const;
+
     int normalStockCount() const;
+
     int lowStockCount() const;
+
+    qint64 totalInventoryValue() const;
+
     int filteredCount() const;
 
     QString searchText() const;
+
     void setSearchText(const QString &searchText);
 
     QString stockFilter() const;
+
     void setStockFilter(const QString &stockFilter);
 
-    Q_INVOKABLE bool addProduct(const QString &productNameText, const QString &productQuantityText, const QString &minimumQuantityText);
+    Q_INVOKABLE bool addProduct(const QString &productNameText, const QString &productQuantityText, const QString &minimumQuantityText, const QString &unitPriceText);
     Q_INVOKABLE bool receiveStock(int proxyIndex, const QString &quantityText);
     Q_INVOKABLE bool releaseStock(int proxyIndex, const QString &quantityText);
     Q_INVOKABLE void increaseQuantity(int proxyIndex);
@@ -60,13 +74,13 @@ public:
     Q_INVOKABLE void resetFilters();
 
 
-
-
 signals:
     void stockSummaryChanged();
+
     void filteredCountChanged();
 
     void searchTextChanged();
+
     void stockFilterChanged();
 
     void messageRequested(const QString &message, const QString &colorName);

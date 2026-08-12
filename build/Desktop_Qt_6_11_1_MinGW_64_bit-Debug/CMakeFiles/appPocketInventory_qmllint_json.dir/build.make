@@ -89,6 +89,10 @@ CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketIn
 CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/InventoryPage.qml
 CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/HistoryPage.qml
 CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryRowDelegate.qml
+CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/StockAdjustDialog.qml
+CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryToolbar.qml
+CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryTable.qml
+CMakeFiles/appPocketInventory_qmllint_json: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DeleteProductDialog.qml
 CMakeFiles/appPocketInventory_qmllint_json: .rcc/qmllint/appPocketInventory_json.rsp
 	cd /d C:\Users\Coding\Desktop\Qt6\PocketInventory && call C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmllint.exe @C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmllint/appPocketInventory_json.rsp
 

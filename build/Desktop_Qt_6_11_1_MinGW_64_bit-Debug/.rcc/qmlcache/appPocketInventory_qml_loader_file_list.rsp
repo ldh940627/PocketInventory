@@ -27,3 +27,7 @@ C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit
 /qt/qml/PocketInventory/Pages/InventoryPage.qml
 /qt/qml/PocketInventory/Pages/HistoryPage.qml
 /qt/qml/PocketInventory/components/HistoryRowDelegate.qml
+/qt/qml/PocketInventory/components/StockAdjustDialog.qml
+/qt/qml/PocketInventory/components/InventoryToolbar.qml
+/qt/qml/PocketInventory/components/InventoryTable.qml
+/qt/qml/PocketInventory/components/DeleteProductDialog.qml

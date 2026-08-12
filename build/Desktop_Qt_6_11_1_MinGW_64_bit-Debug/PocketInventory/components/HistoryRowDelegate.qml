@@ -18,9 +18,7 @@ Rectangle {
     implicitHeight: 62
 
     color:
-        mouseArea.containsMouse
-        ? theme.surfaceSoft
-        : "transparent"
+        mouseArea.containsMouse ? theme.surfaceSoft : "transparent"
 
     RowLayout {
         anchors.fill: parent
@@ -40,6 +38,8 @@ Rectangle {
 
             font.pixelSize: 14
             font.bold: true
+
+            elide: Text.ElideRight
         }
 
         Label {
@@ -49,43 +49,54 @@ Rectangle {
                 + root.newQuantity
                 + "개"
 
-            Layout.preferredWidth: 150
+            Layout.preferredWidth: 170
 
             color: theme.textPrimary
             font.pixelSize: 13
+
+            horizontalAlignment: Text.AlignHCenter
         }
 
-        Rectangle {
-            Layout.preferredWidth: 100
+        Item {
+            Layout.preferredWidth: 110
             Layout.preferredHeight: 28
 
-            radius: 14
-
-            color:
-                actionBackground(root.action)
-
-            Label {
+            Rectangle {
                 anchors.centerIn: parent
 
-                text:
-                    actionText(root.action)
+                width: 72
+                height: 24
+
+                radius: 6
 
                 color:
-                    actionColor(root.action)
+                    actionBackground(root.action)
 
-                font.pixelSize: 11
-                font.bold: true
+                Label {
+                    anchors.centerIn: parent
+
+                    text:
+                        actionText(root.action)
+
+                    color:
+                        actionColor(root.action)
+
+                    font.pixelSize: 11
+                    font.bold: true
+                }
             }
         }
 
         Label {
-            text: root.createdAt
+            text:
+                root.formatDate(root.createdAt)
 
-            Layout.preferredWidth: 170
+            Layout.preferredWidth: 130
 
             color: theme.textSecondary
-
             font.pixelSize: 12
+
+            horizontalAlignment: Text.AlignHCenter
         }
     }
 
@@ -107,6 +118,17 @@ Rectangle {
 
         color: theme.border
     }
+
+    function formatDate(dateText) {
+            const date = new Date(
+                dateText.replace(" ", "T")
+            )
+
+            return Qt.formatDateTime(
+                date,
+                "MM.dd  HH:mm"
+            )
+        }
 
     function actionText(action) {
         switch (action) {

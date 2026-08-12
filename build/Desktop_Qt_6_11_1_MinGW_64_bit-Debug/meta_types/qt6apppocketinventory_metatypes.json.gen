@@ -536,7 +536,7 @@
         "classes": [
             {
                 "className": "InventoryViewModel",
-                "lineNumber": 14,
+                "lineNumber": 13,
                 "methods": [
                     {
                         "access": "public",
@@ -552,10 +552,14 @@
                             {
                                 "name": "minimumQuantityText",
                                 "type": "QString"
+                            },
+                            {
+                                "name": "unitPriceText",
+                                "type": "QString"
                             }
                         ],
                         "index": 6,
-                        "lineNumber": 54,
+                        "lineNumber": 68,
                         "name": "addProduct",
                         "returnType": "bool"
                     },
@@ -572,7 +576,7 @@
                             }
                         ],
                         "index": 7,
-                        "lineNumber": 55,
+                        "lineNumber": 69,
                         "name": "receiveStock",
                         "returnType": "bool"
                     },
@@ -589,7 +593,7 @@
                             }
                         ],
                         "index": 8,
-                        "lineNumber": 56,
+                        "lineNumber": 70,
                         "name": "releaseStock",
                         "returnType": "bool"
                     },
@@ -602,7 +606,7 @@
                             }
                         ],
                         "index": 9,
-                        "lineNumber": 57,
+                        "lineNumber": 71,
                         "name": "increaseQuantity",
                         "returnType": "void"
                     },
@@ -615,7 +619,7 @@
                             }
                         ],
                         "index": 10,
-                        "lineNumber": 58,
+                        "lineNumber": 72,
                         "name": "decreaseQuantity",
                         "returnType": "void"
                     },
@@ -628,14 +632,14 @@
                             }
                         ],
                         "index": 11,
-                        "lineNumber": 59,
+                        "lineNumber": 73,
                         "name": "removeProduct",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 12,
-                        "lineNumber": 60,
+                        "lineNumber": 74,
                         "name": "resetFilters",
                         "returnType": "void"
                     }
@@ -647,7 +651,7 @@
                         "designable": true,
                         "final": false,
                         "index": 0,
-                        "lineNumber": 19,
+                        "lineNumber": 18,
                         "name": "products",
                         "override": false,
                         "read": "products",
@@ -659,11 +663,27 @@
                         "virtual": false
                     },
                     {
-                        "constant": false,
+                        "constant": true,
                         "designable": true,
                         "final": false,
                         "index": 1,
-                        "lineNumber": 22,
+                        "lineNumber": 20,
+                        "name": "lowStockProducts",
+                        "override": false,
+                        "read": "lowStockProducts",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QAbstractItemModel*",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "lineNumber": 23,
                         "name": "totalCount",
                         "notify": "stockSummaryChanged",
                         "override": false,
@@ -679,8 +699,8 @@
                         "constant": false,
                         "designable": true,
                         "final": false,
-                        "index": 2,
-                        "lineNumber": 23,
+                        "index": 3,
+                        "lineNumber": 25,
                         "name": "normalStockCount",
                         "notify": "stockSummaryChanged",
                         "override": false,
@@ -696,8 +716,8 @@
                         "constant": false,
                         "designable": true,
                         "final": false,
-                        "index": 3,
-                        "lineNumber": 24,
+                        "index": 4,
+                        "lineNumber": 27,
                         "name": "lowStockCount",
                         "notify": "stockSummaryChanged",
                         "override": false,
@@ -713,8 +733,25 @@
                         "constant": false,
                         "designable": true,
                         "final": false,
-                        "index": 4,
-                        "lineNumber": 27,
+                        "index": 5,
+                        "lineNumber": 29,
+                        "name": "totalInventoryValue",
+                        "notify": "stockSummaryChanged",
+                        "override": false,
+                        "read": "totalInventoryValue",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qint64",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "lineNumber": 32,
                         "name": "filteredCount",
                         "notify": "filteredCountChanged",
                         "override": false,
@@ -730,8 +767,8 @@
                         "constant": false,
                         "designable": true,
                         "final": false,
-                        "index": 5,
-                        "lineNumber": 30,
+                        "index": 7,
+                        "lineNumber": 35,
                         "name": "searchText",
                         "notify": "searchTextChanged",
                         "override": false,
@@ -748,8 +785,8 @@
                         "constant": false,
                         "designable": true,
                         "final": false,
-                        "index": 6,
-                        "lineNumber": 33,
+                        "index": 8,
+                        "lineNumber": 38,
                         "name": "stockFilter",
                         "notify": "stockFilterChanged",
                         "override": false,
@@ -761,22 +798,6 @@
                         "user": false,
                         "virtual": false,
                         "write": "setStockFilter"
-                    },
-                    {
-                        "constant": true,
-                        "designable": true,
-                        "final": false,
-                        "index": 7,
-                        "lineNumber": 35,
-                        "name": "lowStockProducts",
-                        "override": false,
-                        "read": "lowStockProducts",
-                        "required": false,
-                        "scriptable": true,
-                        "stored": true,
-                        "type": "QAbstractItemModel*",
-                        "user": false,
-                        "virtual": false
                     }
                 ],
                 "qualifiedClassName": "InventoryViewModel",
@@ -784,28 +805,28 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 66,
+                        "lineNumber": 78,
                         "name": "stockSummaryChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 1,
-                        "lineNumber": 67,
+                        "lineNumber": 80,
                         "name": "filteredCountChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 2,
-                        "lineNumber": 69,
+                        "lineNumber": 82,
                         "name": "searchTextChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 3,
-                        "lineNumber": 70,
+                        "lineNumber": 84,
                         "name": "stockFilterChanged",
                         "returnType": "void"
                     },
@@ -822,14 +843,14 @@
                             }
                         ],
                         "index": 4,
-                        "lineNumber": 72,
+                        "lineNumber": 86,
                         "name": "messageRequested",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 5,
-                        "lineNumber": 74,
+                        "lineNumber": 88,
                         "name": "historyChanged",
                         "returnType": "void"
                     }
@@ -961,7 +982,7 @@
         "classes": [
             {
                 "className": "ProductModel",
-                "lineNumber": 16,
+                "lineNumber": 18,
                 "methods": [
                     {
                         "access": "public",
@@ -973,7 +994,7 @@
                         ],
                         "index": 2,
                         "isConst": true,
-                        "lineNumber": 42,
+                        "lineNumber": 44,
                         "name": "get",
                         "returnType": "QVariantMap"
                     },
@@ -986,7 +1007,7 @@
                             }
                         ],
                         "index": 3,
-                        "lineNumber": 49,
+                        "lineNumber": 52,
                         "name": "increaseQuantity",
                         "returnType": "bool"
                     },
@@ -999,7 +1020,7 @@
                             }
                         ],
                         "index": 4,
-                        "lineNumber": 50,
+                        "lineNumber": 54,
                         "name": "decreaseQuantity",
                         "returnType": "bool"
                     },
@@ -1012,7 +1033,7 @@
                             }
                         ],
                         "index": 5,
-                        "lineNumber": 51,
+                        "lineNumber": 56,
                         "name": "removeProduct",
                         "returnType": "bool"
                     },
@@ -1026,7 +1047,7 @@
                         ],
                         "index": 6,
                         "isConst": true,
-                        "lineNumber": 53,
+                        "lineNumber": 58,
                         "name": "containsProduct",
                         "returnType": "bool"
                     }
@@ -1038,7 +1059,7 @@
                         "designable": true,
                         "final": false,
                         "index": 0,
-                        "lineNumber": 20,
+                        "lineNumber": 22,
                         "name": "count",
                         "notify": "countChanged",
                         "override": false,
@@ -1055,7 +1076,7 @@
                         "designable": true,
                         "final": false,
                         "index": 1,
-                        "lineNumber": 22,
+                        "lineNumber": 23,
                         "name": "normalStockCount",
                         "notify": "stockSummaryChanged",
                         "override": false,
@@ -1072,7 +1093,7 @@
                         "designable": true,
                         "final": false,
                         "index": 2,
-                        "lineNumber": 23,
+                        "lineNumber": 24,
                         "name": "lowStockCount",
                         "notify": "stockSummaryChanged",
                         "override": false,
@@ -1090,14 +1111,14 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 62,
+                        "lineNumber": 70,
                         "name": "countChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 1,
-                        "lineNumber": 63,
+                        "lineNumber": 71,
                         "name": "stockSummaryChanged",
                         "returnType": "void"
                     }

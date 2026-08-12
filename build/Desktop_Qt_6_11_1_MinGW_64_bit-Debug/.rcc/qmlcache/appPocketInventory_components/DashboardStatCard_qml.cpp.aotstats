@@ -10,7 +10,7 @@
                             "column": 13,
                             "durationMicroseconds": 0,
                             "functionName": "radius",
-                            "line": 19,
+                            "line": 20,
                             "message": ""
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 12,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 20,
+                            "line": 22,
                             "message": ""
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 23,
+                            "line": 25,
                             "message": ""
                         },
                         {
@@ -34,7 +34,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 26,
+                            "line": 28,
                             "message": ""
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 32,
+                            "line": 38,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 34,
+                            "line": 40,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -58,7 +58,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 42,
+                            "line": 55,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -66,7 +66,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 44,
+                            "line": 57,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -74,23 +74,31 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 51,
+                            "line": 64,
                             "message": "Could not find property \"text\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 21,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 67,
+                            "message": "Could not find property \"visible\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 53,
+                            "line": 69,
                             "message": "Could not find property \"color\"."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 35,
+                            "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 56,
+                            "line": 74,
                             "message": ""
                         },
                         {
@@ -98,7 +106,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 69,
+                            "line": 92,
                             "message": ""
                         }
                     ],

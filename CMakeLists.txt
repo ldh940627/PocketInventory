@@ -51,6 +51,10 @@ qt_add_qml_module(appPocketInventory
         QML_FILES Pages/InventoryPage.qml
         QML_FILES Pages/HistoryPage.qml
         QML_FILES components/HistoryRowDelegate.qml
+        QML_FILES components/StockAdjustDialog.qml
+        QML_FILES components/InventoryToolbar.qml
+        QML_FILES components/InventoryTable.qml
+        QML_FILES components/DeleteProductDialog.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

@@ -127,18 +127,18 @@
                         },
                         {
                             "codegenResult": 0,
-                            "column": 13,
+                            "column": 28,
                             "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 111,
+                            "functionName": "right",
+                            "line": 110,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 13,
+                            "column": 29,
                             "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 114,
+                            "functionName": "bottom",
+                            "line": 111,
                             "message": ""
                         }
                     ],

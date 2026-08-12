@@ -38,6 +38,9 @@ QVariant ProductModel::data(const QModelIndex &index, int role) const
     case MinimumQuantityRole:
         return product.minimumQuantity;
 
+    case UnitPriceRole:
+        return product.unitPrice;
+
     default:
         return {};
     }
@@ -71,6 +74,10 @@ QVariantMap ProductModel::get(int index) const
         {
             QStringLiteral("minimumQuantity"),
             product.minimumQuantity
+        },
+        {
+            QStringLiteral("unitPrice"),
+            product.unitPrice
         }
     };
 }
@@ -87,7 +94,7 @@ void ProductModel::setProducts(const QList<Product> &products)
 
 }
 
-bool ProductModel::addProduct(int id, const QString &name, int quantity, int minimumQuantity)
+bool ProductModel::addProduct(int id, const QString &name, int quantity, int minimumQuantity, int unitPrice)
 {
     const QString normalizedName = name.trimmed();
 
@@ -95,7 +102,7 @@ bool ProductModel::addProduct(int id, const QString &name, int quantity, int min
         return false;
     if(normalizedName.isEmpty())
         return false;
-    if(quantity < 0 || minimumQuantity < 0)
+    if(quantity < 0 || minimumQuantity < 0 || unitPrice < 0)
         return false;
 
     if(containsProduct(normalizedName))
@@ -105,11 +112,12 @@ bool ProductModel::addProduct(int id, const QString &name, int quantity, int min
 
     beginInsertRows(QModelIndex(), newIndex, newIndex);
 
-    m_products.append({id, normalizedName, quantity, minimumQuantity});
+    m_products.append({id, normalizedName, quantity, minimumQuantity, unitPrice});
 
     endInsertRows();
 
     emit countChanged();
+
     emit stockSummaryChanged();
 
     return true;
@@ -232,6 +240,18 @@ int ProductModel::lowStockCount() const
     return lowCount;
 }
 
+qint64 ProductModel::totalInventoryValue() const
+{
+    qint64 totalValue = 0;
+
+    for(const Product &product : m_products){
+        totalValue += static_cast<qint64>(product.quantity) * static_cast<qint64>(product.unitPrice);
+    }
+
+    return totalValue;
+
+}
+
 Product ProductModel::productAt(int index) const
 {
     if(!isValidIndex(index))
@@ -258,6 +278,10 @@ QHash<int, QByteArray> ProductModel::roleNames() const
       {
         MinimumQuantityRole,
         "minimumQuantity"
+      },
+      {
+        UnitPriceRole,
+        "unitPrice"
       }
     };
 }

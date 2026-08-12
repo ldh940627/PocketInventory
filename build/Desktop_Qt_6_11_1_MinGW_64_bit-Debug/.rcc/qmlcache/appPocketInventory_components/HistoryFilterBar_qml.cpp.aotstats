@@ -10,7 +10,31 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "implicitHeight",
-                            "line": 10,
+                            "line": 14,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 13,
+                            "durationMicroseconds": 0,
+                            "functionName": "radius",
+                            "line": 16,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 12,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 18,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 19,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 21,
                             "message": ""
                         },
                         {
@@ -18,264 +42,104 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 18,
+                            "line": 26,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 32,
                             "durationMicroseconds": 0,
-                            "functionName": "onSearchRequested",
-                            "line": 34,
-                            "message": "Type HistoryFilterBar::historyViewModel with type QVariant does not have a property searchText for writing"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 32,
-                            "durationMicroseconds": 0,
-                            "functionName": "onSearchRequested",
-                            "line": 34,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClearRequested",
-                            "line": 39,
-                            "message": "Cannot retrieve a non-object type by ID: fromDateField"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 21,
-                            "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 69,
-                            "message": "Could not find property \"checked\"."
+                            "functionName": "onTextChanged",
+                            "line": 56,
+                            "message": "Could not find signal \"textChanged\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 28,
                             "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 72,
-                            "message": "Could not find signal \"clicked\"."
+                            "functionName": "color",
+                            "line": 63,
+                            "message": "Cannot access value for name theme"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 21,
+                            "column": 25,
                             "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 83,
-                            "message": "Could not find property \"checked\"."
+                            "functionName": "color",
+                            "line": 68,
+                            "message": "Cannot access value for name searchField"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
+                            "column": 24,
                             "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 86,
-                            "message": "Could not find signal \"clicked\"."
+                            "functionName": "model",
+                            "line": 88,
+                            "message": "Could not find property \"model\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 21,
+                            "column": 30,
                             "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 97,
-                            "message": "Could not find property \"checked\"."
+                            "functionName": "onActivated",
+                            "line": 98,
+                            "message": "Could not find signal \"activated\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
+                            "column": 24,
                             "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 100,
-                            "message": "Could not find signal \"clicked\"."
+                            "functionName": "model",
+                            "line": 141,
+                            "message": "Could not find property \"model\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 21,
+                            "column": 30,
                             "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 111,
-                            "message": "Could not find property \"checked\"."
+                            "functionName": "onActivated",
+                            "line": 149,
+                            "message": "Could not find signal \"activated\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
+                            "column": 24,
                             "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 114,
-                            "message": "Could not find signal \"clicked\"."
+                            "functionName": "model",
+                            "line": 183,
+                            "message": "Could not find property \"model\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 21,
+                            "column": 30,
                             "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 125,
-                            "message": "Could not find property \"checked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 128,
-                            "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 21,
-                            "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 139,
-                            "message": "Could not find property \"checked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 142,
-                            "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 21,
-                            "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 153,
-                            "message": "Could not find property \"checked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 156,
-                            "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 21,
-                            "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 185,
-                            "message": "Could not find property \"checked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
+                            "functionName": "onActivated",
                             "line": 188,
-                            "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 21,
-                            "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 198,
-                            "message": "Could not find property \"checked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 201,
-                            "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 21,
-                            "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 211,
-                            "message": "Could not find property \"checked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 214,
-                            "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 21,
-                            "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 224,
-                            "message": "Could not find property \"checked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 227,
-                            "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 266,
-                            "message": "Could not find signal \"clicked\"."
+                            "message": "Could not find signal \"activated\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 17,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 277,
-                            "message": "Could not find property \"visible\"."
+                            "line": 211,
+                            "message": "Cannot retrieve a non-object type by ID: dateCombo"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 21,
+                            "column": 24,
                             "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 308,
-                            "message": "Could not find property \"checked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 311,
-                            "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 21,
-                            "durationMicroseconds": 0,
-                            "functionName": "checked",
-                            "line": 322,
-                            "message": "Could not find property \"checked\"."
+                            "functionName": "color",
+                            "line": 225,
+                            "message": "Could not find property \"color\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 325,
+                            "line": 242,
                             "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 17,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 338,
-                            "message": "Could not find property \"text\"."
                         }
                     ],
                     "filePath": "C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryFilterBar.qml"

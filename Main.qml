@@ -107,14 +107,12 @@ ApplicationWindow {
     AppToast {
         id: toastMessage
 
-        anchors.horizontalCenter:
-            parent.horizontalCenter
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
 
-        anchors.top:
-            parent.top
+            anchors.rightMargin: 24
+            anchors.bottomMargin: 24
 
-        anchors.topMargin: 72
-
-        z: 1000
+            z: 1000
     }
 }

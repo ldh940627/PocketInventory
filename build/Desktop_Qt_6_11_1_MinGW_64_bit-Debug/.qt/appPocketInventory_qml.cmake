@@ -48,6 +48,14 @@ set(src_and_dest_list
     "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/Pages/HistoryPage.qml"
     "C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryRowDelegate.qml"
     "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/components/HistoryRowDelegate.qml"
+    "C:/Users/Coding/Desktop/Qt6/PocketInventory/components/StockAdjustDialog.qml"
+    "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/components/StockAdjustDialog.qml"
+    "C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryToolbar.qml"
+    "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/components/InventoryToolbar.qml"
+    "C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryTable.qml"
+    "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/components/InventoryTable.qml"
+    "C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DeleteProductDialog.qml"
+    "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/components/DeleteProductDialog.qml"
 
 )
 set(timestamp_file "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/appPocketInventory_qml.txt")

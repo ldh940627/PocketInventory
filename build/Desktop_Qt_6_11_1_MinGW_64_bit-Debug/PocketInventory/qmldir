@@ -24,5 +24,9 @@ ProductDialog 254.0 components/ProductDialog.qml
 InventoryPage 254.0 Pages/InventoryPage.qml
 HistoryPage 254.0 Pages/HistoryPage.qml
 HistoryRowDelegate 254.0 components/HistoryRowDelegate.qml
+StockAdjustDialog 254.0 components/StockAdjustDialog.qml
+InventoryToolbar 254.0 components/InventoryToolbar.qml
+InventoryTable 254.0 components/InventoryTable.qml
+DeleteProductDialog 254.0 components/DeleteProductDialog.qml
 depends QtQuick
 

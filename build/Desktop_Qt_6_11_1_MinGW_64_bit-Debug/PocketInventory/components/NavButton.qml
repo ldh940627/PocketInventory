@@ -6,7 +6,6 @@ Button {
     id: root
 
     property bool selected: false
-    property string iconText: ""
 
     Layout.fillWidth: true
 
@@ -43,21 +42,10 @@ Button {
     }
 
     contentItem: RowLayout {
-        spacing: 12
+        spacing: 0
 
         Item {
-            Layout.preferredWidth: 8
-        }
-
-        Label {
-            text: root.iconText
-
-            color:
-                root.selected
-                ? "white"
-                : "#9CA3AF"
-
-            font.pixelSize: 16
+            Layout.preferredWidth: 16
         }
 
         Label {

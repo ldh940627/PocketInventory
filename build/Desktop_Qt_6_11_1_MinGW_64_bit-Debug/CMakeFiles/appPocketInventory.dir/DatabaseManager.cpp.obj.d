@@ -358,6 +358,7 @@ CMakeFiles/appPocketInventory.dir/DatabaseManager.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qdeadlinetimer.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qnativeinterface.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QDebug \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QDir \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qdir.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qdirlisting.h \

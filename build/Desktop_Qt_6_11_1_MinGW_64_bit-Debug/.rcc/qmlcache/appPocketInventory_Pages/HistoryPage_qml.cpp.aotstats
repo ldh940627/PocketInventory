@@ -7,10 +7,10 @@
                     "entries": [
                         {
                             "codegenResult": 0,
-                            "column": 13,
+                            "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 24,
+                            "line": 23,
                             "message": ""
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 22,
                             "durationMicroseconds": 0,
                             "functionName": "spacing",
-                            "line": 35,
+                            "line": 34,
                             "message": ""
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 30,
+                            "line": 29,
                             "message": ""
                         },
                         {
@@ -58,7 +58,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 52,
+                            "line": 51,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -66,7 +66,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 61,
+                            "line": 59,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -74,7 +74,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "historyViewModel",
-                            "line": 73,
+                            "line": 71,
                             "message": ""
                         },
                         {
@@ -82,7 +82,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 85,
+                            "line": 83,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -90,23 +90,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 89,
-                            "message": "Could not find property \"color\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 25,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 101,
-                            "message": "Could not find property \"text\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 105,
+                            "line": 87,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -114,7 +98,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "radius",
-                            "line": 118,
+                            "line": 106,
                             "message": ""
                         },
                         {
@@ -122,7 +106,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 120,
+                            "line": 108,
                             "message": ""
                         },
                         {
@@ -130,7 +114,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 123,
+                            "line": 111,
                             "message": ""
                         },
                         {
@@ -138,7 +122,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 128,
+                            "line": 116,
                             "message": ""
                         },
                         {
@@ -146,7 +130,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 140,
+                            "line": 128,
                             "message": ""
                         },
                         {
@@ -154,7 +138,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 143,
+                            "line": 131,
                             "message": ""
                         },
                         {
@@ -162,7 +146,7 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 159,
+                            "line": 147,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -170,31 +154,55 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 170,
+                            "line": 158,
                             "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 54,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 160,
+                            "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 181,
+                            "line": 171,
                             "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 54,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 173,
+                            "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 192,
+                            "line": 184,
                             "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 54,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 186,
+                            "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
                             "codegenResult": 0,
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 203,
+                            "line": 197,
                             "message": ""
                         },
                         {
@@ -202,7 +210,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 197,
+                            "line": 191,
                             "message": ""
                         },
                         {
@@ -210,7 +218,7 @@
                             "column": 44,
                             "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 198,
+                            "line": 192,
                             "message": ""
                         },
                         {
@@ -218,7 +226,7 @@
                             "column": 45,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 199,
+                            "line": 193,
                             "message": ""
                         },
                         {
@@ -226,7 +234,7 @@
                             "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 223,
+                            "line": 217,
                             "message": "Cannot load property history from HistoryPage::historyViewModel with type QVariant."
                         },
                         {
@@ -234,7 +242,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 218,
+                            "line": 212,
                             "message": ""
                         },
                         {
@@ -242,7 +250,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 227,
+                            "line": 223,
                             "message": "Cannot access value for name historyListView"
                         },
                         {
@@ -251,31 +259,63 @@
                             "durationMicroseconds": 0,
                             "functionName": "visible",
                             "line": 235,
-                            "message": "Could not find property \"visible\"."
+                            "message": "Cannot load property count from HistoryPage::historyViewModel with type QVariant."
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 33,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 238,
-                            "message": "Could not find property \"text\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 36,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 242,
-                            "message": "Could not find property \"color\"."
-                        },
-                        {
-                            "codegenResult": 2,
+                            "codegenResult": 0,
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
                             "line": 232,
-                            "message": "Could not find property \"centerIn\"."
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 37,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 244,
+                            "message": "Could not find property \"text\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 37,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 249,
+                            "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 37,
+                            "durationMicroseconds": 0,
+                            "functionName": "alignment",
+                            "line": 241,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 37,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 259,
+                            "message": "Could not find property \"visible\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 37,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 265,
+                            "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 37,
+                            "durationMicroseconds": 0,
+                            "functionName": "alignment",
+                            "line": 256,
+                            "message": ""
                         }
                     ],
                     "filePath": "C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/HistoryPage.qml"

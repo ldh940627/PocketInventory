@@ -14,15 +14,21 @@ public:
     InventoryService(const QSqlDatabase &database, ProductRepository *productRepository, HistoryRepository *historyRepository);
 
     bool increaseQuantity(const Product &product, QString *errorMessage = nullptr);
+
     bool decreaseQuantity(const Product &product, QString *errorMessage = nullptr);
+
     bool deleteProduct(const Product &product, QString *errorMessage = nullptr);
 
     bool adjustQuantity(const Product &product, int delta, const QString &action, QString *errorMessage = nullptr);
 
-    int addProduct(const QString &name, int quantity, int minimumQuantity, QString *errorMessage = nullptr);
+    int addProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, QString *errorMessage = nullptr);
+
 private:
+
     bool beginTransaction(QString *errorMessage);
+
     bool commitTransaction(QString *errorMessage);
+
     void rollbackTransaction();
 
     QSqlDatabase m_database;

@@ -6,43 +6,43 @@
                 {
                     "entries": [
                         {
-                            "codegenResult": 2,
+                            "codegenResult": 0,
                             "column": 9,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 10,
-                            "message": "Cannot retrieve a non-object type by ID: messageLabel"
+                            "line": 11,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "show",
-                            "line": 45,
+                            "line": 67,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 15,
+                            "codegenResult": 0,
+                            "column": 23,
                             "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 29,
-                            "message": "Could not find property \"text\"."
+                            "functionName": "fill",
+                            "line": 30,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 27,
+                            "column": 19,
                             "durationMicroseconds": 0,
-                            "functionName": "centerIn",
-                            "line": 27,
-                            "message": "Could not find property \"centerIn\"."
+                            "functionName": "text",
+                            "line": 47,
+                            "message": "Could not find property \"text\"."
                         },
                         {
                             "codegenResult": 0,
                             "column": 22,
-                            "durationMicroseconds": 0,
+                            "durationMicroseconds": 5000,
                             "functionName": "onTriggered",
-                            "line": 40,
+                            "line": 62,
                             "message": ""
                         }
                     ],

@@ -58,7 +58,6 @@ Rectangle {
 
         NavButton {
             text: "대시보드"
-            iconText: "▦"
 
             selected:
                 root.currentPage === 0
@@ -70,7 +69,6 @@ Rectangle {
 
         NavButton {
             text: "재고 관리"
-            iconText: "▣"
 
             selected:
                 root.currentPage === 1
@@ -82,7 +80,6 @@ Rectangle {
 
         NavButton {
             text: "변경 이력"
-            iconText: "↕"
 
             selected:
                 root.currentPage === 2

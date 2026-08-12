@@ -62,6 +62,12 @@ int InventoryViewModel::lowStockCount() const
     return m_productModel.lowStockCount();
 }
 
+qint64 InventoryViewModel::totalInventoryValue() const
+{
+    return m_productModel.totalInventoryValue();
+
+}
+
 int InventoryViewModel::filteredCount() const
 {
     return m_filterModel.count();
@@ -87,12 +93,13 @@ void InventoryViewModel::setStockFilter(const QString &stockFilter)
     m_filterModel.setStockFilter(stockFilter);
 }
 
-bool InventoryViewModel::addProduct(const QString &productNameText, const QString &productQuantityText, const QString &minimumQuantityText)
+bool InventoryViewModel::addProduct(const QString &productNameText, const QString &productQuantityText, const QString &minimumQuantityText, const QString &unitPriceText)
 {
 
     const QString productName = productNameText.trimmed();
     const QString quantityText = productQuantityText.trimmed();
     const QString minimumText = minimumQuantityText.trimmed();
+    const QString priceText = unitPriceText.trimmed();
 
     if(productName.isEmpty()){
         emit messageRequested(QStringLiteral("상품명을 입력해주세요."), QStringLiteral("red"));
@@ -109,11 +116,18 @@ bool InventoryViewModel::addProduct(const QString &productNameText, const QStrin
         return false;
     }
 
+    if(priceText.isEmpty()){
+        emit messageRequested(QStringLiteral("단가를 입력해해주세요."), QStringLiteral("red"));
+        return false;
+    }
+
     bool quantityOk = false;
     bool minimumOk = false;
+    bool priceOk = false;
 
     const int quantity = quantityText.toInt(&quantityOk);
     const int minimumQuantity = minimumText.toInt(&minimumOk);
+    const int unitPrice = priceText.toInt(&priceOk);
 
     if(!quantityOk || quantity < 0){
         emit messageRequested(QStringLiteral("현재 수량은 0 이상의 정수여야 합니다."), QStringLiteral("red"));
@@ -122,6 +136,11 @@ bool InventoryViewModel::addProduct(const QString &productNameText, const QStrin
 
     if(!minimumOk || minimumQuantity < 0){
         emit messageRequested(QStringLiteral("최소 수량은 0 이상의 정수여야 합니다."), QStringLiteral("red"));
+        return false;
+    }
+
+    if(!priceOk || unitPrice < 0){
+        emit messageRequested(QStringLiteral("단가는 0 이상의 정수여야 합니다."), QStringLiteral("red"));
         return false;
     }
 
@@ -137,14 +156,14 @@ bool InventoryViewModel::addProduct(const QString &productNameText, const QStrin
 
     QString errorMessage;
 
-    const int productId = m_inventoryService->addProduct(productName, quantity, minimumQuantity, &errorMessage);
+    const int productId = m_inventoryService->addProduct(productName, quantity, minimumQuantity, unitPrice, &errorMessage);
 
     if(productId < 0){
         emit messageRequested(QStringLiteral("상품을 저장하지 못했습니다: ") + errorMessage, QStringLiteral("red"));
         return false;
     }
 
-    if(!m_productModel.addProduct(productId, productName, quantity, minimumQuantity)){
+    if(!m_productModel.addProduct(productId, productName, quantity, minimumQuantity, unitPrice)){
         emit messageRequested(QStringLiteral("상품은 DB에 저장됐지만 " "화면 모델 갱신에 실패했습니다."), QStringLiteral("red"));
         return false;
     }

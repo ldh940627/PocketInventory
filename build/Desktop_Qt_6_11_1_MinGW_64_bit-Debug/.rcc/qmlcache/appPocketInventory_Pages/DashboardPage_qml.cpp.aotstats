@@ -121,64 +121,64 @@
                             "codegenResult": 2,
                             "column": 33,
                             "durationMicroseconds": 0,
-                            "functionName": "value",
+                            "functionName": "valueText",
                             "line": 100,
                             "message": "Cannot load property totalCount from DashboardPage::inventoryViewModel with type QVariant."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 42,
+                            "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "accentColor",
-                            "line": 104,
+                            "line": 107,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 33,
                             "durationMicroseconds": 0,
-                            "functionName": "value",
-                            "line": 114,
+                            "functionName": "valueText",
+                            "line": 117,
                             "message": "Cannot load property normalStockCount from DashboardPage::inventoryViewModel with type QVariant."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 42,
+                            "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "accentColor",
-                            "line": 118,
+                            "line": 124,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 33,
                             "durationMicroseconds": 0,
-                            "functionName": "value",
-                            "line": 128,
+                            "functionName": "valueText",
+                            "line": 134,
                             "message": "Cannot load property lowStockCount from DashboardPage::inventoryViewModel with type QVariant."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 42,
+                            "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "accentColor",
-                            "line": 132,
+                            "line": 141,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 33,
                             "durationMicroseconds": 0,
-                            "functionName": "value",
-                            "line": 142,
-                            "message": "Cannot load property totalCount from DashboardPage::historyViewModel with type QVariant."
+                            "functionName": "valueText",
+                            "line": 151,
+                            "message": "Cannot load property totalInventoryValue from DashboardPage::inventoryViewModel with type QVariant."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 42,
+                            "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "accentColor",
-                            "line": 146,
+                            "line": 162,
                             "message": ""
                         },
                         {
@@ -186,7 +186,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 161,
+                            "line": 177,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -194,7 +194,7 @@
                             "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 170,
+                            "line": 186,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -202,7 +202,7 @@
                             "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 174,
+                            "line": 190,
                             "message": "Could not find property \"visible\"."
                         },
                         {
@@ -210,7 +210,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 176,
+                            "line": 192,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -218,7 +218,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 200,
+                            "line": 216,
                             "message": ""
                         },
                         {
@@ -226,7 +226,7 @@
                             "column": 41,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 215,
+                            "line": 231,
                             "message": "Cannot load property lowStockProducts from DashboardPage::inventoryViewModel with type QVariant."
                         },
                         {
@@ -234,7 +234,7 @@
                             "column": 51,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 205,
+                            "line": 221,
                             "message": ""
                         },
                         {
@@ -242,7 +242,7 @@
                             "column": 52,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 219,
+                            "line": 235,
                             "message": "Cannot access value for name lowStockList"
                         },
                         {
@@ -250,7 +250,7 @@
                             "column": 41,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 227,
+                            "line": 243,
                             "message": "Could not find property \"visible\"."
                         },
                         {
@@ -258,7 +258,7 @@
                             "column": 44,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 232,
+                            "line": 248,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -266,7 +266,7 @@
                             "column": 55,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 224,
+                            "line": 240,
                             "message": "Could not find property \"centerIn\"."
                         },
                         {
@@ -274,7 +274,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 245,
+                            "line": 261,
                             "message": ""
                         },
                         {
@@ -282,7 +282,7 @@
                             "column": 41,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 260,
+                            "line": 276,
                             "message": "Cannot load property recentHistory from DashboardPage::historyViewModel with type QVariant."
                         },
                         {
@@ -290,7 +290,7 @@
                             "column": 51,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 250,
+                            "line": 266,
                             "message": ""
                         },
                         {
@@ -298,7 +298,7 @@
                             "column": 49,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 267,
+                            "line": 283,
                             "message": "Cannot access value for name recentHistoryList"
                         },
                         {
@@ -306,7 +306,7 @@
                             "column": 49,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 270,
+                            "line": 286,
                             "message": ""
                         },
                         {
@@ -314,7 +314,7 @@
                             "column": 49,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 273,
+                            "line": 289,
                             "message": ""
                         },
                         {
@@ -322,7 +322,7 @@
                             "column": 41,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 283,
+                            "line": 299,
                             "message": "Could not find property \"visible\"."
                         },
                         {
@@ -330,7 +330,7 @@
                             "column": 41,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 289,
+                            "line": 305,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -338,7 +338,7 @@
                             "column": 55,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 280,
+                            "line": 296,
                             "message": "Could not find property \"centerIn\"."
                         }
                     ],

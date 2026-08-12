@@ -9,148 +9,292 @@ Rectangle {
     required property string productName
     required property int productQuantity
     required property int minimumQuantity
+    required property int unitPrice
 
-    signal actionRequested(int proxyIndex)
+    signal receiveRequested(
+        int proxyIndex,
+        string productName,
+        int currentQuantity
+    )
+
+    signal releaseRequested(
+        int proxyIndex,
+        string productName,
+        int currentQuantity
+    )
+
+    signal deleteRequested(
+        int proxyIndex,
+        string productName
+    )
 
     AppTheme {
         id: theme
     }
 
-    implicitHeight: 62
+    implicitHeight: 58
 
     color:
-        mouseArea.containsMouse
-        ? theme.surfaceSoft
-        : "transparent"
+        hoverArea.containsMouse
+        ? theme.surfaceHover
+        : theme.surface
+
+    // ============================================================
+    // Row
+    // ============================================================
 
     RowLayout {
         anchors.fill: parent
 
-        anchors.leftMargin: 20
-        anchors.rightMargin: 20
+        anchors.leftMargin: 18
+        anchors.rightMargin: 12
 
         spacing: 12
 
-        Label {
-            text: root.productName
+        // =========================
+        // Product
+        // =========================
 
+        ColumnLayout {
             Layout.fillWidth: true
             Layout.preferredWidth: 4
 
-            color: theme.textPrimary
+            spacing: 1
 
-            font.pixelSize: 14
-            font.bold: true
+            Label {
+                Layout.fillWidth: true
+
+                text: root.productName
+
+                color: theme.textPrimary
+
+                font.pixelSize: 13
+                font.bold: true
+
+                elide: Text.ElideRight
+            }
         }
 
+        // =========================
+        // Quantity
+        // =========================
+
         Label {
+            Layout.preferredWidth: 90
+
             text:
                 root.productQuantity + "개"
 
-            Layout.preferredWidth: 90
-
             color: theme.textPrimary
 
-            font.pixelSize: 14
+            font.pixelSize: 13
             font.bold: true
+
+            horizontalAlignment:
+                Text.AlignHCenter
         }
 
+        // =========================
+        // Minimum
+        // =========================
+
         Label {
+            Layout.preferredWidth: 90
+
             text:
                 root.minimumQuantity + "개"
 
-            Layout.preferredWidth: 90
-
             color: theme.textSecondary
 
-            font.pixelSize: 13
+            font.pixelSize: 12
+
+            horizontalAlignment:
+                Text.AlignHCenter
         }
 
-        RowLayout {
-            Layout.preferredWidth: 90
+        // =========================
+        // Price
+        // =========================
 
-            spacing: 6
+        Label {
+            Layout.preferredWidth: 110
+
+            text: Number(root.unitPrice).toLocaleString(Qt.locale("ko_KR"), "f", 0) + "원"
+
+            color: theme.textPrimary
+
+            font.pixelSize: 12
+
+            horizontalAlignment: Text.AlignHCenter
+        }
+
+        // =========================
+        // TotalPrice
+        // =========================
+
+        Label {
+            Layout.preferredWidth: 120
+
+            text : Number(root.productQuantity * root.unitPrice).toLocaleString(Qt.locale("ko_KR"), "f", 0) + "원"
+
+            color: theme.textPrimary
+
+            font.pixelSize: 12
+            font.bold: true
+
+            horizontalAlignment: Text.AlignHCenter
+        }
+
+        // =========================
+        // Status
+        // =========================
+
+        Item {
+            Layout.preferredWidth: 90
+            Layout.preferredHeight: 28
 
             Rectangle {
-                width: 7
-                height: 7
+                anchors.centerIn: parent
 
-                radius: 4
+                implicitWidth: statusLabel.implicitWidth + 20
+                height: 24
 
-                color:
-                    root.productQuantity
-                        <= root.minimumQuantity
-                    ? theme.danger
-                    : theme.success
-            }
-
-            Label {
-                text:
-                    root.productQuantity
-                        <= root.minimumQuantity
-                    ? "부족"
-                    : "정상"
+                radius: 6
 
                 color:
-                    root.productQuantity
-                        <= root.minimumQuantity
-                    ? theme.danger
-                    : theme.success
+                    root.productQuantity <= root.minimumQuantity
+                    ? theme.dangerSoft
+                    : theme.successSoft
 
-                font.pixelSize: 12
-                font.bold: true
+                Label {
+                    id: statusLabel
+
+                    anchors.centerIn: parent
+
+                    text:
+                        root.productQuantity <= root.minimumQuantity
+                        ? "부족"
+                        : "정상"
+
+                    color:
+                        root.productQuantity <= root.minimumQuantity
+                        ? theme.danger
+                        : theme.success
+
+                    font.pixelSize: 11
+                    font.bold: true
+                }
             }
         }
 
-        Button {
-            id: actionButton
+        // =========================
+        // Actions
+        // =========================
 
+        Item {
             Layout.preferredWidth: 36
-            Layout.preferredHeight: 34
+            Layout.preferredHeight: 36
 
-            text: "⋮"
+            Button {
+                id: actionButton
 
-            onClicked: {
-                root.actionRequested(
-                    root.index
-                )
-            }
+                anchors.fill: parent
 
-            contentItem: Text {
-                text: actionButton.text
+                text: "···"
 
-                font.pixelSize: 20
+                hoverEnabled: true
 
-                color: theme.textSecondary
+                onClicked: {
+                    actionMenu.open()
+                }
 
-                horizontalAlignment:
-                    Text.AlignHCenter
+                contentItem: Text {
+                    text: actionButton.text
 
-                verticalAlignment:
-                    Text.AlignVCenter
-            }
+                    color: theme.textSecondary
 
-            background: Rectangle {
-                radius: 7
+                    font.pixelSize: 16
+                    font.bold: true
 
-                color:
-                    actionButton.hovered
-                    ? "#F1F3F6"
-                    : "transparent"
+                    horizontalAlignment:
+                        Text.AlignHCenter
+
+                    verticalAlignment:
+                        Text.AlignVCenter
+                }
+
+                background: Rectangle {
+                    radius: 6
+
+                    color:
+                        actionButton.hovered
+                        ? theme.surfaceHover
+                        : "transparent"
+                }
+
+                Menu {
+                    id: actionMenu
+
+                    y: actionButton.height + 4
+
+                    MenuItem {
+                        text: "재고 입고"
+
+                        onTriggered: {
+                            root.receiveRequested(
+                                root.index,
+                                root.productName,
+                                root.productQuantity
+                            )
+                        }
+                    }
+
+                    MenuItem {
+                        text: "재고 출고"
+
+                        onTriggered: {
+                            root.releaseRequested(
+                                root.index,
+                                root.productName,
+                                root.productQuantity
+                            )
+                        }
+                    }
+
+                    MenuSeparator {
+                    }
+
+                    MenuItem {
+                        text: "상품 삭제"
+
+                        onTriggered: {
+                            root.deleteRequested(
+                                root.index,
+                                root.productName
+                            )
+                        }
+                    }
+                }
             }
         }
     }
 
+    // ============================================================
+    // Hover
+    // ============================================================
+
     MouseArea {
-        id: mouseArea
+        id: hoverArea
 
         anchors.fill: parent
 
         hoverEnabled: true
-
-        acceptedButtons:
-            Qt.NoButton
+        acceptedButtons: Qt.NoButton
     }
+
+    // ============================================================
+    // Separator
+    // ============================================================
 
     Rectangle {
         anchors.left: parent.left

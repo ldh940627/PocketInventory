@@ -6,17 +6,19 @@ Rectangle {
     id: root
 
     property string title: ""
-    property int value: 0
+    property string valueText: "0"
     property string unit: ""
-    property color accentColor: "#2563EB"
+
+    property color accentColor: "#4F6EF7"
 
     AppTheme {
         id: theme
     }
 
-    implicitHeight: 125
+    implicitHeight: 118
 
     radius: theme.radiusLarge
+
     color: theme.surface
 
     border.width: 1
@@ -28,32 +30,48 @@ Rectangle {
 
         spacing: 8
 
+        // =========================
+        // Title
+        // =========================
+
         Label {
             text: root.title
 
             color: theme.textSecondary
-            font.pixelSize: 13
+
+            font.pixelSize: 12
         }
 
+        // =========================
+        // Value
+        // =========================
+
         RowLayout {
+            Layout.fillWidth: true
+
             spacing: 4
 
             Label {
-                text: root.value
+                text: root.valueText
 
                 color: theme.textPrimary
 
-                font.pixelSize: 28
+                font.pixelSize: 26
                 font.bold: true
             }
 
             Label {
                 text: root.unit
 
-                color: theme.textSecondary
-                font.pixelSize: 14
+                visible:
+                    root.unit !== ""
 
-                Layout.alignment: Qt.AlignBottom
+                color: theme.textSecondary
+
+                font.pixelSize: 12
+
+                Layout.alignment:
+                    Qt.AlignBottom
             }
 
             Item {
@@ -61,11 +79,16 @@ Rectangle {
             }
         }
 
+        Item {
+            Layout.fillHeight: true
+        }
+
         Rectangle {
             Layout.fillWidth: true
             Layout.preferredHeight: 3
 
             radius: 2
+
             color: root.accentColor
         }
     }

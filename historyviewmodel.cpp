@@ -36,7 +36,7 @@ int HistoryViewModel::count() const
 
 int HistoryViewModel::totalCount() const
 {
-    return m_filterModel.count();
+    return m_historyModel.count();
 }
 
 QString HistoryViewModel::searchText() const

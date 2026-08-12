@@ -23,6 +23,10 @@
     <file alias="Pages/InventoryPage.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/InventoryPage.qml</file>
     <file alias="Pages/HistoryPage.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/Pages/HistoryPage.qml</file>
     <file alias="components/HistoryRowDelegate.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/HistoryRowDelegate.qml</file>
+    <file alias="components/StockAdjustDialog.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/StockAdjustDialog.qml</file>
+    <file alias="components/InventoryToolbar.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryToolbar.qml</file>
+    <file alias="components/InventoryTable.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryTable.qml</file>
+    <file alias="components/DeleteProductDialog.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DeleteProductDialog.qml</file>
   </qresource>
 </RCC>
 

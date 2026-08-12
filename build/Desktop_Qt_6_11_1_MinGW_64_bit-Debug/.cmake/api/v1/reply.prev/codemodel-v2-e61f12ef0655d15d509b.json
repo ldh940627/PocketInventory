@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-ec316cd228168bcd15eb.json",
+					"jsonFile" : "directory-.-Debug-1e92ef8255f0a8f549dc.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -76,7 +76,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-all_aotstats-Debug-979e26b44d1760bee7cf.json",
+					"jsonFile" : "target-all_aotstats-Debug-3838f5a77b878c1e0ad3.json",
 					"name" : "all_aotstats",
 					"projectIndex" : 0
 				},
@@ -111,7 +111,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "appPocketInventory::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-appPocketInventory-Debug-439ff221d01ee8ce0875.json",
+					"jsonFile" : "target-appPocketInventory-Debug-d8d148a347678cfc46e0.json",
 					"name" : "appPocketInventory",
 					"projectIndex" : 0
 				},
@@ -125,7 +125,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "appPocketInventory_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-appPocketInventory_autogen_timestamp_deps-Debug-ad6e3418b651e3ce7baa.json",
+					"jsonFile" : "target-appPocketInventory_autogen_timestamp_deps-Debug-915246d07d1600e6b839.json",
 					"name" : "appPocketInventory_autogen_timestamp_deps",
 					"projectIndex" : 0
 				},
@@ -202,7 +202,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "module_appPocketInventory_aotstats_target::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-module_appPocketInventory_aotstats_target-Debug-efe3c43cad2aec900075.json",
+					"jsonFile" : "target-module_appPocketInventory_aotstats_target-Debug-c7ef22136084693250de.json",
 					"name" : "module_appPocketInventory_aotstats_target",
 					"projectIndex" : 0
 				}

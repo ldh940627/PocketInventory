@@ -7,261 +7,237 @@ Rectangle {
 
     required property var historyViewModel
 
-    implicitHeight: contentLayout.implicitHeight + 24
+    AppTheme {
+        id: theme
+    }
 
-    radius: 8
-    color: "#f5f5f5"
+    implicitHeight: customDateRow.visible ? 100 : 58
+
+    radius: theme.radiusMedium
+
+    color: theme.surface
+
+    border.width: 1
+    border.color: theme.border
 
     ColumnLayout {
-        id: contentLayout
+        id: mainLayout
 
         anchors.fill: parent
-        anchors.margins: 12
-        spacing: 12
+        anchors.margins: 10
 
-        // =========================
-        // 상품명 검색
-        // =========================
+        spacing: 10
 
-        SearchBar {
-            id: historySearchBar
-
-            Layout.fillWidth: true
-
-            placeholderText:
-                "이력 상품명을 검색하세요"
-
-            onSearchRequested: function(searchText) {
-                root.historyViewModel.searchText =
-                        searchText
-            }
-
-            onClearRequested: {
-                root.historyViewModel.resetFilters()
-
-                fromDateField.clear()
-                toDateField.clear()
-            }
-        }
-
-        // =========================
-        // 액션 필터
-        // =========================
+        // ====================================================
+        // Main toolbar
+        // ====================================================
 
         RowLayout {
             Layout.fillWidth: true
+
             spacing: 8
 
-            Label {
-                text: "이력 필터"
-                font.bold: true
+            // -------------------------
+            // Search
+            // -------------------------
+
+            TextField {
+                id: searchField
+
+                Layout.fillWidth: true
+                Layout.maximumWidth: 420
+                Layout.preferredHeight: 38
+
+                placeholderText: "상품명 검색"
+
+                leftPadding: 14
+                rightPadding: 14
+
+                onTextChanged: {
+                    root.historyViewModel.searchText = text
+                }
+
+                background: Rectangle {
+                    radius: 7
+
+                    color: theme.surfaceSoft
+
+                    border.width: 1
+
+                    border.color:
+                        searchField.activeFocus
+                        ? theme.primary
+                        : theme.border
+                }
             }
 
             Item {
                 Layout.fillWidth: true
             }
 
-            Button {
-                text: "전체"
-                checkable: true
+            // -------------------------
+            // Action
+            // -------------------------
 
-                checked:
-                    root.historyViewModel.actionFilter
-                    === "all"
+            ComboBox {
+                id: actionCombo
 
-                onClicked: {
-                    root.historyViewModel.actionFilter =
-                            "all"
+                Layout.preferredWidth: 110
+                Layout.preferredHeight: 38
+
+                model: [
+                    "전체 유형",
+                    "등록",
+                    "입고",
+                    "출고",
+                    "증가",
+                    "감소",
+                    "삭제"
+                ]
+
+                onActivated: {
+                    switch (currentIndex) {
+                    case 1:
+                        root.historyViewModel.actionFilter = "create"
+                        break
+
+                    case 2:
+                        root.historyViewModel.actionFilter = "purchase"
+                        break
+
+                    case 3:
+                        root.historyViewModel.actionFilter = "sale"
+                        break
+
+                    case 4:
+                        root.historyViewModel.actionFilter = "increase"
+                        break
+
+                    case 5:
+                        root.historyViewModel.actionFilter = "decrease"
+                        break
+
+                    case 6:
+                        root.historyViewModel.actionFilter = "delete"
+                        break
+
+                    default:
+                        root.historyViewModel.actionFilter = "all"
+                        break
+                    }
                 }
             }
 
-            Button {
-                text: "입고"
-                checkable: true
+            // -------------------------
+            // Date
+            // -------------------------
 
-                checked:
-                    root.historyViewModel.actionFilter
-                    === "purchase"
+            ComboBox {
+                id: dateCombo
 
-                onClicked: {
-                    root.historyViewModel.actionFilter =
-                            "purchase"
+                Layout.preferredWidth: 110
+                Layout.preferredHeight: 38
+
+                model: [
+                    "전체 기간",
+                    "오늘",
+                    "최근 7일",
+                    "최근 30일",
+                    "직접 지정"
+                ]
+
+                onActivated: {
+                    switch (currentIndex) {
+                    case 1:
+                        root.historyViewModel.showToday()
+                        break
+
+                    case 2:
+                        root.historyViewModel.showLast7Days()
+                        break
+
+                    case 3:
+                        root.historyViewModel.showLast30Days()
+                        break
+
+                    case 4:
+                        break
+
+                    default:
+                        root.historyViewModel.showAllDates()
+                        break
+                    }
                 }
             }
 
-            Button {
-                text: "출고"
-                checkable: true
+            // -------------------------
+            // Sort
+            // -------------------------
 
-                checked:
-                    root.historyViewModel.actionFilter
-                    === "sale"
+            ComboBox {
+                id: sortCombo
 
-                onClicked: {
-                    root.historyViewModel.actionFilter =
-                            "sale"
-                }
-            }
+                Layout.preferredWidth: 105
+                Layout.preferredHeight: 38
 
-            Button {
-                text: "등록"
-                checkable: true
+                model: [
+                    "최신순",
+                    "오래된순"
+                ]
 
-                checked:
-                    root.historyViewModel.actionFilter
-                    === "create"
-
-                onClicked: {
-                    root.historyViewModel.actionFilter =
-                            "create"
-                }
-            }
-
-            Button {
-                text: "증가"
-                checkable: true
-
-                checked:
-                    root.historyViewModel.actionFilter
-                    === "increase"
-
-                onClicked: {
-                    root.historyViewModel.actionFilter =
-                            "increase"
-                }
-            }
-
-            Button {
-                text: "감소"
-                checkable: true
-
-                checked:
-                    root.historyViewModel.actionFilter
-                    === "decrease"
-
-                onClicked: {
-                    root.historyViewModel.actionFilter =
-                            "decrease"
-                }
-            }
-
-            Button {
-                text: "삭제"
-                checkable: true
-
-                checked:
-                    root.historyViewModel.actionFilter
-                    === "delete"
-
-                onClicked: {
-                    root.historyViewModel.actionFilter =
-                            "delete"
-                }
-            }
-        }
-
-        // =========================
-        // 기간 프리셋
-        // =========================
-
-        RowLayout {
-            Layout.fillWidth: true
-            spacing: 8
-
-            Label {
-                text: "기간"
-                font.bold: true
-            }
-
-            Item {
-                Layout.fillWidth: true
-            }
-
-            Button {
-                text: "전체"
-                checkable: true
-
-                checked:
-                    root.historyViewModel.datePreset
-                    === "all"
-
-                onClicked: {
-                    root.historyViewModel.showAllDates()
-                }
-            }
-
-            Button {
-                text: "오늘"
-                checkable: true
-
-                checked:
-                    root.historyViewModel.datePreset
-                    === "today"
-
-                onClicked: {
-                    root.historyViewModel.showToday()
-                }
-            }
-
-            Button {
-                text: "7일"
-                checkable: true
-
-                checked:
-                    root.historyViewModel.datePreset
-                    === "7days"
-
-                onClicked: {
-                    root.historyViewModel.showLast7Days()
-                }
-            }
-
-            Button {
-                text: "30일"
-                checkable: true
-
-                checked:
-                    root.historyViewModel.datePreset
-                    === "30days"
-
-                onClicked: {
-                    root.historyViewModel.showLast30Days()
+                onActivated: {
+                    if (currentIndex === 0)
+                        root.historyViewModel.sortNewestFirst()
+                    else
+                        root.historyViewModel.sortOldestFirst()
                 }
             }
         }
 
-        // =========================
-        // 직접 날짜 지정
-        // =========================
+        // ====================================================
+        // Custom date
+        // 직접 지정 선택 시에만 나타남
+        // ====================================================
 
         RowLayout {
+
+            id: customDateRow
+
             Layout.fillWidth: true
+
             spacing: 8
+
+            visible:
+                dateCombo.currentIndex === 4
 
             TextField {
                 id: fromDateField
 
-                Layout.fillWidth: true
+                Layout.preferredWidth: 150
+                Layout.preferredHeight: 36
 
-                placeholderText:
-                    "시작일 yyyy-MM-dd"
+                placeholderText: "2026-08-01"
             }
 
             Label {
-                text: "~"
+                text: "–"
+
+                color: theme.textMuted
             }
 
             TextField {
                 id: toDateField
 
-                Layout.fillWidth: true
+                Layout.preferredWidth: 150
+                Layout.preferredHeight: 36
 
-                placeholderText:
-                    "종료일 yyyy-MM-dd"
+                placeholderText: "2026-08-12"
             }
 
             Button {
                 text: "적용"
+
+                implicitHeight: 36
 
                 onClicked: {
                     root.historyViewModel.setDateRange(
@@ -270,76 +246,10 @@ Rectangle {
                     )
                 }
             }
-        }
-
-        Label {
-            visible:
-                root.historyViewModel.datePreset
-                === "custom"
-
-            text: "직접 지정 기간 적용 중"
-
-            color: "gray"
-            font.pixelSize: 12
-        }
-
-        // =========================
-        // 정렬
-        // =========================
-
-        RowLayout {
-            Layout.fillWidth: true
-            spacing: 8
-
-            Label {
-                text: "정렬"
-                font.bold: true
-            }
 
             Item {
                 Layout.fillWidth: true
             }
-
-            Button {
-                text: "최신순"
-                checkable: true
-
-                checked:
-                    root.historyViewModel.sortOrder
-                    === "newest"
-
-                onClicked: {
-                    root.historyViewModel
-                        .sortNewestFirst()
-                }
-            }
-
-            Button {
-                text: "오래된순"
-                checkable: true
-
-                checked:
-                    root.historyViewModel.sortOrder
-                    === "oldest"
-
-                onClicked: {
-                    root.historyViewModel
-                        .sortOldestFirst()
-                }
-            }
-        }
-
-        // =========================
-        // 결과
-        // =========================
-
-        Label {
-            text:
-                "검색 결과: "
-                + root.historyViewModel.count
-                + "건"
-
-            color: "gray"
         }
     }
 }
