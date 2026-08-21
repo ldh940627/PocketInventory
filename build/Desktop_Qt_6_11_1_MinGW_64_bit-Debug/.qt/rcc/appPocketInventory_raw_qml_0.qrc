@@ -27,6 +27,7 @@
     <file alias="components/InventoryToolbar.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryToolbar.qml</file>
     <file alias="components/InventoryTable.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryTable.qml</file>
     <file alias="components/DeleteProductDialog.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DeleteProductDialog.qml</file>
+    <file alias="components/EditProductDialog.qml">C:/Users/Coding/Desktop/Qt6/PocketInventory/components/EditProductDialog.qml</file>
   </qresource>
 </RCC>
 

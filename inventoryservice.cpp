@@ -1,8 +1,81 @@
 #include "inventoryservice.h"
 #include <QSqlError>
+#include <QStringList>
 
 InventoryService::InventoryService(const QSqlDatabase &database, ProductRepository *productRepository, HistoryRepository *historyRepository) : m_database(database), m_productRepository(productRepository), m_historyRepository(historyRepository)
 {
+
+}
+
+bool InventoryService::updateProduct(const Product &product, const QString &name, int minimumQuantity, int unitPrice, QString *errorMessage)
+{
+    if(!m_productRepository || !m_historyRepository){
+        if(errorMessage)
+            *errorMessage = QStringLiteral("Repository가 연결되지 않았습니다.");
+        return false;
+    }
+
+    const QString trimmedName = name.trimmed();
+
+    if(trimmedName.isEmpty()){
+        if(errorMessage)
+            *errorMessage = QStringLiteral("상품명을 입력해주세요.");
+        return false;
+    }
+
+    if(minimumQuantity < 0){
+        if(errorMessage)
+            *errorMessage = QStringLiteral("최소 재고는 0 이상이어야 합니다.");
+        return false;
+    }
+
+    if(unitPrice < 0){
+        if(errorMessage)
+            *errorMessage = QStringLiteral("단가는 0 이상이어야 합니다.");
+        return false;
+    }
+
+    QStringList changes;
+
+    if(product.name != trimmedName)
+        changes.append(QStringLiteral("상품명: %1 → %2").arg(product.name, trimmedName));
+
+    if(product.minimumQuantity != minimumQuantity)
+        changes.append(QStringLiteral("최소 재고: %1 → %2").arg(product.minimumQuantity).arg(minimumQuantity));
+
+    if(product.unitPrice != unitPrice)
+        changes.append(QStringLiteral("단가: %1 → %2").arg(product.unitPrice).arg(unitPrice));
+
+    if(changes.isEmpty()){
+        if(errorMessage)
+            errorMessage->clear();
+        return true;
+    }
+
+    const QString details = changes.join(QStringLiteral(" / "));
+
+    if(!beginTransaction(errorMessage))
+        return false;
+
+    if(!m_productRepository->updateProductInfo(product.id, trimmedName, minimumQuantity, unitPrice, errorMessage)){
+        rollbackTransaction();
+        return false;
+    }
+
+    if(!m_historyRepository->insertHistory(product.id, trimmedName, product.quantity, product.quantity, QStringLiteral("EDIT"), details, errorMessage)){
+        rollbackTransaction();
+        return false;
+    }
+
+    if(!commitTransaction(errorMessage)){
+        rollbackTransaction();
+        return false;
+    }
+
+    if(errorMessage)
+        errorMessage->clear();
+
+    return true;
 
 }
 

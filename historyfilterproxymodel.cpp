@@ -50,9 +50,7 @@ void HistoryFilterProxyModel::setActionFilter(const QString &actionFilter)
 {
     QString normalizedFilter = actionFilter.trimmed().toLower();
 
-    if(normalizedFilter != QStringLiteral("create") && normalizedFilter != QStringLiteral("increase")
-        && normalizedFilter != QStringLiteral("decrease") && normalizedFilter != QStringLiteral("delete")
-        && normalizedFilter != QStringLiteral("purchase") && normalizedFilter != QStringLiteral("sale")){
+    if(normalizedFilter != QStringLiteral("create") && normalizedFilter != QStringLiteral("increase") && normalizedFilter != QStringLiteral("decrease") && normalizedFilter != QStringLiteral("delete") && normalizedFilter != QStringLiteral("purchase") && normalizedFilter != QStringLiteral("sale") && normalizedFilter != QStringLiteral("edit")){
         normalizedFilter = QStringLiteral("all");
     }
 

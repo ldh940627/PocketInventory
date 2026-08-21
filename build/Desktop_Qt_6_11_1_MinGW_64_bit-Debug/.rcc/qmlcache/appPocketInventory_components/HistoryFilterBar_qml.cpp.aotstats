@@ -82,7 +82,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "onActivated",
-                            "line": 98,
+                            "line": 99,
                             "message": "Could not find signal \"activated\"."
                         },
                         {
@@ -90,7 +90,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 141,
+                            "line": 146,
                             "message": "Could not find property \"model\"."
                         },
                         {
@@ -98,7 +98,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "onActivated",
-                            "line": 149,
+                            "line": 154,
                             "message": "Could not find signal \"activated\"."
                         },
                         {
@@ -106,15 +106,15 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 183,
-                            "message": "Could not find property \"model\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 30,
-                            "durationMicroseconds": 0,
-                            "functionName": "onActivated",
                             "line": 188,
+                            "message": "Could not find property \"model\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "onActivated",
+                            "line": 193,
                             "message": "Could not find signal \"activated\"."
                         },
                         {
@@ -122,7 +122,7 @@
                             "column": 17,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 211,
+                            "line": 216,
                             "message": "Cannot retrieve a non-object type by ID: dateCombo"
                         },
                         {
@@ -130,7 +130,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 225,
+                            "line": 230,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -138,7 +138,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 242,
+                            "line": 247,
                             "message": "Could not find signal \"clicked\"."
                         }
                     ],

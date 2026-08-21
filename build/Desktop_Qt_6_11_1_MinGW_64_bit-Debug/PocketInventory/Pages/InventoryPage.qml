@@ -149,6 +149,27 @@ Item {
                     }
 
                 // ------------------------------------------------
+                // 수정
+                // ------------------------------------------------
+
+                onEditRequested:
+                    function(
+                        proxyIndex,
+                        productName,
+                        currentQuantity,
+                        minimumQuantity,
+                        unitPrice
+                    ){
+                        editProductDialog.openEdit(
+                            proxyIndex,
+                            productName,
+                            currentQuantity,
+                            minimumQuantity,
+                            unitPrice
+                        )
+                    }
+
+                // ------------------------------------------------
                 // 삭제
                 // ------------------------------------------------
 
@@ -173,8 +194,7 @@ Item {
     ProductDialog {
         id: productDialog
 
-        inventoryViewModel:
-            root.inventoryViewModel
+        inventoryViewModel: root.inventoryViewModel
     }
 
     // ============================================================
@@ -185,8 +205,17 @@ Item {
     StockAdjustDialog {
         id: stockAdjustDialog
 
-        inventoryViewModel:
-            root.inventoryViewModel
+        inventoryViewModel: root.inventoryViewModel
+    }
+
+    // ============================================================
+    // Edit Product Dialog
+    // ============================================================
+
+    EditProductDialog{
+        id: editProductDialog
+
+        inventoryViewModel: root.inventoryViewModel
     }
 
     // ============================================================
@@ -196,7 +225,6 @@ Item {
     DeleteProductDialog {
         id: deleteDialog
 
-        inventoryViewModel:
-            root.inventoryViewModel
+        inventoryViewModel: root.inventoryViewModel
     }
 }

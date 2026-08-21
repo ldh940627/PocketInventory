@@ -13,6 +13,8 @@ class InventoryService
 public:
     InventoryService(const QSqlDatabase &database, ProductRepository *productRepository, HistoryRepository *historyRepository);
 
+    bool updateProduct(const Product &product, const QString &name, int minimumQuantity, int unitPrice, QString *errorMessage = nullptr);
+
     bool increaseQuantity(const Product &product, QString *errorMessage = nullptr);
 
     bool decreaseQuantity(const Product &product, QString *errorMessage = nullptr);

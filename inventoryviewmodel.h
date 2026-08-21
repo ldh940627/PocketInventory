@@ -66,6 +66,7 @@ public:
     void setStockFilter(const QString &stockFilter);
 
     Q_INVOKABLE bool addProduct(const QString &productNameText, const QString &productQuantityText, const QString &minimumQuantityText, const QString &unitPriceText);
+    Q_INVOKABLE bool updateProduct(int proxyIndex, const QString &productNameText, const QString &minimumQuantityText, const QString &unitPriceText);
     Q_INVOKABLE bool receiveStock(int proxyIndex, const QString &quantityText);
     Q_INVOKABLE bool releaseStock(int proxyIndex, const QString &quantityText);
     Q_INVOKABLE void increaseQuantity(int proxyIndex);

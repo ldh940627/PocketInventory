@@ -53,8 +53,9 @@ template <> constexpr inline auto InventoryViewModel::qt_create_metaobjectdata<q
         "productQuantityText",
         "minimumQuantityText",
         "unitPriceText",
-        "receiveStock",
+        "updateProduct",
         "proxyIndex",
+        "receiveStock",
         "quantityText",
         "releaseStock",
         "increaseQuantity",
@@ -92,48 +93,52 @@ template <> constexpr inline auto InventoryViewModel::qt_create_metaobjectdata<q
         QtMocHelpers::MethodData<bool(const QString &, const QString &, const QString &, const QString &)>(10, 2, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::QString, 11 }, { QMetaType::QString, 12 }, { QMetaType::QString, 13 }, { QMetaType::QString, 14 },
         }}),
+        // Method 'updateProduct'
+        QtMocHelpers::MethodData<bool(int, const QString &, const QString &, const QString &)>(15, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 16 }, { QMetaType::QString, 11 }, { QMetaType::QString, 13 }, { QMetaType::QString, 14 },
+        }}),
         // Method 'receiveStock'
-        QtMocHelpers::MethodData<bool(int, const QString &)>(15, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 16 }, { QMetaType::QString, 17 },
+        QtMocHelpers::MethodData<bool(int, const QString &)>(17, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 16 }, { QMetaType::QString, 18 },
         }}),
         // Method 'releaseStock'
-        QtMocHelpers::MethodData<bool(int, const QString &)>(18, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 16 }, { QMetaType::QString, 17 },
+        QtMocHelpers::MethodData<bool(int, const QString &)>(19, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 16 }, { QMetaType::QString, 18 },
         }}),
         // Method 'increaseQuantity'
-        QtMocHelpers::MethodData<void(int)>(19, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 16 },
-        }}),
-        // Method 'decreaseQuantity'
         QtMocHelpers::MethodData<void(int)>(20, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 16 },
         }}),
-        // Method 'removeProduct'
+        // Method 'decreaseQuantity'
         QtMocHelpers::MethodData<void(int)>(21, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 16 },
         }}),
+        // Method 'removeProduct'
+        QtMocHelpers::MethodData<void(int)>(22, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 16 },
+        }}),
         // Method 'resetFilters'
-        QtMocHelpers::MethodData<void()>(22, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(23, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'products'
-        QtMocHelpers::PropertyData<QAbstractItemModel*>(23, 0x80000000 | 24, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
+        QtMocHelpers::PropertyData<QAbstractItemModel*>(24, 0x80000000 | 25, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
         // property 'lowStockProducts'
-        QtMocHelpers::PropertyData<QAbstractItemModel*>(25, 0x80000000 | 24, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
+        QtMocHelpers::PropertyData<QAbstractItemModel*>(26, 0x80000000 | 25, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
         // property 'totalCount'
-        QtMocHelpers::PropertyData<int>(26, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
-        // property 'normalStockCount'
         QtMocHelpers::PropertyData<int>(27, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
-        // property 'lowStockCount'
+        // property 'normalStockCount'
         QtMocHelpers::PropertyData<int>(28, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
+        // property 'lowStockCount'
+        QtMocHelpers::PropertyData<int>(29, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
         // property 'totalInventoryValue'
-        QtMocHelpers::PropertyData<qint64>(29, QMetaType::LongLong, QMC::DefaultPropertyFlags, 0),
+        QtMocHelpers::PropertyData<qint64>(30, QMetaType::LongLong, QMC::DefaultPropertyFlags, 0),
         // property 'filteredCount'
-        QtMocHelpers::PropertyData<int>(30, QMetaType::Int, QMC::DefaultPropertyFlags, 1),
+        QtMocHelpers::PropertyData<int>(31, QMetaType::Int, QMC::DefaultPropertyFlags, 1),
         // property 'searchText'
-        QtMocHelpers::PropertyData<QString>(31, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 2),
+        QtMocHelpers::PropertyData<QString>(32, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 2),
         // property 'stockFilter'
-        QtMocHelpers::PropertyData<QString>(32, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 3),
+        QtMocHelpers::PropertyData<QString>(33, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 3),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -163,14 +168,16 @@ void InventoryViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 5: _t->historyChanged(); break;
         case 6: { bool _r = _t->addProduct((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 7: { bool _r = _t->receiveStock((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])));
+        case 7: { bool _r = _t->updateProduct((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 8: { bool _r = _t->releaseStock((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])));
+        case 8: { bool _r = _t->receiveStock((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 9: _t->increaseQuantity((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 10: _t->decreaseQuantity((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 11: _t->removeProduct((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 12: _t->resetFilters(); break;
+        case 9: { bool _r = _t->releaseStock((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])));
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
+        case 10: _t->increaseQuantity((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 11: _t->decreaseQuantity((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 12: _t->removeProduct((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 13: _t->resetFilters(); break;
         default: ;
         }
     }
@@ -240,14 +247,14 @@ int InventoryViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 14;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 14)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 13;
+        _id -= 14;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

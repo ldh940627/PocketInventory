@@ -19,6 +19,14 @@ Rectangle {
         int currentQuantity
     )
 
+    signal editRequested(
+        int proxyIndex,
+        string productName,
+        int currentQuantity,
+        int minimumQuantity,
+        int unitPrice
+    )
+
     signal deleteRequested(
         int proxyIndex,
         string productName
@@ -201,6 +209,23 @@ Rectangle {
                                 proxyIndex,
                                 productName,
                                 currentQuantity
+                            )
+                        }
+
+                    onEditRequested:
+                        function(
+                            proxyIndex,
+                            productName,
+                            currentQuantity,
+                            minimumQuantity,
+                            unitPrice
+                        ) {
+                             root.editRequested(
+                                proxyIndex,
+                                productName,
+                                currentQuantity,
+                                minimumQuantity,
+                                unitPrice
                             )
                         }
 

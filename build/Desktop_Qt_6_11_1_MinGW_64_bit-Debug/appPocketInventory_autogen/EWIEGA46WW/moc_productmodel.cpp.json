@@ -27,7 +27,7 @@
                         }
                     ],
                     "index": 3,
-                    "lineNumber": 52,
+                    "lineNumber": 54,
                     "name": "increaseQuantity",
                     "returnType": "bool"
                 },
@@ -40,7 +40,7 @@
                         }
                     ],
                     "index": 4,
-                    "lineNumber": 54,
+                    "lineNumber": 56,
                     "name": "decreaseQuantity",
                     "returnType": "bool"
                 },
@@ -53,7 +53,7 @@
                         }
                     ],
                     "index": 5,
-                    "lineNumber": 56,
+                    "lineNumber": 58,
                     "name": "removeProduct",
                     "returnType": "bool"
                 },
@@ -67,7 +67,7 @@
                     ],
                     "index": 6,
                     "isConst": true,
-                    "lineNumber": 58,
+                    "lineNumber": 60,
                     "name": "containsProduct",
                     "returnType": "bool"
                 }
@@ -131,14 +131,14 @@
                 {
                     "access": "public",
                     "index": 0,
-                    "lineNumber": 70,
+                    "lineNumber": 74,
                     "name": "countChanged",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
                     "index": 1,
-                    "lineNumber": 71,
+                    "lineNumber": 75,
                     "name": "stockSummaryChanged",
                     "returnType": "void"
                 }

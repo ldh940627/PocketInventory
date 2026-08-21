@@ -19,7 +19,7 @@ public:
     {
         HistoryIdRole = Qt::UserRole + 1,
         ProductIdRole, ProductNameRole, OldQuantityRole, NewQuantityRole,
-        ActionRole, CreatedAtRole
+        ActionRole, DetailsRole, CreatedAtRole
     };
 
     explicit HistoryModel(QObject *parent = nullptr);

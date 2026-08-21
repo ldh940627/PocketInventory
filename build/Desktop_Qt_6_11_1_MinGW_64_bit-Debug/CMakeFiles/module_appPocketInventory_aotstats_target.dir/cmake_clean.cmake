@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   ".rcc/qmlcache/appPocketInventory_components/DashboardStatCard_qml.cpp.aotstats"
   ".rcc/qmlcache/appPocketInventory_components/DeleteProductDialog_qml.cpp"
   ".rcc/qmlcache/appPocketInventory_components/DeleteProductDialog_qml.cpp.aotstats"
+  ".rcc/qmlcache/appPocketInventory_components/EditProductDialog_qml.cpp"
+  ".rcc/qmlcache/appPocketInventory_components/EditProductDialog_qml.cpp.aotstats"
   ".rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp"
   ".rcc/qmlcache/appPocketInventory_components/FilterBar_qml.cpp.aotstats"
   ".rcc/qmlcache/appPocketInventory_components/HistoryDelegate_qml.cpp"

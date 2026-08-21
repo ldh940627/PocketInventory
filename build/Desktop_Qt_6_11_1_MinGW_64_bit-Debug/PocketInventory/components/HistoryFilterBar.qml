@@ -92,7 +92,8 @@ Rectangle {
                     "출고",
                     "증가",
                     "감소",
-                    "삭제"
+                    "삭제",
+                    "상품 수정"
                 ]
 
                 onActivated: {
@@ -119,6 +120,10 @@ Rectangle {
 
                     case 6:
                         root.historyViewModel.actionFilter = "delete"
+                        break
+
+                    case 7:
+                        root.historyViewModel.actionFilter = "edit"
                         break
 
                     default:

@@ -28,5 +28,6 @@ StockAdjustDialog 254.0 components/StockAdjustDialog.qml
 InventoryToolbar 254.0 components/InventoryToolbar.qml
 InventoryTable 254.0 components/InventoryTable.qml
 DeleteProductDialog 254.0 components/DeleteProductDialog.qml
+EditProductDialog 254.0 components/EditProductDialog.qml
 depends QtQuick
 

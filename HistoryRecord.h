@@ -14,6 +14,7 @@ struct HistoryRecord
     int newQuantity = 0;
 
     QString action;
+    QString details;
     QString createdAt;
 
 };

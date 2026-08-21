@@ -165,16 +165,16 @@ bool DatabaseManager::createTables()
 
     const QString createHistoryTable =
         QStringLiteral(
-            "CREATE TABLE IF NOT EXISTS history ("
-            "id INTEGER PRIMARY KEY AUTOINCREMENT, "
-            "product_id INTEGER NOT NULL, "
-            "product_name TEXT NOT NULL, "
-            "old_quantity INTEGER NOT NULL, "
-            "new_quantity INTEGER NOT NULL, "
-            "action TEXT NOT NULL, "
-            "created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP"
-            ")"
-            );
+        "CREATE TABLE IF NOT EXISTS history ("
+        "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+        "product_id INTEGER NOT NULL, "
+        "product_name TEXT NOT NULL, "
+        "old_quantity INTEGER NOT NULL, "
+        "new_quantity INTEGER NOT NULL, "
+        "action TEXT NOT NULL, "
+        "details TEXT NOT NULL DEFAULT '', "
+        "created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP"
+        ")");
 
 
     if(!query.exec(createHistoryTable)){
@@ -200,59 +200,32 @@ bool DatabaseManager::migrateDatabase()
 {
     QSqlQuery query(m_database);
 
-
     // ============================================================
     // 현재 products 컬럼 확인
     // ============================================================
 
-    if(!query.exec(
-            QStringLiteral(
-                "PRAGMA table_info(products)"
-                )
-            ))
+    if(!query.exec(QStringLiteral("PRAGMA table_info(products)")))
     {
-        m_lastError =
-            QStringLiteral(
-                "products 테이블 구조 확인 실패: "
-                )
-            + query.lastError().text();
+        m_lastError = QStringLiteral("products 테이블 구조 확인 실패: ") + query.lastError().text();
 
         return false;
     }
 
-
     bool hasUnitPrice = false;
 
-
-    qDebug()
-        << "===== products columns =====";
-
+    qDebug() << "===== products columns =====";
 
     while(query.next()){
 
-        // PRAGMA table_info
-        // 0 = cid
-        // 1 = name
-        // 2 = type
-        // ...
+        const QString columnName = query.value(1).toString();
 
-        const QString columnName =
-            query.value(1).toString();
+        qDebug() << columnName;
 
-
-        qDebug()
-            << columnName;
-
-
-        if(columnName.compare(
-                QStringLiteral("unit_price"),
-                Qt::CaseInsensitive
-                ) == 0)
+        if(columnName.compare(QStringLiteral("unit_price"), Qt::CaseInsensitive) == 0)
         {
             hasUnitPrice = true;
         }
     }
-
 
     // ============================================================
     // 기존 DB에 unit_price가 없다면 추가
@@ -260,54 +233,69 @@ bool DatabaseManager::migrateDatabase()
 
     if(!hasUnitPrice){
 
-        qDebug()
-        << "[Migration]"
-        << "unit_price 컬럼이 없습니다."
-        << "Migration을 시작합니다.";
+        qDebug() << "[Migration]" << "unit_price 컬럼이 없습니다." << "Migration을 시작합니다.";
 
+        QSqlQuery alterQuery(m_database);
 
-        QSqlQuery alterQuery(
-            m_database
-            );
-
-
-        const QString alterSql =
-            QStringLiteral(
+        const QString alterSql = QStringLiteral(
                 "ALTER TABLE products "
                 "ADD COLUMN unit_price "
                 "INTEGER NOT NULL DEFAULT 0"
                 );
 
-
         if(!alterQuery.exec(alterSql)){
 
-            m_lastError =
-                QStringLiteral(
-                    "unit_price 컬럼 추가 실패: "
-                    )
-                + alterQuery.lastError().text();
-
-
-            qWarning()
-                << "[Migration 실패]"
-                << m_lastError;
-
-
+            m_lastError = QStringLiteral("unit_price 컬럼 추가 실패: ") + alterQuery.lastError().text();
+            qWarning() << "[Migration 실패]" << m_lastError;
             return false;
         }
 
-
-        qDebug()
-            << "[Migration 성공]"
-            << "products.unit_price 컬럼 추가 완료";
+        qDebug() << "[Migration 성공]"  << "products.unit_price 컬럼 추가 완료";
     }
     else
     {
-        qDebug()
-        << "[Migration]"
-        << "unit_price 컬럼이 이미 존재합니다.";
+        qDebug()  << "[Migration]" << "unit_price 컬럼이 이미 존재합니다.";
     }
 
+    // ============================================================
+    // History details 컬럼 Migration
+    // ============================================================
+
+    QSqlQuery historyInfoQuery(m_database);
+
+    if(!historyInfoQuery.exec(QStringLiteral("PRAGMA table_info(history)"))){
+        m_lastError = QStringLiteral("history 테이블 구조 확인 실패: ") + historyInfoQuery.lastError().text();
+        return false;
+    }
+
+    bool hasDetails = false;
+
+    while(historyInfoQuery.next()){
+        const QString columnName = historyInfoQuery.value(1).toString();
+
+        if(columnName.compare(QStringLiteral("details"), Qt::CaseInsensitive) == 0){
+            hasDetails = true;
+            break;
+        }
+    }
+
+    if(!hasDetails){
+        QSqlQuery alterHistoryQuery(m_database);
+
+        const QString alterSql = QStringLiteral("ALTER TABLE history ADD COLUMN details TEXT NOT NULL DEFAULT ''");
+
+        if(!alterHistoryQuery.exec(alterSql)){
+            m_lastError = QStringLiteral("history.details 컬럼 추가 실패: ") + alterHistoryQuery.lastError().text();
+            qWarning() << "[Migration 실패]" << m_lastError;
+            qWarning() << "[실행 SQL]" << alterSql;
+            return false;
+        }
+
+        qDebug() << "[Migration 성공] history.details 컬럼 추가 완료";
+    }
+    else{
+        qDebug() << "[Migration] history.details 컬럼이 이미 존재합니다.";
+    }
 
     return true;
 }

@@ -194,6 +194,13 @@ namespace _qt_qml_PocketInventory_components_DeleteProductDialog_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_PocketInventory_components_EditProductDialog_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -235,6 +242,7 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/InventoryToolbar.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_InventoryToolbar_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/InventoryTable.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_InventoryTable_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/DeleteProductDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_DeleteProductDialog_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/PocketInventory/components/EditProductDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_PocketInventory_components_EditProductDialog_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

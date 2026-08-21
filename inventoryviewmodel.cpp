@@ -175,6 +175,86 @@ bool InventoryViewModel::addProduct(const QString &productNameText, const QStrin
     return true;
 }
 
+bool InventoryViewModel::updateProduct(int proxyIndex, const QString &productNameText, const QString &minimumQuantityText, const QString &unitPriceText)
+{
+    const int sourceIndex = toSourceIndex(proxyIndex);
+
+    if(sourceIndex < 0){
+        emit messageRequested(QString("상품 정보를 찾을 수 없습니다."), QStringLiteral("red"));
+
+        return false;
+    }
+
+    if(m_productModel.containsProductExcept(sourceIndex, productNameText)){
+        emit messageRequested(QStringLiteral("이미 등록된 상품명입니다."), QStringLiteral("red"));
+        return false;
+    }
+
+    const QString productName = productNameText.trimmed();
+
+    if(productName.isEmpty()){
+        emit messageRequested(QStringLiteral("상품명을 입력해주세요."),QStringLiteral("red"));
+        return false;
+    }
+
+    bool minimumQuantityOk = false;
+
+    const int minimumQuantity = minimumQuantityText.toInt(&minimumQuantityOk);
+
+    if(!minimumQuantityOk || minimumQuantity < 0){
+        emit messageRequested(QStringLiteral("최소 재고는 0 이상의 숫자로 입력해주세요."), QStringLiteral("red"));
+
+        return false;
+    }
+
+    bool unitPriceOk = false;
+
+    const int unitPrice = unitPriceText.toInt(&unitPriceOk);
+
+    if(!unitPriceOk || unitPrice < 0){
+        emit messageRequested(QStringLiteral("단가는 0 이상의 숫자로 입력해주세요."), QStringLiteral("red"));
+        return false;
+    }
+
+    const Product product = m_productModel.productAt(sourceIndex);
+
+    if(product.id < 0){
+        emit messageRequested(QStringLiteral("상품 정보를 찾을 수 없습니다."), QStringLiteral("red"));
+        return false;
+    }
+
+    if(!m_inventoryService){
+        emit messageRequested(QStringLiteral("재고 서비스를 사용할 수 없습니다."), QStringLiteral("red"));
+        return false;
+    }
+
+    QString errorMessage;
+
+    const bool succeeded = m_inventoryService->updateProduct(product, productName, minimumQuantity, unitPrice, &errorMessage);
+
+    if(!succeeded){
+        emit messageRequested(errorMessage.isEmpty() ? QStringLiteral("상품 수정에 실패했습니다.") : errorMessage, QStringLiteral("red"));
+        return false;
+    }
+
+    const bool modelUpdated = m_productModel.updateProductInfo(sourceIndex, productName, minimumQuantity, unitPrice);
+
+    if(!modelUpdated){
+        emit messageRequested(QStringLiteral("상품은 저장되었지만 화면 갱신에 실패했습니다."), QStringLiteral("red"));
+
+        return false;
+    }
+
+    emit historyChanged();
+    emit stockSummaryChanged();
+    emit filteredCountChanged();
+
+    emit messageRequested(QStringLiteral("상품 정보가 수정되었습니다."), QStringLiteral("green"));
+
+    return true;
+
+}
+
 bool InventoryViewModel::receiveStock(int proxyIndex, const QString &quantityText)
 {
     const int sourceIndex = toSourceIndex(proxyIndex);

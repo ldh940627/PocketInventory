@@ -23,6 +23,14 @@ Rectangle {
         int currentQuantity
     )
 
+    signal editRequested(
+        int proxyIndex,
+        string productname,
+        int currentQuantity,
+        int minimumQuantity,
+        int unitPrice
+    )
+
     signal deleteRequested(
         int proxyIndex,
         string productName
@@ -262,6 +270,20 @@ Rectangle {
                     }
 
                     MenuSeparator {
+                    }
+
+                    MenuItem{
+                        text: "상품 수정"
+
+                        onTriggered:{
+                            root.editRequested(
+                                root.index,
+                                root.productName,
+                                root.productQuantity,
+                                root.minimumQuantity,
+                                root.unitPrice
+                            )
+                        }
                     }
 
                     MenuItem {

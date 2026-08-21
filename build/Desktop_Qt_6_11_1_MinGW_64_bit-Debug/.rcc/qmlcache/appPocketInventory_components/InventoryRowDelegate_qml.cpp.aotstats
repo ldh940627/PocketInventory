@@ -10,7 +10,7 @@
                             "column": 9,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 38,
+                            "line": 46,
                             "message": ""
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 47,
+                            "line": 55,
                             "message": ""
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 67,
+                            "line": 75,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -34,7 +34,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 69,
+                            "line": 77,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "elide",
-                            "line": 74,
+                            "line": 82,
                             "message": "Could not find property \"elide\"."
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 17,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 86,
+                            "line": 94,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -58,7 +58,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 88,
+                            "line": 96,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -66,7 +66,7 @@
                             "column": 17,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 94,
+                            "line": 102,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -74,7 +74,7 @@
                             "column": 17,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 105,
+                            "line": 113,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -82,7 +82,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 107,
+                            "line": 115,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -90,7 +90,7 @@
                             "column": 17,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 112,
+                            "line": 120,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -98,7 +98,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 122,
+                            "line": 130,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -106,7 +106,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 124,
+                            "line": 132,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -114,7 +114,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 128,
+                            "line": 136,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -122,7 +122,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 138,
+                            "line": 146,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -130,7 +130,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 140,
+                            "line": 148,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -138,7 +138,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 145,
+                            "line": 153,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -146,7 +146,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "implicitWidth",
-                            "line": 159,
+                            "line": 167,
                             "message": "Cannot retrieve a non-object type by ID: statusLabel"
                         },
                         {
@@ -154,7 +154,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 165,
+                            "line": 173,
                             "message": ""
                         },
                         {
@@ -162,7 +162,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 157,
+                            "line": 165,
                             "message": ""
                         },
                         {
@@ -170,7 +170,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 175,
+                            "line": 183,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -178,7 +178,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 180,
+                            "line": 188,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -186,7 +186,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 172,
+                            "line": 180,
                             "message": "Could not find property \"centerIn\"."
                         },
                         {
@@ -194,7 +194,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 207,
+                            "line": 215,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -202,7 +202,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 201,
+                            "line": 209,
                             "message": "Could not find property \"fill\"."
                         },
                         {
@@ -210,7 +210,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 212,
+                            "line": 220,
                             "message": "Cannot access value for name actionButton"
                         },
                         {
@@ -218,7 +218,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 214,
+                            "line": 222,
                             "message": "Cannot access value for name theme"
                         },
                         {
@@ -226,7 +226,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 220,
+                            "line": 228,
                             "message": ""
                         },
                         {
@@ -234,7 +234,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "verticalAlignment",
-                            "line": 223,
+                            "line": 231,
                             "message": ""
                         },
                         {
@@ -242,7 +242,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 230,
+                            "line": 238,
                             "message": "Cannot access value for name actionButton"
                         },
                         {
@@ -250,7 +250,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 238,
+                            "line": 246,
                             "message": "Could not find property \"y\"."
                         },
                         {
@@ -258,7 +258,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "onTriggered",
-                            "line": 243,
+                            "line": 251,
                             "message": "Could not find signal \"triggered\"."
                         },
                         {
@@ -266,7 +266,15 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "onTriggered",
-                            "line": 255,
+                            "line": 263,
+                            "message": "Could not find signal \"triggered\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 37,
+                            "durationMicroseconds": 0,
+                            "functionName": "onTriggered",
+                            "line": 278,
                             "message": "Could not find signal \"triggered\"."
                         },
                         {
@@ -274,7 +282,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "onTriggered",
-                            "line": 270,
+                            "line": 292,
                             "message": "Could not find signal \"triggered\"."
                         },
                         {
@@ -282,7 +290,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "acceptedButtons",
-                            "line": 292,
+                            "line": 314,
                             "message": ""
                         },
                         {
@@ -290,7 +298,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 289,
+                            "line": 311,
                             "message": ""
                         },
                         {
@@ -298,7 +306,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 306,
+                            "line": 328,
                             "message": ""
                         },
                         {
@@ -306,7 +314,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 300,
+                            "line": 322,
                             "message": ""
                         },
                         {
@@ -314,7 +322,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 301,
+                            "line": 323,
                             "message": ""
                         },
                         {
@@ -322,7 +330,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 302,
+                            "line": 324,
                             "message": ""
                         }
                     ],

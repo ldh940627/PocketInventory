@@ -156,6 +156,49 @@ int ProductRepository::insertProduct(const QString &name, int quantity, int mini
     return insertedId;
 }
 
+bool ProductRepository::updateProductInfo(int productId, const QString &name, int minimumQuantity, int unitPrice, QString *errorMessage) const
+{
+    if(!m_database.isOpen()){
+        if(errorMessage){
+            *errorMessage = QStringLiteral("데이터베이스가 열려 있지 않습니다.");
+        }
+
+        return false;
+    }
+
+    QSqlQuery query(m_database);
+
+    query.prepare(QStringLiteral(
+        "UPDATE products "
+        "SET "
+        "name = :name, "
+        "minimum_quantity = :minimum_quantity, "
+        "unit_price = :unit_price, "
+        "updated_at = CURRENT_TIMESTAMP "
+        "WHERE id = :id"));
+
+    query.bindValue(QStringLiteral(":name"), name.trimmed());
+    query.bindValue(QStringLiteral(":minimum_quantity"), minimumQuantity);
+    query.bindValue(QStringLiteral(":unit_price"), unitPrice);
+    query.bindValue(QStringLiteral(":id"), productId);
+
+    if(!query.exec()){
+        if(errorMessage){
+            *errorMessage = query.lastError().text();
+        }
+
+        qWarning() << "[productRepository::updateProductInfo]" << query.lastError().text();
+
+        return false;
+    }
+
+    if(errorMessage){
+        errorMessage->clear();
+    }
+
+    return true;
+}
+
 
 bool ProductRepository::updateQuantity(int productId, int quantity, QString *errorMessage) const
 {

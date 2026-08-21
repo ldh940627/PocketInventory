@@ -359,4 +359,5 @@ CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\productrepository.h \
  C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlError \
- C:/Qt/6.11.1/mingw_64/include/QtSql/qsqlerror.h
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qsqlerror.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QStringList

@@ -96,11 +96,11 @@ clean: CMakeFiles/appPocketInventory_autogen.dir/clean
 
 # All Build rule for target.
 CMakeFiles/appPocketInventory.dir/all: CMakeFiles/appPocketInventory_copy_qml.dir/all
-CMakeFiles/appPocketInventory.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
-CMakeFiles/appPocketInventory.dir/all: CMakeFiles/appPocketInventory_qmlimportscan.dir/all
 CMakeFiles/appPocketInventory.dir/all: CMakeFiles/appPocketInventory_copy_res.dir/all
-CMakeFiles/appPocketInventory.dir/all: CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all
+CMakeFiles/appPocketInventory.dir/all: CMakeFiles/appPocketInventory_qmlimportscan.dir/all
 CMakeFiles/appPocketInventory.dir/all: CMakeFiles/appPocketInventory_autogen.dir/all
+CMakeFiles/appPocketInventory.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
+CMakeFiles/appPocketInventory.dir/all: CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target appPocketInventory"
@@ -108,7 +108,7 @@ CMakeFiles/appPocketInventory.dir/all: CMakeFiles/appPocketInventory_autogen.dir
 
 # Build rule for subdir invocation for target.
 CMakeFiles/appPocketInventory.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 70
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/appPocketInventory.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/appPocketInventory.dir/rule
@@ -134,7 +134,7 @@ CMakeFiles/appPocketInventory_qmltyperegistration.dir/all: CMakeFiles/appPocketI
 
 # Build rule for subdir invocation for target.
 CMakeFiles/appPocketInventory_qmltyperegistration.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/appPocketInventory_qmltyperegistration.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/appPocketInventory_qmltyperegistration.dir/rule
@@ -160,7 +160,7 @@ CMakeFiles/all_qmltyperegistrations.dir/all: CMakeFiles/appPocketInventory_qmlty
 
 # Build rule for subdir invocation for target.
 CMakeFiles/all_qmltyperegistrations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/all_qmltyperegistrations.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/all_qmltyperegistrations.dir/rule
@@ -186,7 +186,7 @@ CMakeFiles/appPocketInventory_qmllint.dir/all: CMakeFiles/all_qmltyperegistratio
 
 # Build rule for subdir invocation for target.
 CMakeFiles/appPocketInventory_qmllint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/appPocketInventory_qmllint.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/appPocketInventory_qmllint.dir/rule
@@ -212,7 +212,7 @@ CMakeFiles/appPocketInventory_qmllint_json.dir/all: CMakeFiles/all_qmltyperegist
 
 # Build rule for subdir invocation for target.
 CMakeFiles/appPocketInventory_qmllint_json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/appPocketInventory_qmllint_json.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/appPocketInventory_qmllint_json.dir/rule
@@ -238,7 +238,7 @@ CMakeFiles/appPocketInventory_qmllint_module.dir/all: CMakeFiles/all_qmltyperegi
 
 # Build rule for subdir invocation for target.
 CMakeFiles/appPocketInventory_qmllint_module.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/appPocketInventory_qmllint_module.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/appPocketInventory_qmllint_module.dir/rule
@@ -264,7 +264,7 @@ CMakeFiles/all_qmllint.dir/all: CMakeFiles/appPocketInventory_qmllint.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/all_qmllint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/all_qmllint.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/all_qmllint.dir/rule
@@ -290,7 +290,7 @@ CMakeFiles/all_qmllint_json.dir/all: CMakeFiles/appPocketInventory_qmllint_json.
 
 # Build rule for subdir invocation for target.
 CMakeFiles/all_qmllint_json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/all_qmllint_json.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/all_qmllint_json.dir/rule
@@ -316,7 +316,7 @@ CMakeFiles/all_qmllint_module.dir/all: CMakeFiles/appPocketInventory_qmllint_mod
 
 # Build rule for subdir invocation for target.
 CMakeFiles/all_qmllint_module.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/all_qmllint_module.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/all_qmllint_module.dir/rule
@@ -441,12 +441,12 @@ CMakeFiles/appPocketInventory_copy_res.dir/clean:
 CMakeFiles/generate_qmlls_build_ini_file.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\generate_qmlls_build_ini_file.dir\build.make CMakeFiles/generate_qmlls_build_ini_file.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\generate_qmlls_build_ini_file.dir\build.make CMakeFiles/generate_qmlls_build_ini_file.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=77 "Built target generate_qmlls_build_ini_file"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num= "Built target generate_qmlls_build_ini_file"
 .PHONY : CMakeFiles/generate_qmlls_build_ini_file.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/generate_qmlls_build_ini_file.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/generate_qmlls_build_ini_file.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/generate_qmlls_build_ini_file.dir/rule
@@ -468,7 +468,7 @@ CMakeFiles/module_appPocketInventory_aotstats_target.dir/all: CMakeFiles/appPock
 CMakeFiles/module_appPocketInventory_aotstats_target.dir/all: CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_appPocketInventory_aotstats_target.dir\build.make CMakeFiles/module_appPocketInventory_aotstats_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_appPocketInventory_aotstats_target.dir\build.make CMakeFiles/module_appPocketInventory_aotstats_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target module_appPocketInventory_aotstats_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target module_appPocketInventory_aotstats_target"
 .PHONY : CMakeFiles/module_appPocketInventory_aotstats_target.dir/all
 
 # Build rule for subdir invocation for target.
@@ -491,8 +491,8 @@ CMakeFiles/module_appPocketInventory_aotstats_target.dir/clean:
 # Target rules for target CMakeFiles/all_aotstats.dir
 
 # All Build rule for target.
-CMakeFiles/all_aotstats.dir/all: CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all
 CMakeFiles/all_aotstats.dir/all: CMakeFiles/module_appPocketInventory_aotstats_target.dir/all
+CMakeFiles/all_aotstats.dir/all: CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\all_aotstats.dir\build.make CMakeFiles/all_aotstats.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\all_aotstats.dir\build.make CMakeFiles/all_aotstats.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num= "Built target all_aotstats"
@@ -545,9 +545,9 @@ CMakeFiles/appPocketInventory_qmlimportscan.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all: CMakeFiles/appPocketInventory_copy_qml.dir/all
-CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
-CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all: CMakeFiles/appPocketInventory_qmlimportscan.dir/all
 CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all: CMakeFiles/appPocketInventory_copy_res.dir/all
+CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all: CMakeFiles/appPocketInventory_qmlimportscan.dir/all
+CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory_autogen_timestamp_deps.dir\build.make CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory_autogen_timestamp_deps.dir\build.make CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num= "Built target appPocketInventory_autogen_timestamp_deps"
@@ -555,7 +555,7 @@ CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all: CMakeFiles/appPock
 
 # Build rule for subdir invocation for target.
 CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/appPocketInventory_autogen_timestamp_deps.dir/rule
@@ -581,7 +581,7 @@ CMakeFiles/appPocketInventory_autogen.dir/all: CMakeFiles/appPocketInventory_aut
 
 # Build rule for subdir invocation for target.
 CMakeFiles/appPocketInventory_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/appPocketInventory_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/appPocketInventory_autogen.dir/rule

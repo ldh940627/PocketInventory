@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 22,
-                            "durationMicroseconds": 5000,
+                            "durationMicroseconds": 0,
                             "functionName": "onTriggered",
                             "line": 62,
                             "message": ""

@@ -38,6 +38,8 @@ QVariant HistoryModel::data(const QModelIndex &index, int role) const
         return record.newQuantity;
     case ActionRole:
         return record.action;
+    case DetailsRole:
+        return record.details;
     case CreatedAtRole:
         return record.createdAt;
 
@@ -71,6 +73,7 @@ QHash<int, QByteArray> HistoryModel::roleNames() const
         {OldQuantityRole, "oldQuantity"},
         {NewQuantityRole, "newQuantity"},
         {ActionRole, "action"},
+        {DetailsRole, "details"},
         {CreatedAtRole, "createdAt"}
     };
 }

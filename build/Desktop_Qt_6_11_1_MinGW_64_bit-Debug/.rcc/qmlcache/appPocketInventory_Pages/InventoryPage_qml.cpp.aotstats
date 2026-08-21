@@ -161,8 +161,24 @@
                             "codegenResult": 2,
                             "column": 21,
                             "durationMicroseconds": 0,
-                            "functionName": "onDeleteRequested",
+                            "functionName": "onEditRequested",
                             "line": 156,
+                            "message": "Cannot retrieve a non-object type by ID: editProductDialog"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 21,
+                            "durationMicroseconds": 0,
+                            "functionName": "onEditRequested",
+                            "line": 156,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 21,
+                            "durationMicroseconds": 0,
+                            "functionName": "onDeleteRequested",
+                            "line": 177,
                             "message": "Cannot retrieve a non-object type by ID: deleteDialog"
                         },
                         {
@@ -170,31 +186,39 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "onDeleteRequested",
-                            "line": 156,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 13,
-                            "durationMicroseconds": 0,
-                            "functionName": "inventoryViewModel",
                             "line": 177,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 13,
+                            "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "inventoryViewModel",
-                            "line": 189,
+                            "line": 197,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 13,
+                            "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "inventoryViewModel",
-                            "line": 200,
+                            "line": 208,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "inventoryViewModel",
+                            "line": 218,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "inventoryViewModel",
+                            "line": 228,
                             "message": ""
                         }
                     ],

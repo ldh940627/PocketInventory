@@ -18,6 +18,8 @@ public:
 
     bool insertHistory(int productId, const QString &productName, int oldQuantity, int newQuantity, const QString &action, QString *errorMessage = nullptr) const;
 
+    bool insertHistory(int productId, const QString &productName, int oldQuantity, int newQuantity, const QString &action, const QString &details, QString *errorMessage = nullptr) const;
+
     QList<HistoryRecord> loadAll(QString *errorMessage = nullptr) const;
 
 private:

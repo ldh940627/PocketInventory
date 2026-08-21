@@ -9,6 +9,7 @@ Rectangle {
     required property int oldQuantity
     required property int newQuantity
     required property string action
+    required property string details
     required property string createdAt
 
     AppTheme {
@@ -43,18 +44,16 @@ Rectangle {
         }
 
         Label {
-            text:
-                root.oldQuantity
-                + "개  →  "
-                + root.newQuantity
-                + "개"
+            text: root.action === "EDIT" ? root.details : root.oldQuantity + "개 → " + root.newQuantity + "개"
 
             Layout.preferredWidth: 170
 
             color: theme.textPrimary
             font.pixelSize: 13
 
-            horizontalAlignment: Text.AlignHCenter
+            horizontalAlignment: root.action === "EDIT" ? Text.AlignLeft : Text.AlignHCenter
+
+            elide: Text.ElideRight
         }
 
         Item {
@@ -146,6 +145,9 @@ Rectangle {
 
         case "SALE":
             return "출고"
+
+        case "EDIT":
+            return "상품 수정"
 
         case "DELETE":
             return "삭제"

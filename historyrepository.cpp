@@ -12,6 +12,11 @@ HistoryRepository::HistoryRepository(const QSqlDatabase &database) : m_database(
 
 bool HistoryRepository::insertHistory(int productId, const QString &productName, int oldQuantity, int newQuantity, const QString &action, QString *errorMessage) const
 {
+    return insertHistory(productId, productName, oldQuantity, newQuantity, action, QString(), errorMessage);
+}
+
+bool HistoryRepository::insertHistory(int productId, const QString &productName, int oldQuantity, int newQuantity, const QString &action, const QString &details, QString *errorMessage) const
+{
     if(!m_database.isOpen()){
         if(errorMessage){
             *errorMessage = QStringLiteral("데이터베이스가 열려 있지 않습니다.");
@@ -22,26 +27,14 @@ bool HistoryRepository::insertHistory(int productId, const QString &productName,
 
     QSqlQuery query(m_database);
 
-    query.prepare(QStringLiteral( "INSERT INTO history ("
-                                 "product_id, "
-                                 "product_name, "
-                                 "old_quantity, "
-                                 "new_quantity, "
-                                 "action"
-                                 ") "
-                                 "VALUES ("
-                                 ":product_id, "
-                                 ":product_name, "
-                                 ":old_quantity, "
-                                 ":new_quantity, "
-                                 ":action"
-                                 ")"));
+    query.prepare(QStringLiteral("INSERT INTO history (product_id, product_name, old_quantity, new_quantity, action, details) VALUES (:product_id, :product_name, :old_quantity, :new_quantity, :action, :details)"));
 
     query.bindValue(QStringLiteral(":product_id"), productId);
     query.bindValue(QStringLiteral(":product_name"), productName.trimmed());
     query.bindValue(QStringLiteral(":old_quantity"), oldQuantity);
     query.bindValue(QStringLiteral(":new_quantity"), newQuantity);
     query.bindValue(QStringLiteral(":action"), action.trimmed().toUpper());
+    query.bindValue(QStringLiteral(":details"), details.trimmed());
 
     if(!query.exec()){
         if(errorMessage){
@@ -55,6 +48,7 @@ bool HistoryRepository::insertHistory(int productId, const QString &productName,
         errorMessage->clear();
 
     return true;
+
 }
 
 QList<HistoryRecord> HistoryRepository::loadAll(QString *errorMessage) const
@@ -70,16 +64,7 @@ QList<HistoryRecord> HistoryRepository::loadAll(QString *errorMessage) const
 
     QSqlQuery query(m_database);
 
-    const QString sql = QStringLiteral("SELECT "
-                                       "id, "
-                                       "product_id, "
-                                       "product_name, "
-                                       "old_quantity, "
-                                       "new_quantity, "
-                                       "action, "
-                                       "created_at "
-                                       "FROM history "
-                                       "ORDER BY id DESC");
+    const QString sql = QStringLiteral("SELECT id, product_id, product_name, old_quantity, new_quantity, action, details, created_at FROM history ORDER BY id DESC");
 
     if(!query.exec(sql)){
         if(errorMessage){
@@ -98,7 +83,8 @@ QList<HistoryRecord> HistoryRepository::loadAll(QString *errorMessage) const
         record.oldQuantity = query.value(3).toInt();
         record.newQuantity = query.value(4).toInt();
         record.action = query.value(5).toString();
-        record.createdAt = query.value(6).toString();
+        record.details = query.value(6).toString();
+        record.createdAt = query.value(7).toString();
 
         historyRecords.append(record);
     }

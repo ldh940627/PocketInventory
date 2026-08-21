@@ -49,6 +49,8 @@ public:
 
     bool setQuantity(int index, int quantity);
 
+    bool updateProductInfo(int index, const QString &name, int minimumQuantity, int unitPrice);
+
     Q_INVOKABLE bool increaseQuantity(int index);
 
     Q_INVOKABLE bool decreaseQuantity(int index);
@@ -64,6 +66,8 @@ public:
     qint64 totalInventoryValue() const;
 
     Product productAt(int index) const;
+
+    bool containsProductExcept(int exceptIndex, const QString &name) const;
 
 
 signals:

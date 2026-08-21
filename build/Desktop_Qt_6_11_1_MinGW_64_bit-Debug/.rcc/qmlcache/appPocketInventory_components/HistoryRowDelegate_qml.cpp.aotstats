@@ -10,7 +10,7 @@
                             "column": 9,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 21,
+                            "line": 22,
                             "message": ""
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "formatDate",
-                            "line": 122,
+                            "line": 121,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "actionText",
-                            "line": 133,
+                            "line": 132,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -34,7 +34,7 @@
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "actionColor",
-                            "line": 158,
+                            "line": 160,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "actionBackground",
-                            "line": 177,
+                            "line": 179,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 24,
+                            "line": 25,
                             "message": ""
                         },
                         {
@@ -58,7 +58,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 32,
+                            "line": 33,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -66,7 +66,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 37,
+                            "line": 38,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -74,12 +74,12 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "elide",
-                            "line": 42,
+                            "line": 43,
                             "message": "Could not find property \"elide\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 17,
+                            "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
                             "line": 47,
@@ -90,7 +90,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 54,
+                            "line": 51,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -98,15 +98,23 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 57,
+                            "line": 54,
                             "message": "Could not find property \"horizontalAlignment\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "elide",
+                            "line": 56,
+                            "message": "Could not find property \"elide\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 73,
+                            "line": 72,
                             "message": "method actionBackground cannot be resolved."
                         },
                         {
@@ -114,7 +122,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 65,
+                            "line": 64,
                             "message": ""
                         },
                         {
@@ -122,7 +130,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 79,
+                            "line": 78,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -130,7 +138,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 82,
+                            "line": 81,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -138,7 +146,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 76,
+                            "line": 75,
                             "message": "Could not find property \"centerIn\"."
                         },
                         {
@@ -146,7 +154,7 @@
                             "column": 17,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 92,
+                            "line": 91,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -154,7 +162,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 96,
+                            "line": 95,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -162,7 +170,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 99,
+                            "line": 98,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -170,7 +178,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "acceptedButtons",
-                            "line": 109,
+                            "line": 108,
                             "message": ""
                         },
                         {
@@ -178,7 +186,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 106,
+                            "line": 105,
                             "message": ""
                         },
                         {
@@ -186,7 +194,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 119,
+                            "line": 118,
                             "message": ""
                         },
                         {
@@ -194,7 +202,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 113,
+                            "line": 112,
                             "message": ""
                         },
                         {
@@ -202,7 +210,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 114,
+                            "line": 113,
                             "message": ""
                         },
                         {
@@ -210,7 +218,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 115,
+                            "line": 114,
                             "message": ""
                         }
                     ],

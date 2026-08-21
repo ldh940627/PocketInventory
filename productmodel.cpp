@@ -148,6 +148,28 @@ bool ProductModel::setQuantity(int index, int quantity)
 
 }
 
+bool ProductModel::updateProductInfo(int index, const QString &name, int minimumQuantity, int unitPrice)
+{
+    if(index < 0 || index >= m_products.size()){
+        return false;
+    }
+
+    Product &product = m_products[index];
+
+    product.name = name.trimmed();
+    product.minimumQuantity = minimumQuantity;
+    product.unitPrice = unitPrice;
+
+    const QModelIndex modelIndex = createIndex(index, 0);
+
+    emit dataChanged(modelIndex, modelIndex,{ProductNameRole, MinimumQuantityRole, UnitPriceRole});
+
+    emit stockSummaryChanged();
+
+    return true;
+
+}
+
 
 bool ProductModel::increaseQuantity(int index)
 {
@@ -258,6 +280,22 @@ Product ProductModel::productAt(int index) const
         return {};
 
     return m_products.at(index);
+}
+
+bool ProductModel::containsProductExcept(int exceptIndex, const QString &name) const
+{
+    const QString trimmedName = name.trimmed();
+
+    for(int i = 0; i < m_products.size(); ++i){
+        if(i == exceptIndex)
+            continue;
+
+        if(m_products[i].name.compare(trimmedName, Qt::CaseInsensitive) == 0)
+            return true;
+    }
+
+    return false;
+
 }
 
 QHash<int, QByteArray> ProductModel::roleNames() const
