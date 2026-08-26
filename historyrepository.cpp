@@ -12,7 +12,7 @@ HistoryRepository::HistoryRepository(const QSqlDatabase &database) : m_database(
 
 bool HistoryRepository::insertHistory(int productId, const QString &productName, int oldQuantity, int newQuantity, const QString &action, QString *errorMessage) const
 {
-    return insertHistory(productId, productName, oldQuantity, newQuantity, action, QString(), errorMessage);
+    return insertHistory(productId, productName, oldQuantity, newQuantity, action, QStringLiteral(""), errorMessage);
 }
 
 bool HistoryRepository::insertHistory(int productId, const QString &productName, int oldQuantity, int newQuantity, const QString &action, const QString &details, QString *errorMessage) const
@@ -34,7 +34,7 @@ bool HistoryRepository::insertHistory(int productId, const QString &productName,
     query.bindValue(QStringLiteral(":old_quantity"), oldQuantity);
     query.bindValue(QStringLiteral(":new_quantity"), newQuantity);
     query.bindValue(QStringLiteral(":action"), action.trimmed().toUpper());
-    query.bindValue(QStringLiteral(":details"), details.trimmed());
+    query.bindValue(QStringLiteral(":details"), details.isNull() ? QStringLiteral("") : details.trimmed());
 
     if(!query.exec()){
         if(errorMessage){

@@ -93,13 +93,14 @@ void InventoryViewModel::setStockFilter(const QString &stockFilter)
     m_filterModel.setStockFilter(stockFilter);
 }
 
-bool InventoryViewModel::addProduct(const QString &productNameText, const QString &productQuantityText, const QString &minimumQuantityText, const QString &unitPriceText)
+bool InventoryViewModel::addProduct(const QString &productNameText, const QString &productQuantityText, const QString &minimumQuantityText, const QString &unitPriceText, const QString &categoryText)
 {
 
     const QString productName = productNameText.trimmed();
     const QString quantityText = productQuantityText.trimmed();
     const QString minimumText = minimumQuantityText.trimmed();
     const QString priceText = unitPriceText.trimmed();
+    const QString category = categoryText.trimmed();
 
     if(productName.isEmpty()){
         emit messageRequested(QStringLiteral("상품명을 입력해주세요."), QStringLiteral("red"));
@@ -117,7 +118,12 @@ bool InventoryViewModel::addProduct(const QString &productNameText, const QStrin
     }
 
     if(priceText.isEmpty()){
-        emit messageRequested(QStringLiteral("단가를 입력해해주세요."), QStringLiteral("red"));
+        emit messageRequested(QStringLiteral("단가를 입력해주세요."), QStringLiteral("red"));
+        return false;
+    }
+
+    if(categoryText.isEmpty()){
+        emit messageRequested(QStringLiteral("카데고리를 입력해주세요."), QStringLiteral("red"));
         return false;
     }
 
@@ -156,14 +162,14 @@ bool InventoryViewModel::addProduct(const QString &productNameText, const QStrin
 
     QString errorMessage;
 
-    const int productId = m_inventoryService->addProduct(productName, quantity, minimumQuantity, unitPrice, &errorMessage);
+    const int productId = m_inventoryService->addProduct(productName, quantity, minimumQuantity, unitPrice, category, &errorMessage);
 
     if(productId < 0){
         emit messageRequested(QStringLiteral("상품을 저장하지 못했습니다: ") + errorMessage, QStringLiteral("red"));
         return false;
     }
 
-    if(!m_productModel.addProduct(productId, productName, quantity, minimumQuantity, unitPrice)){
+    if(!m_productModel.addProduct(productId, productName, quantity, minimumQuantity, unitPrice, category)){
         emit messageRequested(QStringLiteral("상품은 DB에 저장됐지만 " "화면 모델 갱신에 실패했습니다."), QStringLiteral("red"));
         return false;
     }

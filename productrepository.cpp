@@ -22,14 +22,7 @@ QList<Product> ProductRepository::loadAll(QString *errorMessage) const
 
     QSqlQuery query(m_database);
 
-    const QString sql = QStringLiteral("SELECT "
-            "id, "
-            "name, "
-            "quantity, "
-            "minimum_quantity, "
-            "unit_price "
-            "FROM products "
-            "ORDER BY id ASC");
+    const QString sql = QStringLiteral("SELECT id, name, quantity, minimum_quantity, unit_price, category FROM products ORDER BY id ASC");
 
     if(!query.exec(sql)){
         if(errorMessage){
@@ -46,6 +39,7 @@ QList<Product> ProductRepository::loadAll(QString *errorMessage) const
         product.quantity = query.value(2).toInt();
         product.minimumQuantity = query.value(3).toInt();
         product.unitPrice = query.value(4).toInt();
+        product.category = query.value(5).toString();
 
         products.append(product);
 
@@ -57,7 +51,7 @@ QList<Product> ProductRepository::loadAll(QString *errorMessage) const
     return products;
 }
 
-int ProductRepository::insertProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, QString *errorMessage) const
+int ProductRepository::insertProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, const QString &category, QString *errorMessage) const
 {
     if(!m_database.isOpen()){
         if(errorMessage){
@@ -70,12 +64,7 @@ int ProductRepository::insertProduct(const QString &name, int quantity, int mini
 
     QSqlQuery query(m_database);
 
-    const QString sql =
-        QStringLiteral(
-            "INSERT INTO products "
-            "(name, quantity, minimum_quantity, unit_price) "
-            "VALUES (?, ?, ?, ?)"
-            );
+    const QString sql = QStringLiteral("INSERT INTO products (name, quantity, minimum_quantity, unit_price, category) VALUES (?, ?, ?, ?, ?)");
 
     // ============================================================
     // Prepare
@@ -100,28 +89,22 @@ int ProductRepository::insertProduct(const QString &name, int quantity, int mini
     // Bind
     // ============================================================
 
-    query.addBindValue(
-        name.trimmed()
-        );
+    query.addBindValue(name.trimmed());
 
-    query.addBindValue(
-        quantity
-        );
+    query.addBindValue(quantity);
 
-    query.addBindValue(
-        minimumQuantity
-        );
+    query.addBindValue(minimumQuantity);
 
-    query.addBindValue(
-        unitPrice
-        );
+    query.addBindValue(unitPrice);
+
+    query.addBindValue(category.trimmed());
 
     qDebug()
         << "[ProductRepository] INSERT 값:"
         << name
         << quantity
         << minimumQuantity
-        << unitPrice;
+        << unitPrice << category;
 
     // ============================================================
     // Execute

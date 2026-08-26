@@ -23,7 +23,7 @@ Dialog {
         quantityField.clear()
         minimumField.clear()
         unitPriceField.clear()
-
+        categoryField.clear()
         nameField.forceActiveFocus()
     }
 
@@ -198,6 +198,33 @@ Dialog {
             }
         }
 
+        ColumnLayout{
+            Layout.fillWidth: true
+            spacing: 6
+
+            Label{
+                text: "카테고리"
+                font.pixelSize: 13
+                font.bold: true
+                color: theme.textPrimary
+            }
+
+            TextField{
+                id:categoryField
+
+                Layout.fillWidth: true
+                Layout.preferredHeight: 42
+                placeholderText: "예 : 부품"
+
+                background: Rectangle{
+                    radius: 7
+                    color: theme.surface
+                    border.width: 1
+                    border.color: categoryField.activeFocus ? theme.primary : theme.border
+                }
+            }
+        }
+
         RowLayout {
             Layout.fillWidth: true
             spacing: 8
@@ -228,10 +255,8 @@ Dialog {
                 onClicked: {
                     const succeeded =
                         root.inventoryViewModel.addProduct(
-                            nameField.text,
-                            quantityField.text,
-                            minimumField.text,
-                            unitPriceField.text
+                            nameField.text, quantityField.text, minimumField.text,
+                            unitPriceField.text, categoryField.text
                         )
 
                     if(succeeded) {

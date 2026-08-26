@@ -175,10 +175,34 @@
                         },
                         {
                             "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 209,
+                            "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 221,
+                            "message": "Cannot access value for name theme"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 223,
+                            "message": "Cannot access value for name categoryField"
+                        },
+                        {
+                            "codegenResult": 2,
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 215,
+                            "line": 242,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -186,7 +210,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 228,
+                            "line": 255,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -194,7 +218,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 243,
+                            "line": 268,
                             "message": "Cannot access value for name addButton"
                         },
                         {
@@ -202,7 +226,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 250,
+                            "line": 275,
                             "message": ""
                         },
                         {
@@ -210,7 +234,7 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "verticalAlignment",
-                            "line": 251,
+                            "line": 276,
                             "message": ""
                         },
                         {
@@ -218,7 +242,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 258,
+                            "line": 283,
                             "message": "Cannot access value for name addButton"
                         }
                     ],

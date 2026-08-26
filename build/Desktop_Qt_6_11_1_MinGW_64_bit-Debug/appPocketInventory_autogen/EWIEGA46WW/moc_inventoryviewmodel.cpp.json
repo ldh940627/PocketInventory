@@ -22,6 +22,10 @@
                         {
                             "name": "unitPriceText",
                             "type": "QString"
+                        },
+                        {
+                            "name": "categoryText",
+                            "type": "QString"
                         }
                     ],
                     "index": 6,

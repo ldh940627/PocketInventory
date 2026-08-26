@@ -14,7 +14,7 @@ public:
 
     QList<Product> loadAll(QString *errorMessage = nullptr) const;
 
-    int insertProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, QString *errorMessage = nullptr) const;
+    int insertProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, const QString &category, QString *errorMessage = nullptr) const;
 
     bool updateProductInfo(int productId, const QString &name, int minimumQuantity, int unitPrice, QString *errorMessage = nullptr) const;
 

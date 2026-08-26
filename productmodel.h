@@ -11,8 +11,8 @@ struct Product
     QString name;
     int quantity = 0;
     int minimumQuantity = 0;
-
     int unitPrice = 0;
+    QString category;
 };
 
 class ProductModel : public QAbstractListModel
@@ -31,7 +31,8 @@ public:
         ProductNameRole,
         ProductQuantityRole,
         MinimumQuantityRole,
-        UnitPriceRole
+        UnitPriceRole,
+        CategoryRole
     };
 
     explicit ProductModel(QObject *parent = nullptr);
@@ -45,7 +46,7 @@ public:
 
     void setProducts(const QList<Product> &products);
 
-    bool addProduct(int id, const QString &name, int quantity, int minimumQuantity, int unitPrice);
+    bool addProduct(int id, const QString &name, int quantity, int minimumQuantity, int unitPrice, const QString &category);
 
     bool setQuantity(int index, int quantity);
 

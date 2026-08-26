@@ -53,6 +53,7 @@ template <> constexpr inline auto InventoryViewModel::qt_create_metaobjectdata<q
         "productQuantityText",
         "minimumQuantityText",
         "unitPriceText",
+        "categoryText",
         "updateProduct",
         "proxyIndex",
         "receiveStock",
@@ -90,55 +91,56 @@ template <> constexpr inline auto InventoryViewModel::qt_create_metaobjectdata<q
         // Signal 'historyChanged'
         QtMocHelpers::SignalData<void()>(9, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'addProduct'
-        QtMocHelpers::MethodData<bool(const QString &, const QString &, const QString &, const QString &)>(10, 2, QMC::AccessPublic, QMetaType::Bool, {{
+        QtMocHelpers::MethodData<bool(const QString &, const QString &, const QString &, const QString &, const QString &)>(10, 2, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::QString, 11 }, { QMetaType::QString, 12 }, { QMetaType::QString, 13 }, { QMetaType::QString, 14 },
+            { QMetaType::QString, 15 },
         }}),
         // Method 'updateProduct'
-        QtMocHelpers::MethodData<bool(int, const QString &, const QString &, const QString &)>(15, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 16 }, { QMetaType::QString, 11 }, { QMetaType::QString, 13 }, { QMetaType::QString, 14 },
+        QtMocHelpers::MethodData<bool(int, const QString &, const QString &, const QString &)>(16, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 17 }, { QMetaType::QString, 11 }, { QMetaType::QString, 13 }, { QMetaType::QString, 14 },
         }}),
         // Method 'receiveStock'
-        QtMocHelpers::MethodData<bool(int, const QString &)>(17, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 16 }, { QMetaType::QString, 18 },
+        QtMocHelpers::MethodData<bool(int, const QString &)>(18, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 17 }, { QMetaType::QString, 19 },
         }}),
         // Method 'releaseStock'
-        QtMocHelpers::MethodData<bool(int, const QString &)>(19, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 16 }, { QMetaType::QString, 18 },
+        QtMocHelpers::MethodData<bool(int, const QString &)>(20, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 17 }, { QMetaType::QString, 19 },
         }}),
         // Method 'increaseQuantity'
-        QtMocHelpers::MethodData<void(int)>(20, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 16 },
+        QtMocHelpers::MethodData<void(int)>(21, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 17 },
         }}),
         // Method 'decreaseQuantity'
-        QtMocHelpers::MethodData<void(int)>(21, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 16 },
+        QtMocHelpers::MethodData<void(int)>(22, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 17 },
         }}),
         // Method 'removeProduct'
-        QtMocHelpers::MethodData<void(int)>(22, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 16 },
+        QtMocHelpers::MethodData<void(int)>(23, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 17 },
         }}),
         // Method 'resetFilters'
-        QtMocHelpers::MethodData<void()>(23, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(24, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'products'
-        QtMocHelpers::PropertyData<QAbstractItemModel*>(24, 0x80000000 | 25, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
+        QtMocHelpers::PropertyData<QAbstractItemModel*>(25, 0x80000000 | 26, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
         // property 'lowStockProducts'
-        QtMocHelpers::PropertyData<QAbstractItemModel*>(26, 0x80000000 | 25, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
+        QtMocHelpers::PropertyData<QAbstractItemModel*>(27, 0x80000000 | 26, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
         // property 'totalCount'
-        QtMocHelpers::PropertyData<int>(27, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
-        // property 'normalStockCount'
         QtMocHelpers::PropertyData<int>(28, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
-        // property 'lowStockCount'
+        // property 'normalStockCount'
         QtMocHelpers::PropertyData<int>(29, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
+        // property 'lowStockCount'
+        QtMocHelpers::PropertyData<int>(30, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
         // property 'totalInventoryValue'
-        QtMocHelpers::PropertyData<qint64>(30, QMetaType::LongLong, QMC::DefaultPropertyFlags, 0),
+        QtMocHelpers::PropertyData<qint64>(31, QMetaType::LongLong, QMC::DefaultPropertyFlags, 0),
         // property 'filteredCount'
-        QtMocHelpers::PropertyData<int>(31, QMetaType::Int, QMC::DefaultPropertyFlags, 1),
+        QtMocHelpers::PropertyData<int>(32, QMetaType::Int, QMC::DefaultPropertyFlags, 1),
         // property 'searchText'
-        QtMocHelpers::PropertyData<QString>(32, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 2),
+        QtMocHelpers::PropertyData<QString>(33, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 2),
         // property 'stockFilter'
-        QtMocHelpers::PropertyData<QString>(33, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 3),
+        QtMocHelpers::PropertyData<QString>(34, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 3),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -166,7 +168,7 @@ void InventoryViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 3: _t->stockFilterChanged(); break;
         case 4: _t->messageRequested((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
         case 5: _t->historyChanged(); break;
-        case 6: { bool _r = _t->addProduct((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4])));
+        case 6: { bool _r = _t->addProduct((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         case 7: { bool _r = _t->updateProduct((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;

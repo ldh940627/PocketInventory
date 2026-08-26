@@ -556,6 +556,10 @@
                             {
                                 "name": "unitPriceText",
                                 "type": "QString"
+                            },
+                            {
+                                "name": "categoryText",
+                                "type": "QString"
                             }
                         ],
                         "index": 6,
@@ -1019,7 +1023,7 @@
                         ],
                         "index": 2,
                         "isConst": true,
-                        "lineNumber": 44,
+                        "lineNumber": 45,
                         "name": "get",
                         "returnType": "QVariantMap"
                     },
@@ -1032,7 +1036,7 @@
                             }
                         ],
                         "index": 3,
-                        "lineNumber": 54,
+                        "lineNumber": 55,
                         "name": "increaseQuantity",
                         "returnType": "bool"
                     },
@@ -1045,7 +1049,7 @@
                             }
                         ],
                         "index": 4,
-                        "lineNumber": 56,
+                        "lineNumber": 57,
                         "name": "decreaseQuantity",
                         "returnType": "bool"
                     },
@@ -1058,7 +1062,7 @@
                             }
                         ],
                         "index": 5,
-                        "lineNumber": 58,
+                        "lineNumber": 59,
                         "name": "removeProduct",
                         "returnType": "bool"
                     },
@@ -1072,7 +1076,7 @@
                         ],
                         "index": 6,
                         "isConst": true,
-                        "lineNumber": 60,
+                        "lineNumber": 61,
                         "name": "containsProduct",
                         "returnType": "bool"
                     }
@@ -1136,14 +1140,14 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 74,
+                        "lineNumber": 75,
                         "name": "countChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 1,
-                        "lineNumber": 75,
+                        "lineNumber": 76,
                         "name": "stockSummaryChanged",
                         "returnType": "void"
                     }

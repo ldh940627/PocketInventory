@@ -142,6 +142,7 @@ bool DatabaseManager::createTables()
             "quantity INTEGER NOT NULL DEFAULT 0, "
             "minimum_quantity INTEGER NOT NULL DEFAULT 0, "
             "unit_price INTEGER NOT NULL DEFAULT 0, "
+            "category TEXT NOT NULL DEFAULT '', "
             "created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP, "
             "updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP"
             ")"
@@ -212,6 +213,7 @@ bool DatabaseManager::migrateDatabase()
     }
 
     bool hasUnitPrice = false;
+    bool hasCategory = false;
 
     qDebug() << "===== products columns =====";
 
@@ -224,6 +226,10 @@ bool DatabaseManager::migrateDatabase()
         if(columnName.compare(QStringLiteral("unit_price"), Qt::CaseInsensitive) == 0)
         {
             hasUnitPrice = true;
+        }
+
+        if(columnName.compare(QStringLiteral("category"), Qt::CaseInsensitive) == 0){
+            hasCategory = true;
         }
     }
 
@@ -255,6 +261,24 @@ bool DatabaseManager::migrateDatabase()
     else
     {
         qDebug()  << "[Migration]" << "unit_price 컬럼이 이미 존재합니다.";
+    }
+
+    if(!hasCategory){
+        qDebug() << "[Migration] category 컬럼이 없습니다. Migration을 시작합니다.";
+
+        QSqlQuery alterCategoryQuery(m_database);
+        const QString alterSql = QStringLiteral("ALTER TABLE products ADD COLUMN category TEXT NOT NULL DEFAULT ''");
+
+        if(!alterCategoryQuery.exec(alterSql)){
+            m_lastError = QStringLiteral("category 컬럼 추가 실패: ") + alterCategoryQuery.lastError().text();
+            qWarning() << "[Migration 실패]" << m_lastError;
+            return false;
+        }
+
+        qDebug() << "[Migration 성공] products.category 컬럼 추가 완료";
+    }
+    else{
+        qDebug() << "[Migration] category 컬럼이 이미 존재합니다.";
     }
 
     // ============================================================

@@ -210,7 +210,7 @@ bool InventoryService::adjustQuantity(const Product &product, int delta, const Q
     return true;
 }
 
-int InventoryService::addProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, QString *errorMessage)
+int InventoryService::addProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, const QString &category, QString *errorMessage)
 {
 
     if(!m_productRepository || !m_historyRepository){
@@ -233,7 +233,7 @@ int InventoryService::addProduct(const QString &name, int quantity, int minimumQ
             name,
             quantity,
             minimumQuantity,
-            unitPrice,
+            unitPrice, category,
             errorMessage
             );
 

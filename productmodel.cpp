@@ -41,6 +41,9 @@ QVariant ProductModel::data(const QModelIndex &index, int role) const
     case UnitPriceRole:
         return product.unitPrice;
 
+    case CategoryRole:
+        return product.category;
+
     default:
         return {};
     }
@@ -78,6 +81,10 @@ QVariantMap ProductModel::get(int index) const
         {
             QStringLiteral("unitPrice"),
             product.unitPrice
+        },
+        {
+            QStringLiteral("category"),
+            product.category
         }
     };
 }
@@ -94,9 +101,10 @@ void ProductModel::setProducts(const QList<Product> &products)
 
 }
 
-bool ProductModel::addProduct(int id, const QString &name, int quantity, int minimumQuantity, int unitPrice)
+bool ProductModel::addProduct(int id, const QString &name, int quantity, int minimumQuantity, int unitPrice, const QString &category)
 {
     const QString normalizedName = name.trimmed();
+    const QString normalizedCategory = category.trimmed();
 
     if(id<0)
         return false;
@@ -112,7 +120,7 @@ bool ProductModel::addProduct(int id, const QString &name, int quantity, int min
 
     beginInsertRows(QModelIndex(), newIndex, newIndex);
 
-    m_products.append({id, normalizedName, quantity, minimumQuantity, unitPrice});
+    m_products.append({id, normalizedName, quantity, minimumQuantity, unitPrice, category});
 
     endInsertRows();
 
@@ -320,6 +328,10 @@ QHash<int, QByteArray> ProductModel::roleNames() const
       {
         UnitPriceRole,
         "unitPrice"
+      },
+      {
+        CategoryRole,
+        "category"
       }
     };
 }

@@ -23,7 +23,7 @@ public:
 
     bool adjustQuantity(const Product &product, int delta, const QString &action, QString *errorMessage = nullptr);
 
-    int addProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, QString *errorMessage = nullptr);
+    int addProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, const QString &category, QString *errorMessage = nullptr);
 
 private:
 
