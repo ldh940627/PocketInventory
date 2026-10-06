@@ -139,7 +139,7 @@ int ProductRepository::insertProduct(const QString &name, int quantity, int mini
     return insertedId;
 }
 
-bool ProductRepository::updateProductInfo(int productId, const QString &name, int minimumQuantity, int unitPrice, QString *errorMessage) const
+bool ProductRepository::updateProductInfo(int productId, const QString &name, int minimumQuantity, int unitPrice, const QString &category, QString *errorMessage) const
 {
     if(!m_database.isOpen()){
         if(errorMessage){
@@ -151,18 +151,12 @@ bool ProductRepository::updateProductInfo(int productId, const QString &name, in
 
     QSqlQuery query(m_database);
 
-    query.prepare(QStringLiteral(
-        "UPDATE products "
-        "SET "
-        "name = :name, "
-        "minimum_quantity = :minimum_quantity, "
-        "unit_price = :unit_price, "
-        "updated_at = CURRENT_TIMESTAMP "
-        "WHERE id = :id"));
+    query.prepare(QStringLiteral("UPDATE products SET name = :name, minimum_quantity = :minimum_quantity, unit_price = :unit_price, category = :category, updated_at = CURRENT_TIMESTAMP WHERE id = :id"));
 
     query.bindValue(QStringLiteral(":name"), name.trimmed());
     query.bindValue(QStringLiteral(":minimum_quantity"), minimumQuantity);
     query.bindValue(QStringLiteral(":unit_price"), unitPrice);
+    query.bindValue(QStringLiteral(":category"), category.trimmed());
     query.bindValue(QStringLiteral(":id"), productId);
 
     if(!query.exec()){
@@ -222,6 +216,27 @@ bool ProductRepository::deleteProduct(int productId, QString *errorMessage) cons
     }
 
     return true;
+
+}
+
+bool ProductRepository::existsByName(const QString &name, QString *errorMessage) const
+{
+    QSqlQuery query(m_database);
+
+    query.prepare(QStringLiteral("SELECT 1 FROM products WHERE LOWER(name) = LOWER(?) LIMIT 1"));
+
+    query.addBindValue(name.trimmed());
+
+    if(!query.exec()){
+        if(errorMessage)
+            *errorMessage = query.lastError().text();
+        return false;
+    }
+
+    if(errorMessage)
+        errorMessage->clear();
+
+    return query.next();
 
 }
 

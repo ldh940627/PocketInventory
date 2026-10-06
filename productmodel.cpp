@@ -156,7 +156,7 @@ bool ProductModel::setQuantity(int index, int quantity)
 
 }
 
-bool ProductModel::updateProductInfo(int index, const QString &name, int minimumQuantity, int unitPrice)
+bool ProductModel::updateProductInfo(int index, const QString &name, int minimumQuantity, int unitPrice, const QString &category)
 {
     if(index < 0 || index >= m_products.size()){
         return false;
@@ -167,10 +167,11 @@ bool ProductModel::updateProductInfo(int index, const QString &name, int minimum
     product.name = name.trimmed();
     product.minimumQuantity = minimumQuantity;
     product.unitPrice = unitPrice;
+    product.category = category.trimmed();
 
     const QModelIndex modelIndex = createIndex(index, 0);
 
-    emit dataChanged(modelIndex, modelIndex,{ProductNameRole, MinimumQuantityRole, UnitPriceRole});
+    emit dataChanged(modelIndex, modelIndex,{ProductNameRole, MinimumQuantityRole, UnitPriceRole, CategoryRole});
 
     emit stockSummaryChanged();
 
@@ -290,6 +291,11 @@ Product ProductModel::productAt(int index) const
     return m_products.at(index);
 }
 
+QVector<Product> ProductModel::products() const
+{
+    return m_products;
+}
+
 bool ProductModel::containsProductExcept(int exceptIndex, const QString &name) const
 {
     const QString trimmedName = name.trimmed();
@@ -303,6 +309,48 @@ bool ProductModel::containsProductExcept(int exceptIndex, const QString &name) c
     }
 
     return false;
+
+}
+
+QStringList ProductModel::categories() const
+{
+    QStringList result;
+
+    for(const Product &product : m_products){
+        const QString category = product.category.trimmed();
+        if(!category.isEmpty() && !result.contains(category, Qt::CaseInsensitive)) result.append(category);
+
+    }
+
+    result.sort(Qt::CaseInsensitive);
+    return result;
+}
+
+QVariantList ProductModel::categorySummary() const
+{
+    QVariantMap summaries;
+
+    for(const Product &product : m_products){
+        const QString category = product.category.trimmed().isEmpty() ? QStringLiteral("미분류") : product.category.trimmed();
+
+        QVariantMap summary = summaries.value(category).toMap();
+
+        summary[QStringLiteral("category")] = category;
+        summary[QStringLiteral("productCount")] = summary.value(QStringLiteral("productCount"), 0).toInt() + 1;
+        summary[QStringLiteral("totalQuantity")] = summary.value(QStringLiteral("totalQuantity"), 0).toInt() + product.quantity;
+        summary[QStringLiteral("lowStockCount")] = summary.value(QStringLiteral("lowStockCount"), 0).toInt() + (product.quantity <= product.minimumQuantity ? 1 : 0);
+        summary[QStringLiteral("inventoryValue")] = summary.value(QStringLiteral("inventoryValue"), 0).toLongLong() + static_cast<qint64>(product.quantity) * product.unitPrice;
+
+        summaries[category] = summary;
+    }
+
+    QVariantList result;
+
+    for(auto it = summaries.constBegin(); it != summaries.constEnd(); ++it){
+        result.append(it.value());
+    }
+
+    return result;
 
 }
 

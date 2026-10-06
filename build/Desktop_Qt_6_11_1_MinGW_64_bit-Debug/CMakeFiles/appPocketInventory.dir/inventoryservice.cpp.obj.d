@@ -349,15 +349,19 @@ CMakeFiles/appPocketInventory.dir/inventoryservice.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qobject_impl.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qbindingstorage.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\historyrepository.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QList \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\HistoryRecord.h \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\productmodel.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QAbstractListModel \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qabstractitemmodel.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
- C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QStringList \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVariantList \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qvariantlist.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QList \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVariant \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\productrepository.h \
  C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlError \
- C:/Qt/6.11.1/mingw_64/include/QtSql/qsqlerror.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/QStringList
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qsqlerror.h

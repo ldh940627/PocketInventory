@@ -743,6 +743,30 @@ build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_comp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppToast_qml.cpp.s
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppToast_qml.cpp.s
 
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.obj
+
+# target to build an object file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.obj
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.obj
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.i: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.i
+
+# target to preprocess a source file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.i
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.i
+
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.s: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.s
+
+# target to generate assembly for a file
+build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.s
+.PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.s
+
 build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.obj: build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.cpp.obj
 .PHONY : build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.obj
 
@@ -1487,6 +1511,30 @@ productrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/productrepository.cpp.s
 .PHONY : productrepository.cpp.s
 
+service/csvservice.obj: service/csvservice.cpp.obj
+.PHONY : service/csvservice.obj
+
+# target to build an object file
+service/csvservice.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/service/csvservice.cpp.obj
+.PHONY : service/csvservice.cpp.obj
+
+service/csvservice.i: service/csvservice.cpp.i
+.PHONY : service/csvservice.i
+
+# target to preprocess a source file
+service/csvservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/service/csvservice.cpp.i
+.PHONY : service/csvservice.cpp.i
+
+service/csvservice.s: service/csvservice.cpp.s
+.PHONY : service/csvservice.s
+
+# target to generate assembly for a file
+service/csvservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\appPocketInventory.dir\build.make CMakeFiles/appPocketInventory.dir/service/csvservice.cpp.s
+.PHONY : service/csvservice.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1560,6 +1608,9 @@ help:
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppToast_qml.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppToast_qml.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppToast_qml.s
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.obj
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.i
+	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.s
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.obj
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.i
 	@echo ... build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.s
@@ -1653,6 +1704,9 @@ help:
 	@echo ... productrepository.obj
 	@echo ... productrepository.i
 	@echo ... productrepository.s
+	@echo ... service/csvservice.obj
+	@echo ... service/csvservice.i
+	@echo ... service/csvservice.s
 .PHONY : help
 
 

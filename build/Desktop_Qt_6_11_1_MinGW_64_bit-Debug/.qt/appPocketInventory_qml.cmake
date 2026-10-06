@@ -58,6 +58,8 @@ set(src_and_dest_list
     "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/components/DeleteProductDialog.qml"
     "C:/Users/Coding/Desktop/Qt6/PocketInventory/components/EditProductDialog.qml"
     "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/components/EditProductDialog.qml"
+    "C:/Users/Coding/Desktop/Qt6/PocketInventory/components/CategorySummaryDelegate.qml"
+    "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/PocketInventory/components/CategorySummaryDelegate.qml"
 
 )
 set(timestamp_file "C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qt/appPocketInventory_qml.txt")

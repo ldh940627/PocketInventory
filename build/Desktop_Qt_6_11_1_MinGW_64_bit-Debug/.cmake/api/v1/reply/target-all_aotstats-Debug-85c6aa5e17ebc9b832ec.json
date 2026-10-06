@@ -40,10 +40,10 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "appPocketInventory_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "module_appPocketInventory_aotstats_target::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "module_appPocketInventory_aotstats_target::@6890427a1f51a3e7e1df"
+			"id" : "appPocketInventory_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "all_aotstats::@6890427a1f51a3e7e1df",
@@ -100,7 +100,9 @@
 				32,
 				33,
 				34,
-				35
+				35,
+				36,
+				37
 			]
 		}
 	],
@@ -181,6 +183,12 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
@@ -194,6 +202,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DeleteProductDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/EditProductDialog_qml.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
 		{

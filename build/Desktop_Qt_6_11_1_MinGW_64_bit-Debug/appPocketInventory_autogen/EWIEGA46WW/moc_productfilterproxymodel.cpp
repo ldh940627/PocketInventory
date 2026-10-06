@@ -43,11 +43,13 @@ template <> constexpr inline auto ProductFilterProxyModel::qt_create_metaobjectd
         "",
         "stockFilterChanged",
         "countChanged",
+        "categoryFilterChanged",
         "sourceIndex",
         "proxyIndex",
         "searchText",
         "stockFilter",
-        "count"
+        "count",
+        "categoryFilter"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -57,18 +59,22 @@ template <> constexpr inline auto ProductFilterProxyModel::qt_create_metaobjectd
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'countChanged'
         QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'categoryFilterChanged'
+        QtMocHelpers::SignalData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'sourceIndex'
-        QtMocHelpers::MethodData<int(int) const>(5, 2, QMC::AccessPublic, QMetaType::Int, {{
-            { QMetaType::Int, 6 },
+        QtMocHelpers::MethodData<int(int) const>(6, 2, QMC::AccessPublic, QMetaType::Int, {{
+            { QMetaType::Int, 7 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'searchText'
-        QtMocHelpers::PropertyData<QString>(7, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 0),
+        QtMocHelpers::PropertyData<QString>(8, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 0),
         // property 'stockFilter'
-        QtMocHelpers::PropertyData<QString>(8, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 1),
+        QtMocHelpers::PropertyData<QString>(9, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 1),
         // property 'count'
-        QtMocHelpers::PropertyData<int>(9, QMetaType::Int, QMC::DefaultPropertyFlags, 2),
+        QtMocHelpers::PropertyData<int>(10, QMetaType::Int, QMC::DefaultPropertyFlags, 2),
+        // property 'categoryFilter'
+        QtMocHelpers::PropertyData<QString>(11, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable, 3),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -93,7 +99,8 @@ void ProductFilterProxyModel::qt_static_metacall(QObject *_o, QMetaObject::Call 
         case 0: _t->searchTextChanged(); break;
         case 1: _t->stockFilterChanged(); break;
         case 2: _t->countChanged(); break;
-        case 3: { int _r = _t->sourceIndex((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 3: _t->categoryFilterChanged(); break;
+        case 4: { int _r = _t->sourceIndex((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<int*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -105,6 +112,8 @@ void ProductFilterProxyModel::qt_static_metacall(QObject *_o, QMetaObject::Call 
             return;
         if (QtMocHelpers::indexOfMethod<void (ProductFilterProxyModel::*)()>(_a, &ProductFilterProxyModel::countChanged, 2))
             return;
+        if (QtMocHelpers::indexOfMethod<void (ProductFilterProxyModel::*)()>(_a, &ProductFilterProxyModel::categoryFilterChanged, 3))
+            return;
     }
     if (_c == QMetaObject::ReadProperty) {
         void *_v = _a[0];
@@ -112,6 +121,7 @@ void ProductFilterProxyModel::qt_static_metacall(QObject *_o, QMetaObject::Call 
         case 0: *reinterpret_cast<QString*>(_v) = _t->searchText(); break;
         case 1: *reinterpret_cast<QString*>(_v) = _t->stockFilter(); break;
         case 2: *reinterpret_cast<int*>(_v) = _t->count(); break;
+        case 3: *reinterpret_cast<QString*>(_v) = _t->categoryFilter(); break;
         default: break;
         }
     }
@@ -120,6 +130,7 @@ void ProductFilterProxyModel::qt_static_metacall(QObject *_o, QMetaObject::Call 
         switch (_id) {
         case 0: _t->setSearchText(*reinterpret_cast<QString*>(_v)); break;
         case 1: _t->setStockFilter(*reinterpret_cast<QString*>(_v)); break;
+        case 3: _t->setCategoryFilter(*reinterpret_cast<QString*>(_v)); break;
         default: break;
         }
     }
@@ -144,20 +155,20 @@ int ProductFilterProxyModel::qt_metacall(QMetaObject::Call _c, int _id, void **_
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 5;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }
@@ -178,5 +189,11 @@ void ProductFilterProxyModel::stockFilterChanged()
 void ProductFilterProxyModel::countChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+
+// SIGNAL 3
+void ProductFilterProxyModel::categoryFilterChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
 }
 QT_WARNING_POP

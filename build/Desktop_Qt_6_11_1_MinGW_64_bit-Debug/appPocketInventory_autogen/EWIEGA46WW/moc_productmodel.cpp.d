@@ -1,7 +1,11 @@
 C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/EWIEGA46WW/moc_productmodel.cpp: C:/Users/Coding/Desktop/Qt6/PocketInventory/productmodel.h \
   C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/appPocketInventory_autogen/moc_predefs.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/QAbstractListModel \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QList \
   C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QStringList \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QVariant \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QVariantList \
   C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
@@ -119,6 +123,7 @@ C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit
   C:/Qt/6.11.1/mingw_64/include/QtCore/qtypes.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qvariant.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qvariantlist.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qversiontagging.h \

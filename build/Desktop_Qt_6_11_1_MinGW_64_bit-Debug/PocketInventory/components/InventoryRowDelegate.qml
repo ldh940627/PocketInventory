@@ -10,6 +10,7 @@ Rectangle {
     required property int productQuantity
     required property int minimumQuantity
     required property int unitPrice
+    required property string category
 
     signal receiveRequested(
         int proxyIndex,
@@ -82,6 +83,19 @@ Rectangle {
                 elide: Text.ElideRight
             }
         }
+        // =========================
+        // Category
+        // =========================
+
+        Label {
+            Layout.preferredWidth: 100
+            text: root.category.length > 0 ? root.category : "미분류"
+            color: theme.textSecondary
+            font.pixelSize: 12
+            horizontalAlignment: Text.AlignHCenter
+            elide: Text.ElideRight
+        }
+
 
         // =========================
         // Quantity

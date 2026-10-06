@@ -94,6 +94,7 @@ CMakeFiles/appPocketInventory_qmllint: C:/Users/Coding/Desktop/Qt6/PocketInvento
 CMakeFiles/appPocketInventory_qmllint: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/InventoryTable.qml
 CMakeFiles/appPocketInventory_qmllint: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/DeleteProductDialog.qml
 CMakeFiles/appPocketInventory_qmllint: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/EditProductDialog.qml
+CMakeFiles/appPocketInventory_qmllint: C:/Users/Coding/Desktop/Qt6/PocketInventory/components/CategorySummaryDelegate.qml
 CMakeFiles/appPocketInventory_qmllint: .rcc/qmllint/appPocketInventory.rsp
 	cd /d C:\Users\Coding\Desktop\Qt6\PocketInventory && call C:\Users\Coding\Desktop\Qt6\PocketInventory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.1/mingw_64/bin/qmllint.exe @C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmllint/appPocketInventory.rsp
 

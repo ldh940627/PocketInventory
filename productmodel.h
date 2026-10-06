@@ -4,6 +4,8 @@
 #include <QAbstractListModel>
 #include <QString>
 #include <QVector>
+#include <QStringList>
+#include <QVariantList>
 
 struct Product
 {
@@ -50,7 +52,7 @@ public:
 
     bool setQuantity(int index, int quantity);
 
-    bool updateProductInfo(int index, const QString &name, int minimumQuantity, int unitPrice);
+    bool updateProductInfo(int index, const QString &name, int minimumQuantity, int unitPrice, const QString &category);
 
     Q_INVOKABLE bool increaseQuantity(int index);
 
@@ -68,8 +70,13 @@ public:
 
     Product productAt(int index) const;
 
+    QVector<Product> products() const;
+
     bool containsProductExcept(int exceptIndex, const QString &name) const;
 
+    QStringList categories() const;
+
+    QVariantList categorySummary() const;
 
 signals:
     void countChanged();

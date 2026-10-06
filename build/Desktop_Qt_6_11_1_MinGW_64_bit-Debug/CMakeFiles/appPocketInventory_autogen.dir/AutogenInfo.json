@@ -1267,6 +1267,12 @@
 			"MU",
 			"EWIEGA46WW/moc_productrepository.cpp",
 			null
+		],
+		[
+			"C:/Users/Coding/Desktop/Qt6/PocketInventory/service/csvservice.h",
+			"MU",
+			"EZIERFRHL2/moc_csvservice.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -1355,6 +1361,7 @@
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppSidebar_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppTheme_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppToast_qml.cpp",
+		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardStatCard_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DeleteProductDialog_qml.cpp",
@@ -1438,6 +1445,11 @@
 			"C:/Users/Coding/Desktop/Qt6/PocketInventory/productrepository.cpp",
 			"MU",
 			null
+		],
+		[
+			"C:/Users/Coding/Desktop/Qt6/PocketInventory/service/csvservice.cpp",
+			"MU",
+			null
 		]
 	],
 	"UIC_OPTIONS" : [],
@@ -1455,6 +1467,7 @@
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppSidebar_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppTheme_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppToast_qml.cpp",
+		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DashboardStatCard_qml.cpp",
 		"C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/DeleteProductDialog_qml.cpp",

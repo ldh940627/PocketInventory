@@ -112,7 +112,8 @@
 				32,
 				33,
 				34,
-				35
+				35,
+				36
 			]
 		}
 	],
@@ -182,6 +183,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/AppToast_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
 		{

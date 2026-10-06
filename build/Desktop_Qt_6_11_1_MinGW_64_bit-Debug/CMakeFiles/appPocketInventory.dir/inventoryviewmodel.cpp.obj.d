@@ -346,6 +346,8 @@ CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtCore/q20utility.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QUrl \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qurl.h \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\productfilterproxymodel.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QSortFilterProxyModel \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qsortfilterproxymodel.h \
@@ -355,6 +357,11 @@ CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QAbstractListModel \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QStringList \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVariantList \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qvariantlist.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QList \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVariant \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\productrepository.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QList \
  C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlDatabase \
@@ -366,4 +373,6 @@ CMakeFiles/appPocketInventory.dir/inventoryviewmodel.cpp.obj: \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\inventoryservice.h \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\historyrepository.h \
  C:\Users\Coding\Desktop\Qt6\PocketInventory\HistoryRecord.h \
+ C:\Users\Coding\Desktop\Qt6\PocketInventory\service/csvservice.h \
+ C:/Users/Coding/Desktop/Qt6/PocketInventory/productmodel.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QDebug

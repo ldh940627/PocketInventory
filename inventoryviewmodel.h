@@ -4,11 +4,13 @@
 #include <QAbstractItemModel>
 #include <QObject>
 #include <QString>
+#include <QUrl>
 
 #include "productfilterproxymodel.h"
 #include "productmodel.h"
 #include "productrepository.h"
 #include "inventoryservice.h"
+#include "service/csvservice.h"
 
 class InventoryViewModel : public QObject
 {
@@ -37,8 +39,12 @@ class InventoryViewModel : public QObject
     // 재고 상태 필터
     Q_PROPERTY(QString stockFilter READ stockFilter WRITE setStockFilter NOTIFY stockFilterChanged)
 
+    // 카테고리
+    Q_PROPERTY(QStringList categories READ categories NOTIFY categoriesChanged)
 
+    Q_PROPERTY(QString categoryFilter READ categoryFilter WRITE setCategoryFilter NOTIFY categoryFilterChanged)
 
+    Q_PROPERTY(QVariantList categorySummary READ categorySummary NOTIFY categorySummaryChanged)
 public:
 
     explicit InventoryViewModel(ProductRepository *productRepository, InventoryService *inventoryService, QObject *parent = nullptr);
@@ -65,14 +71,22 @@ public:
 
     void setStockFilter(const QString &stockFilter);
 
+    QStringList categories() const;
+    QString categoryFilter() const;
+    void setCategoryFilter(const QString &filter);
+
+    QVariantList categorySummary() const;
+
     Q_INVOKABLE bool addProduct(const QString &productNameText, const QString &productQuantityText, const QString &minimumQuantityText, const QString &unitPriceText, const QString &categoryText);
-    Q_INVOKABLE bool updateProduct(int proxyIndex, const QString &productNameText, const QString &minimumQuantityText, const QString &unitPriceText);
+    Q_INVOKABLE bool updateProduct(int proxyIndex, const QString &productNameText, const QString &minimumQuantityText, const QString &unitPriceText, const QString &categoryText);
     Q_INVOKABLE bool receiveStock(int proxyIndex, const QString &quantityText);
     Q_INVOKABLE bool releaseStock(int proxyIndex, const QString &quantityText);
     Q_INVOKABLE void increaseQuantity(int proxyIndex);
     Q_INVOKABLE void decreaseQuantity(int proxyIndex);
     Q_INVOKABLE void removeProduct(int proxyIndex);
     Q_INVOKABLE void resetFilters();
+    Q_INVOKABLE bool exportProducts(const QUrl &fileUrl);
+    Q_INVOKABLE bool importProducts(const QUrl &fileUrl);
 
 
 signals:
@@ -88,6 +102,12 @@ signals:
 
     void historyChanged();
 
+    void categoriesChanged();
+
+    void categoryFilterChanged();
+
+    void categorySummaryChanged();
+
 private:
     int toSourceIndex(int proxyIndex) const;
 
@@ -97,6 +117,7 @@ private:
     ProductModel m_productModel;
     ProductFilterProxyModel m_filterModel;
     ProductFilterProxyModel m_lowStockModel;
+    csvservice m_csvService;
 
 
 };

@@ -10,7 +10,7 @@
                             "column": 13,
                             "durationMicroseconds": 0,
                             "functionName": "radius",
-                            "line": 39,
+                            "line": 40,
                             "message": ""
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 12,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 41,
+                            "line": 42,
                             "message": ""
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 44,
+                            "line": 45,
                             "message": ""
                         },
                         {
@@ -34,7 +34,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 49,
+                            "line": 50,
                             "message": ""
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 61,
+                            "line": 62,
                             "message": ""
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 64,
+                            "line": 65,
                             "message": ""
                         },
                         {
@@ -58,7 +58,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 77,
+                            "line": 78,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -66,39 +66,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 88,
-                            "message": "Could not find property \"color\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 25,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalAlignment",
-                            "line": 94,
-                            "message": "Could not find property \"horizontalAlignment\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 102,
-                            "message": "Could not find property \"color\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 25,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalAlignment",
-                            "line": 108,
-                            "message": "Could not find property \"horizontalAlignment\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 115,
+                            "line": 87,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -106,7 +74,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 120,
+                            "line": 90,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -114,23 +82,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 128,
-                            "message": "Could not find property \"color\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 42,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalAlignment",
-                            "line": 133,
-                            "message": "Could not find property \"horizontalAlignment\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 141,
+                            "line": 98,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -138,7 +90,71 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 147,
+                            "line": 104,
+                            "message": "Could not find property \"horizontalAlignment\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 112,
+                            "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 118,
+                            "message": "Could not find property \"horizontalAlignment\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 125,
+                            "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 42,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 130,
+                            "message": "Could not find property \"horizontalAlignment\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 138,
+                            "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 42,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 143,
+                            "message": "Could not find property \"horizontalAlignment\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 151,
+                            "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 157,
                             "message": "Could not find property \"horizontalAlignment\"."
                         },
                         {
@@ -146,7 +162,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 162,
+                            "line": 172,
                             "message": ""
                         },
                         {
@@ -154,7 +170,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 156,
+                            "line": 166,
                             "message": ""
                         },
                         {
@@ -162,7 +178,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 157,
+                            "line": 167,
                             "message": ""
                         },
                         {
@@ -170,7 +186,7 @@
                             "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 158,
+                            "line": 168,
                             "message": ""
                         },
                         {
@@ -178,7 +194,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 182,
+                            "line": 192,
                             "message": "Cannot load property products from InventoryTable::inventoryViewModel with type QVariant."
                         },
                         {
@@ -186,7 +202,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 177,
+                            "line": 187,
                             "message": ""
                         },
                         {
@@ -194,7 +210,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 187,
+                            "line": 197,
                             "message": "Cannot access value for name productList"
                         },
                         {
@@ -202,7 +218,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "onReceiveRequested",
-                            "line": 190,
+                            "line": 200,
                             "message": "Cannot access value for name root"
                         },
                         {
@@ -210,7 +226,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "onReceiveRequested",
-                            "line": 190,
+                            "line": 200,
                             "message": ""
                         },
                         {
@@ -218,7 +234,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "onReleaseRequested",
-                            "line": 203,
+                            "line": 213,
                             "message": "Cannot access value for name root"
                         },
                         {
@@ -226,7 +242,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "onReleaseRequested",
-                            "line": 203,
+                            "line": 213,
                             "message": ""
                         },
                         {
@@ -234,7 +250,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "onEditRequested",
-                            "line": 216,
+                            "line": 226,
                             "message": "Cannot access value for name root"
                         },
                         {
@@ -242,7 +258,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "onEditRequested",
-                            "line": 216,
+                            "line": 226,
                             "message": ""
                         },
                         {
@@ -250,7 +266,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "onDeleteRequested",
-                            "line": 233,
+                            "line": 245,
                             "message": "Cannot access value for name root"
                         },
                         {
@@ -258,7 +274,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "onDeleteRequested",
-                            "line": 233,
+                            "line": 245,
                             "message": ""
                         },
                         {
@@ -266,7 +282,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 253,
+                            "line": 265,
                             "message": "Cannot load property filteredCount from InventoryTable::inventoryViewModel with type QVariant."
                         },
                         {
@@ -274,7 +290,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 250,
+                            "line": 262,
                             "message": ""
                         },
                         {
@@ -282,7 +298,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 261,
+                            "line": 273,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -290,7 +306,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 265,
+                            "line": 277,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -298,7 +314,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 258,
+                            "line": 270,
                             "message": ""
                         },
                         {
@@ -306,7 +322,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 274,
+                            "line": 286,
                             "message": "Could not find property \"visible\"."
                         },
                         {
@@ -314,7 +330,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 279,
+                            "line": 291,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -322,7 +338,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 271,
+                            "line": 283,
                             "message": ""
                         }
                     ],

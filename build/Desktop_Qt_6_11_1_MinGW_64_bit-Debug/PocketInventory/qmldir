@@ -29,5 +29,6 @@ InventoryToolbar 254.0 components/InventoryToolbar.qml
 InventoryTable 254.0 components/InventoryTable.qml
 DeleteProductDialog 254.0 components/DeleteProductDialog.qml
 EditProductDialog 254.0 components/EditProductDialog.qml
+CategorySummaryDelegate 254.0 components/CategorySummaryDelegate.qml
 depends QtQuick
 

@@ -346,4 +346,9 @@ CMakeFiles/appPocketInventory.dir/productmodel.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtCore/q20utility.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
- C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QStringList \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVariantList \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qvariantlist.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QList \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVariant

@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   ".rcc/qmlcache/appPocketInventory_components/AppTheme_qml.cpp.aotstats"
   ".rcc/qmlcache/appPocketInventory_components/AppToast_qml.cpp"
   ".rcc/qmlcache/appPocketInventory_components/AppToast_qml.cpp.aotstats"
+  ".rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp"
+  ".rcc/qmlcache/appPocketInventory_components/CategorySummaryDelegate_qml.cpp.aotstats"
   ".rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.cpp"
   ".rcc/qmlcache/appPocketInventory_components/DashboardPanel_qml.cpp.aotstats"
   ".rcc/qmlcache/appPocketInventory_components/DashboardStatCard_qml.cpp"

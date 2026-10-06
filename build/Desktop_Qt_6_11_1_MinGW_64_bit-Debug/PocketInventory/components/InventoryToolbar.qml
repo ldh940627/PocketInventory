@@ -8,6 +8,8 @@ Item {
     required property var inventoryViewModel
 
     signal addProductRequested()
+    signal exportCsvRequested()
+    signal importCsvRequested()
 
     AppTheme {
         id: theme
@@ -50,6 +52,102 @@ Item {
                     searchField.activeFocus
                     ? theme.primary
                     : theme.border
+            }
+        }
+
+        ComboBox {
+            id: categoryComboBox
+
+            Layout.preferredWidth: 150
+            Layout.preferredHeight: 36
+
+            model: ["전체 카테고리", "미분류"].concat(root.inventoryViewModel.categories)
+
+            onActivated: {
+                if(currentIndex === 0){
+                    root.inventoryViewModel.categoryFilter = "all"
+                }
+                else if(currentIndex === 1){
+                    root.inventoryViewModel.categoryFilter = "uncategorized"
+                }
+                else{
+                    root.inventoryViewModel.categoryFilter = currentText
+                }
+            }
+
+            contentItem: Text {
+                leftPadding: 12
+                rightPadding: 30
+
+                text: categoryComboBox.displayText
+                color: theme.textPrimary
+
+                font.pixelSize: 12
+
+                verticalAlignment: Text.AlignVCenter
+                elide: Text.ElideRight
+            }
+
+            indicator: Text {
+                x: categoryComboBox.width - width - 12
+                y: (categoryComboBox.height - height) / 2
+
+                text: "▼"
+                color: theme.textSecondary
+                font.pixelSize: 9
+            }
+
+            background: Rectangle {
+                radius: theme.radiusMedium
+                color: categoryComboBox.hovered ? theme.surfaceHover : theme.surface
+
+                border.width: 1
+                border.color: categoryComboBox.activeFocus ? theme.primary : theme.border
+            }
+
+            popup: Popup {
+                y: categoryComboBox.height + 4
+                width: categoryComboBox.width
+
+                padding: 4
+
+                contentItem: ListView {
+                    implicitHeight: Math.min(contentHeight, 220)
+                    clip: true
+
+                    model: categoryComboBox.popup.visible ? categoryComboBox.delegateModel : null
+                    currentIndex: categoryComboBox.highlightedIndex
+
+                    ScrollIndicator.vertical: ScrollIndicator {}
+                }
+
+                background: Rectangle {
+                    radius: theme.radiusMedium
+                    color: theme.surface
+                    border.width: 1
+                    border.color: theme.border
+                }
+            }
+
+            delegate: ItemDelegate {
+                width: categoryComboBox.width - 8
+                height: 34
+
+                highlighted: categoryComboBox.highlightedIndex === index
+
+                contentItem: Text {
+                    text: modelData
+                    color: theme.textPrimary
+                    font.pixelSize: 12
+
+                    verticalAlignment: Text.AlignVCenter
+                    leftPadding: 8
+                }
+
+                background: Rectangle {
+                    radius: 6
+                    color: highlighted ? theme.primarySoft : "transparent"
+                }
             }
         }
 
@@ -197,6 +295,20 @@ Item {
             Layout.fillWidth: true
         }
 
+        Button {
+            text: "CSV 가져오기"
+
+            onClicked: root.importCsvRequested()
+        }
+
+        Button {
+            text: "CSV 내보내기"
+            enabled: root.inventoryViewModel.totalCount > 0
+
+            onClicked: root.exportCsvRequested()
+        }
+
+
         // =========================
         // Add Product
         // =========================
@@ -232,6 +344,19 @@ Item {
                     addButton.hovered
                     ? theme.primaryHover
                     : theme.primary
+            }
+        }
+
+        // =========================
+        // Category Connections
+        // =========================
+
+        Connections {
+            target: root.inventoryViewModel
+
+            function onCategoriesChanged(){
+                categoryComboBox.currentIndex = 0
+                root.inventoryViewModel.categoryFilter = "all"
             }
         }
     }

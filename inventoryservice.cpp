@@ -7,7 +7,7 @@ InventoryService::InventoryService(const QSqlDatabase &database, ProductReposito
 
 }
 
-bool InventoryService::updateProduct(const Product &product, const QString &name, int minimumQuantity, int unitPrice, QString *errorMessage)
+bool InventoryService::updateProduct(const Product &product, const QString &name, int minimumQuantity, int unitPrice, const QString &category, QString *errorMessage)
 {
     if(!m_productRepository || !m_historyRepository){
         if(errorMessage)
@@ -16,6 +16,7 @@ bool InventoryService::updateProduct(const Product &product, const QString &name
     }
 
     const QString trimmedName = name.trimmed();
+    const QString trimmedCategory = category.trimmed();
 
     if(trimmedName.isEmpty()){
         if(errorMessage)
@@ -46,6 +47,9 @@ bool InventoryService::updateProduct(const Product &product, const QString &name
     if(product.unitPrice != unitPrice)
         changes.append(QStringLiteral("단가: %1 → %2").arg(product.unitPrice).arg(unitPrice));
 
+    if(product.category != trimmedCategory)
+        changes.append(QStringLiteral("카테고리: %1 → %2").arg(product.category.isEmpty() ? QStringLiteral("미분류") : product.category, trimmedCategory.isEmpty() ? QStringLiteral("미분류") : trimmedCategory));
+
     if(changes.isEmpty()){
         if(errorMessage)
             errorMessage->clear();
@@ -57,7 +61,7 @@ bool InventoryService::updateProduct(const Product &product, const QString &name
     if(!beginTransaction(errorMessage))
         return false;
 
-    if(!m_productRepository->updateProductInfo(product.id, trimmedName, minimumQuantity, unitPrice, errorMessage)){
+    if(!m_productRepository->updateProductInfo(product.id, trimmedName, minimumQuantity, unitPrice, category, errorMessage)){
         rollbackTransaction();
         return false;
     }
@@ -286,6 +290,67 @@ int InventoryService::addProduct(const QString &name, int quantity, int minimumQ
     qDebug() << "[ADD] Commit 성공";
 
     return productId;
+
+}
+
+bool InventoryService::importProduct(const QVector<Product> &products, QString *errorMessage)
+{
+    if(!m_productRepository || !m_historyRepository){
+        if(errorMessage)
+            *errorMessage = QStringLiteral("Repository가 연결되지 않았습니다.");
+        return false;
+    }
+
+    if(products.isEmpty()){
+        if(errorMessage)
+            *errorMessage = QStringLiteral("가져올 상품이 없습니다.");
+        return false;
+    }
+
+    for(const Product &product : products){
+        QString repositoryError;
+
+        const bool exists = m_productRepository->existsByName(product.name, &repositoryError);
+
+        if(!repositoryError.isEmpty()){
+            if(errorMessage)
+                *errorMessage = repositoryError;
+            return false;
+        }
+
+        if(exists){
+            if(errorMessage)
+                *errorMessage = QStringLiteral("이미 등록된 상품 '%1'이 CSV 파일에 포함되어 있습니다.").arg(product.name);
+            return false;
+        }
+    }
+
+    if(!beginTransaction(errorMessage))
+        return false;
+
+    for(const Product &product : products){
+        const int productId = m_productRepository->insertProduct(product.name, product.quantity, product.minimumQuantity, product.unitPrice, product.category, errorMessage);
+
+        if(productId < 0){
+            rollbackTransaction();
+            return false;
+        }
+
+        if(!m_historyRepository->insertHistory(productId, product.name, 0, product.quantity, QStringLiteral("CREATE"), errorMessage)){
+            rollbackTransaction();
+            return false;
+        }
+    }
+
+    if(!commitTransaction(errorMessage)){
+        rollbackTransaction();
+        return false;
+    }
+
+    if(errorMessage)
+        errorMessage->clear();
+
+    return true;
 
 }
 

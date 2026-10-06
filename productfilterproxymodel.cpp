@@ -73,6 +73,32 @@ int ProductFilterProxyModel::sourceIndex(int proxyIndex) const
     return sourceModelIndex.row();
 }
 
+QString ProductFilterProxyModel::categoryFilter() const
+{
+    return m_categoryFilter;
+}
+
+void ProductFilterProxyModel::setCategoryFilter(const QString &categoryFilter)
+{
+    qDebug() << "[CATEGORY FILTER]" << categoryFilter;
+
+    QString normalizedFilter = categoryFilter.trimmed();
+
+    if(normalizedFilter.isEmpty())
+        normalizedFilter = QStringLiteral("all");
+
+    if(m_categoryFilter == normalizedFilter)
+        return;
+
+    m_categoryFilter = normalizedFilter;
+
+    beginFilterChange();
+    endFilterChange();
+
+    emit categoryFilterChanged();
+    emit countChanged();
+}
+
 bool ProductFilterProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
 {
     if(!sourceModel())
@@ -82,6 +108,8 @@ bool ProductFilterProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex 
     const QString productName = sourceModel()->data(sourceIndex, ProductModel::ProductNameRole).toString();
     const int productQuantity = sourceModel()->data(sourceIndex, ProductModel::ProductQuantityRole).toInt();
     const int minimumQuantity = sourceModel()->data(sourceIndex, ProductModel::MinimumQuantityRole).toInt();
+    const QString category = sourceModel()->data(sourceIndex, ProductModel::CategoryRole).toString().trimmed();
+
     const bool matchesSearch = m_searchText.isEmpty() || productName.contains(m_searchText, Qt::CaseInsensitive);
 
     qDebug()
@@ -98,7 +126,19 @@ bool ProductFilterProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex 
     else if (m_stockFilter == QStringLiteral("low")){
         matchesStock = productQuantity <= minimumQuantity;
     }
-    return matchesSearch && matchesStock;
+
+    bool matchesCategory = true;
+
+    if(m_categoryFilter == QStringLiteral("uncategorized")){
+        matchesCategory = category.isEmpty();
+    }
+    else if(m_categoryFilter != QStringLiteral("all")){
+        matchesCategory = category.compare(m_categoryFilter, Qt::CaseInsensitive) == 0;
+    }
+
+    qDebug() << "[CATEGORY CHECK]" << productName << "상품 카테고리:" << category << "필터:" << m_categoryFilter << "결과:" << matchesCategory;
+
+    return matchesSearch && matchesStock && matchesCategory;
 }
 
 

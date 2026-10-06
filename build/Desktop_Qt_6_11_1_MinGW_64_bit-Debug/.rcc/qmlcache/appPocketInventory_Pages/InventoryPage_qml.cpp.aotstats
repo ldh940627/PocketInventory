@@ -10,7 +10,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 27,
+                            "line": 28,
                             "message": ""
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 22,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 23,
+                            "line": 24,
                             "message": ""
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 24,
+                            "line": 25,
                             "message": ""
                         },
                         {
@@ -34,15 +34,63 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 25,
+                            "line": 26,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "fileMode",
+                            "line": 37,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "nameFilters",
+                            "line": 38,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "onAccepted",
+                            "line": 41,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "fileMode",
+                            "line": 50,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "nameFilters",
+                            "line": 51,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "onAccepted",
+                            "line": 53,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 0,
                             "column": 22,
                             "durationMicroseconds": 0,
                             "functionName": "spacing",
-                            "line": 38,
+                            "line": 64,
                             "message": ""
                         },
                         {
@@ -50,7 +98,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 33,
+                            "line": 59,
                             "message": ""
                         },
                         {
@@ -58,7 +106,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "topMargin",
-                            "line": 35,
+                            "line": 61,
                             "message": ""
                         },
                         {
@@ -66,7 +114,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "bottomMargin",
-                            "line": 36,
+                            "line": 62,
                             "message": ""
                         },
                         {
@@ -74,7 +122,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 55,
+                            "line": 81,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -82,7 +130,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 63,
+                            "line": 89,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -90,7 +138,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "inventoryViewModel",
-                            "line": 75,
+                            "line": 101,
                             "message": ""
                         },
                         {
@@ -98,15 +146,31 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "onAddProductRequested",
-                            "line": 77,
+                            "line": 103,
                             "message": "Cannot retrieve a non-object type by ID: productDialog"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "onExportCsvRequested",
+                            "line": 107,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "onImportCsvRequested",
+                            "line": 111,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 91,
+                            "line": 125,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -114,7 +178,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 95,
+                            "line": 129,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -122,7 +186,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "inventoryViewModel",
-                            "line": 115,
+                            "line": 149,
                             "message": ""
                         },
                         {
@@ -130,7 +194,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "onReceiveRequested",
-                            "line": 122,
+                            "line": 156,
                             "message": "Cannot retrieve a non-object type by ID: stockAdjustDialog"
                         },
                         {
@@ -138,7 +202,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "onReceiveRequested",
-                            "line": 122,
+                            "line": 156,
                             "message": ""
                         },
                         {
@@ -146,7 +210,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "onReleaseRequested",
-                            "line": 139,
+                            "line": 173,
                             "message": "Cannot retrieve a non-object type by ID: stockAdjustDialog"
                         },
                         {
@@ -154,7 +218,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "onReleaseRequested",
-                            "line": 139,
+                            "line": 173,
                             "message": ""
                         },
                         {
@@ -162,7 +226,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "onEditRequested",
-                            "line": 156,
+                            "line": 190,
                             "message": "Cannot retrieve a non-object type by ID: editProductDialog"
                         },
                         {
@@ -170,7 +234,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "onEditRequested",
-                            "line": 156,
+                            "line": 190,
                             "message": ""
                         },
                         {
@@ -178,7 +242,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "onDeleteRequested",
-                            "line": 177,
+                            "line": 213,
                             "message": "Cannot retrieve a non-object type by ID: deleteDialog"
                         },
                         {
@@ -186,7 +250,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "onDeleteRequested",
-                            "line": 177,
+                            "line": 213,
                             "message": ""
                         },
                         {
@@ -194,7 +258,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "inventoryViewModel",
-                            "line": 197,
+                            "line": 233,
                             "message": ""
                         },
                         {
@@ -202,7 +266,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "inventoryViewModel",
-                            "line": 208,
+                            "line": 244,
                             "message": ""
                         },
                         {
@@ -210,7 +274,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "inventoryViewModel",
-                            "line": 218,
+                            "line": 254,
                             "message": ""
                         },
                         {
@@ -218,7 +282,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "inventoryViewModel",
-                            "line": 228,
+                            "line": 264,
                             "message": ""
                         }
                     ],

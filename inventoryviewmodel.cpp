@@ -93,6 +93,33 @@ void InventoryViewModel::setStockFilter(const QString &stockFilter)
     m_filterModel.setStockFilter(stockFilter);
 }
 
+QStringList InventoryViewModel::categories() const
+{
+    return m_productModel.categories();
+}
+
+QString InventoryViewModel::categoryFilter() const
+{
+    return m_filterModel.categoryFilter();
+}
+
+void InventoryViewModel::setCategoryFilter(const QString &filter)
+{
+    if(m_filterModel.categoryFilter() == filter)
+        return;
+
+    m_filterModel.setCategoryFilter(filter);
+
+    emit categoryFilterChanged();
+    emit filteredCountChanged();
+
+}
+
+QVariantList InventoryViewModel::categorySummary() const
+{
+    return m_productModel.categorySummary();
+}
+
 bool InventoryViewModel::addProduct(const QString &productNameText, const QString &productQuantityText, const QString &minimumQuantityText, const QString &unitPriceText, const QString &categoryText)
 {
 
@@ -175,13 +202,15 @@ bool InventoryViewModel::addProduct(const QString &productNameText, const QStrin
     }
 
     emit historyChanged();
+    emit categoriesChanged();
+    emit categorySummaryChanged();
 
     emit messageRequested(productName + QStringLiteral(" 상품이 등록되었습니다."), QStringLiteral("green"));
 
     return true;
 }
 
-bool InventoryViewModel::updateProduct(int proxyIndex, const QString &productNameText, const QString &minimumQuantityText, const QString &unitPriceText)
+bool InventoryViewModel::updateProduct(int proxyIndex, const QString &productNameText, const QString &minimumQuantityText, const QString &unitPriceText, const QString &categoryText)
 {
     const int sourceIndex = toSourceIndex(proxyIndex);
 
@@ -197,6 +226,7 @@ bool InventoryViewModel::updateProduct(int proxyIndex, const QString &productNam
     }
 
     const QString productName = productNameText.trimmed();
+    const QString category = categoryText.trimmed();
 
     if(productName.isEmpty()){
         emit messageRequested(QStringLiteral("상품명을 입력해주세요."),QStringLiteral("red"));
@@ -236,14 +266,14 @@ bool InventoryViewModel::updateProduct(int proxyIndex, const QString &productNam
 
     QString errorMessage;
 
-    const bool succeeded = m_inventoryService->updateProduct(product, productName, minimumQuantity, unitPrice, &errorMessage);
+    const bool succeeded = m_inventoryService->updateProduct(product, productName, minimumQuantity, unitPrice, category, &errorMessage);
 
     if(!succeeded){
         emit messageRequested(errorMessage.isEmpty() ? QStringLiteral("상품 수정에 실패했습니다.") : errorMessage, QStringLiteral("red"));
         return false;
     }
 
-    const bool modelUpdated = m_productModel.updateProductInfo(sourceIndex, productName, minimumQuantity, unitPrice);
+    const bool modelUpdated = m_productModel.updateProductInfo(sourceIndex, productName, minimumQuantity, unitPrice, category);
 
     if(!modelUpdated){
         emit messageRequested(QStringLiteral("상품은 저장되었지만 화면 갱신에 실패했습니다."), QStringLiteral("red"));
@@ -254,6 +284,8 @@ bool InventoryViewModel::updateProduct(int proxyIndex, const QString &productNam
     emit historyChanged();
     emit stockSummaryChanged();
     emit filteredCountChanged();
+    emit categoriesChanged();
+    emit categorySummaryChanged();
 
     emit messageRequested(QStringLiteral("상품 정보가 수정되었습니다."), QStringLiteral("green"));
 
@@ -294,6 +326,7 @@ bool InventoryViewModel::receiveStock(int proxyIndex, const QString &quantityTex
     m_productModel.setQuantity(sourceIndex, newQuantity);
 
     emit historyChanged();
+    emit categorySummaryChanged();
 
     emit messageRequested(product.name + QStringLiteral("") + QString::number(amount) + QStringLiteral("개 입고 처리했습니다."),
                           QStringLiteral("green"));
@@ -342,6 +375,7 @@ bool InventoryViewModel::releaseStock(int proxyIndex, const QString &quantityTex
     m_productModel.setQuantity(sourceIndex, newQuantity);
 
     emit historyChanged();
+    emit categorySummaryChanged();
 
     emit messageRequested(product.name + QStringLiteral(" ") + QString::number(amount)
                               +QStringLiteral("개 출고 처리했습니다."), QStringLiteral("darkorange"));
@@ -370,6 +404,7 @@ void InventoryViewModel::increaseQuantity(int proxyIndex)
     m_productModel.increaseQuantity(sourceIndex);
 
     emit historyChanged();
+    emit categorySummaryChanged();
 
     emit messageRequested(
         product.name
@@ -405,6 +440,7 @@ void InventoryViewModel::decreaseQuantity(int proxyIndex)
     m_productModel.decreaseQuantity(sourceIndex);
 
     emit historyChanged();
+    emit categorySummaryChanged();
 
 
     emit messageRequested(
@@ -438,6 +474,8 @@ void InventoryViewModel::removeProduct(int proxyIndex)
     m_productModel.removeProduct(sourceIndex);
 
     emit historyChanged();
+    emit categoriesChanged();
+    emit categorySummaryChanged();
 
     emit messageRequested(product.name + QStringLiteral("상품을 삭제했습니다."), QStringLiteral("darkorange"));
 }
@@ -450,6 +488,76 @@ void InventoryViewModel::resetFilters()
     emit messageRequested(QStringLiteral("검색 조건을 초기화했습니다."), QStringLiteral("gray"));
 
 }
+
+bool InventoryViewModel::exportProducts(const QUrl &fileUrl)
+{
+    if(m_productModel.count() == 0){
+        emit messageRequested(QStringLiteral("내보낼 상품이 없습니다."), QStringLiteral("red"));
+        return false;
+    }
+
+    const QString filePath = fileUrl.toLocalFile();
+
+    if(filePath.isEmpty()){
+        emit messageRequested(QStringLiteral("올바른 저장 경로가 아닙니다."), QStringLiteral("red"));
+        return false;
+    }
+
+    QString errorMessage;
+
+    if(!m_csvService.exportProduct(m_productModel.products(), filePath, &errorMessage)){
+        emit messageRequested(errorMessage, QStringLiteral("red"));
+        return false;
+    }
+
+    emit messageRequested(QStringLiteral("CSV 파일을 저장했습니다."), QStringLiteral("green"));
+    return true;
+
+}
+
+bool InventoryViewModel::importProducts(const QUrl &fileUrl)
+{
+    const QString filePath = fileUrl.toLocalFile();
+
+    if(filePath.isEmpty()){
+        emit messageRequested(QStringLiteral("올바른 CSV 파일 경로가 아닙니다."), QStringLiteral("red"));
+        return false;
+    }
+
+    const CsvImportResult importResult = m_csvService.importProducts(filePath);
+
+    if(!importResult.success){
+        emit messageRequested(importResult.errorMessage, QStringLiteral("red"));
+        return false;
+    }
+
+    QString errorMessage;
+
+    if(!m_inventoryService->importProduct(importResult.products, &errorMessage)){
+        emit messageRequested(errorMessage, QStringLiteral("red"));
+        return false;
+    }
+
+    const QList<Product> products = m_productRepository->loadAll(&errorMessage);
+
+    if(!errorMessage.isEmpty()){
+        emit messageRequested(QStringLiteral("상품은 저장되었지만 화면 갱신에 실패했습니다: %1").arg(errorMessage), QStringLiteral("red"));
+        return false;
+    }
+
+    m_productModel.setProducts(products);
+
+    emit stockSummaryChanged();
+    emit filteredCountChanged();
+    emit categoriesChanged();
+    emit categorySummaryChanged();
+
+    emit messageRequested(QStringLiteral("%1개의 상품을 가져왔습니다.").arg(importResult.products.size()), QStringLiteral("green"));
+
+    return true;
+
+}
+
 
 int InventoryViewModel::toSourceIndex(int proxyIndex) const
 {

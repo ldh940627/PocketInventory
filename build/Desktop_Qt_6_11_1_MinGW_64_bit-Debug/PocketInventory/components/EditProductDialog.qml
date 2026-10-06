@@ -13,6 +13,7 @@ Dialog {
     property int currentQuantity: 0
     property int minimumQuantity: 0
     property int unitPrice: 0
+    property string category: ""
 
     modal: true
 
@@ -26,13 +27,13 @@ Dialog {
         id: theme
     }
 
-    function openEdit(index, name, quantity, minimum, price){
+    function openEdit(index, name, quantity, minimum, price, category){
         root.proxyIndex = index
         root.productName = name
         root.currentQuantity = quantity
         root.minimumQuantity = minimum
         root.unitPrice = price
-
+        root.category = category
         root.open()
     }
 
@@ -255,6 +256,25 @@ Dialog {
                     }
                 }
             }
+
+            ColumnLayout {
+                Layout.fillWidth: true
+                spacing: 6
+
+                Label {
+                    text: "카테고리"
+                    font.pixelSize: 13
+                    font.bold: true
+                    color: theme.textPrimary
+                }
+
+                TextField{
+                    id: categoryField
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: 42
+                    placeholderText: "예: 부품"
+                }
+            }
         }
 
         // ============================================================
@@ -340,7 +360,8 @@ Dialog {
                                         root.proxyIndex,
                                         nameField.text,
                                         minimumField.text,
-                                        unitPriceField.text)
+                                        unitPriceField.text,
+                                        categoryField.text)
 
                     if(succeeded){
                         root.close()

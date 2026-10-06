@@ -24,7 +24,8 @@ Rectangle {
         string productName,
         int currentQuantity,
         int minimumQuantity,
-        int unitPrice
+        int unitPrice,
+        string category
     )
 
     signal deleteRequested(
@@ -78,6 +79,15 @@ Rectangle {
 
                     font.pixelSize: 11
                     font.bold: true
+                }
+
+                Label {
+                    Layout.preferredWidth: 100
+                    text: "카테고리"
+                    color: theme.textSecondary
+                    font.pixelSize: 11
+                    font.bold: true
+                    horizontalAlignment: Text.AlignHCenter
                 }
 
                 Label {
@@ -218,14 +228,16 @@ Rectangle {
                             productName,
                             currentQuantity,
                             minimumQuantity,
-                            unitPrice
+                            unitPrice,
+                            category
                         ) {
                              root.editRequested(
                                 proxyIndex,
                                 productName,
                                 currentQuantity,
                                 minimumQuantity,
-                                unitPrice
+                                unitPrice,
+                                category
                             )
                         }
 

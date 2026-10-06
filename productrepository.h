@@ -16,12 +16,13 @@ public:
 
     int insertProduct(const QString &name, int quantity, int minimumQuantity, int unitPrice, const QString &category, QString *errorMessage = nullptr) const;
 
-    bool updateProductInfo(int productId, const QString &name, int minimumQuantity, int unitPrice, QString *errorMessage = nullptr) const;
+    bool updateProductInfo(int productId, const QString &name, int minimumQuantity, int unitPrice, const QString &category, QString *errorMessage = nullptr) const;
 
     bool updateQuantity(int productId, int quantity, QString *errorMessage = nullptr) const;
 
     bool deleteProduct(int productId, QString *errorMessage = nullptr) const;
 
+    bool existsByName(const QString &name, QString *errorMessage = nullptr) const;
 
 private:
     QSqlDatabase m_database;

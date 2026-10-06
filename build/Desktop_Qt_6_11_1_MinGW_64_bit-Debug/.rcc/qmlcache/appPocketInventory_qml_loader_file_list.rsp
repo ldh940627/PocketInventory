@@ -32,3 +32,4 @@ C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit
 /qt/qml/PocketInventory/components/InventoryTable.qml
 /qt/qml/PocketInventory/components/DeleteProductDialog.qml
 /qt/qml/PocketInventory/components/EditProductDialog.qml
+/qt/qml/PocketInventory/components/CategorySummaryDelegate.qml

@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.Dialogs
 
 import "../components"
 
@@ -28,6 +29,31 @@ Item {
             parent.width - 56,
             theme.pageMaxWidth
         )
+
+        FileDialog {
+            id: exportCsvDialog
+
+            title: "CSV 파일 저장"
+            fileMode: FileDialog.SaveFile
+            nameFilters: ["CSV 파일 (*.csv)"]
+            defaultSuffix: "csv"
+
+            onAccepted: {
+                root.inventoryViewModel.exportProducts(selectedFile)
+            }
+        }
+
+        FileDialog {
+            id: importCsvDialog
+
+            title: "CSV 파일 가져오기"
+            fileMode: FileDialog.OpenFile
+            nameFilters: ["CSV 파일 (*.csv)"]
+
+            onAccepted: {
+                root.inventoryViewModel.importProducts(selectedFile)
+            }
+        }
 
         ColumnLayout {
             anchors.fill: parent
@@ -76,6 +102,14 @@ Item {
 
                 onAddProductRequested: {
                     productDialog.open()
+                }
+
+                onExportCsvRequested: {
+                    exportCsvDialog.open()
+                }
+
+                onImportCsvRequested: {
+                    importCsvDialog.open()
                 }
             }
 
@@ -158,14 +192,16 @@ Item {
                         productName,
                         currentQuantity,
                         minimumQuantity,
-                        unitPrice
+                        unitPrice,
+                        category
                     ){
                         editProductDialog.openEdit(
                             proxyIndex,
                             productName,
                             currentQuantity,
                             minimumQuantity,
-                            unitPrice
+                            unitPrice,
+                            category
                         )
                     }
 

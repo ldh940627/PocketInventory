@@ -6,6 +6,10 @@ C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit
   C:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
   C:/Qt/6.11.1/mingw_64/include/QtCore/QSortFilterProxyModel \
   C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QStringList \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QUrl \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QVariant \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QVariantList \
   C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
@@ -125,8 +129,10 @@ C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit
   C:/Qt/6.11.1/mingw_64/include/QtCore/qtversionchecks.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qtypeinfo.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qtypes.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qurl.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qvariant.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qvariantlist.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qversiontagging.h \
@@ -354,4 +360,5 @@ C:/Users/Coding/Desktop/Qt6/PocketInventory/build/Desktop_Qt_6_11_1_MinGW_64_bit
   C:/Users/Coding/Desktop/Qt6/PocketInventory/inventoryservice.h \
   C:/Users/Coding/Desktop/Qt6/PocketInventory/productfilterproxymodel.h \
   C:/Users/Coding/Desktop/Qt6/PocketInventory/productmodel.h \
-  C:/Users/Coding/Desktop/Qt6/PocketInventory/productrepository.h
+  C:/Users/Coding/Desktop/Qt6/PocketInventory/productrepository.h \
+  C:/Users/Coding/Desktop/Qt6/PocketInventory/service/csvservice.h
